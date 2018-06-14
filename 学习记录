@@ -1,0 +1,4 @@
+setTimeout和setInterval以及单线程的缺陷
+单线程的解决方案:worker
+阻塞和异步引起的问题
+
