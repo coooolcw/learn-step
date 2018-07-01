@@ -33,3 +33,11 @@ html特性(attribute)与dom属性(prop)的关联和区别
 
 特例:src,同步但值不同
 class与className同步
+
+
+
+学习jQuery的data方法时
+提到了原生js自定义属性时会引起循环引用导致内存泄露的问题
+主要查阅https://segmentfault.com/q/1010000000192427
+暂时看不太懂
+留待学习完闭包和函数作用域以后再查看
