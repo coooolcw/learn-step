@@ -55,5 +55,7 @@ input:-webkit-autofill {
             -webkit-box-shadow: 0 0 0px 1000px white inset;
         }
 
-
+html5的新增属性
+validity 属性以及返回的validityState对象
 https://blog.csdn.net/baidu_25343343/article/details/54990802
+https://developer.mozilla.org/zh-CN/docs/Web/API/ValidityState
