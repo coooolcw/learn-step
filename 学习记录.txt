@@ -59,3 +59,7 @@ html5的新增属性
 validity 属性以及返回的validityState对象
 https://blog.csdn.net/baidu_25343343/article/details/54990802
 https://developer.mozilla.org/zh-CN/docs/Web/API/ValidityState
+
+
+CSS3新增表单属性
+https://www.w3cplus.com/css/advanced-css-form-styling.html
