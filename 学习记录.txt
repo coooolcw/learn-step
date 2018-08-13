@@ -68,3 +68,4 @@ https://www.w3cplus.com/css/advanced-css-form-styling.html
 html5默认气泡的修改
 注意修改需要较多的经验和测试
 https://c7sky.com/building-html5-form-validation-bubble-replacements.html
+此处与html5的验证需要进一步学习,视频教程讲解不佳
