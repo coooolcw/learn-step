@@ -76,3 +76,11 @@ html5默认气泡的修改
 注意修改需要较多的经验和测试
 https://c7sky.com/building-html5-form-validation-bubble-replacements.html
 此处与html5的验证需要进一步学习,视频教程讲解不佳
+
+
+::first-letter与::first-line都不对行内元素生效,具体参见
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/::first-line
+first-letter可以与::before搭配使用,可以自动匹配到content中的第一个
+另外有文字匹配规则,参见
+https://www.zhangxinxu.com/wordpress/2016/09/css-first-letter-pseudo-element/
+注意 此文章不得转载
