@@ -85,3 +85,6 @@ first-letter可以与::before搭配使用,可以自动匹配到content中的第�
 https://www.zhangxinxu.com/wordpress/2016/09/css-first-letter-pseudo-element/(注意 此文章不得转载)
 
 content的用法https://blog.csdn.net/ganyingxie123456/article/details/70338260
+
+
+selection支持的属性较少,见https://developer.mozilla.org/zh-CN/docs/Web/CSS/::selection
