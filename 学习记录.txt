@@ -82,5 +82,6 @@ https://c7sky.com/building-html5-form-validation-bubble-replacements.html
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/::first-line
 first-letter可以与::before搭配使用,可以自动匹配到content中的第一个
 另外有文字匹配规则,参见
-https://www.zhangxinxu.com/wordpress/2016/09/css-first-letter-pseudo-element/
-注意 此文章不得转载
+https://www.zhangxinxu.com/wordpress/2016/09/css-first-letter-pseudo-element/(注意 此文章不得转载)
+
+content的用法https://blog.csdn.net/ganyingxie123456/article/details/70338260
