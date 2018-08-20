@@ -88,3 +88,6 @@ content的用法https://blog.csdn.net/ganyingxie123456/article/details/70338260
 
 
 selection支持的属性较少,见https://developer.mozilla.org/zh-CN/docs/Web/CSS/::selection
+
+border-image的使用方法,书籍上介绍不甚详细
+https://www.cnblogs.com/panshijie205/p/6851759.html
