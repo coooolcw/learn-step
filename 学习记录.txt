@@ -92,3 +92,6 @@ selection支持的属性较少,见https://developer.mozilla.org/zh-CN/docs/Web/C
 border-image的使用方法,书籍上介绍不甚详细
 https://www.cnblogs.com/panshijie205/p/6851759.html
 https://segmentfault.com/a/1190000010969367
+
+css3背景色渐变
+https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
