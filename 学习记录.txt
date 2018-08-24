@@ -99,3 +99,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/gradient
 老兼容问题:
 https://www.cnblogs.com/pingfan/p/5280648.html
+
+
+翻阅css3文档的时候看到了新的布局模块:grid
+display:grid即可自动布局
+非常吸引人,在制作个人主页时必须尝试(兼容?什么兼容)
