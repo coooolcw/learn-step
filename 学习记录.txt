@@ -104,3 +104,7 @@ https://www.cnblogs.com/pingfan/p/5280648.html
 翻阅css3文档的时候看到了新的布局模块:grid
 display:grid即可自动布局
 非常吸引人,在制作个人主页时必须尝试(兼容?什么兼容)
+
+
+font-face
+总体介绍https://www.zhangxinxu.com/wordpress/2017/03/css3-font-face-src-local/  注意版权
