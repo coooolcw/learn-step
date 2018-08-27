@@ -108,3 +108,4 @@ display:grid即可自动布局
 
 font-face
 总体介绍https://www.zhangxinxu.com/wordpress/2017/03/css3-font-face-src-local/  注意版权
+兼容格式https://www.w3cplus.com/content/css3-font-face
