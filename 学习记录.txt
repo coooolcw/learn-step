@@ -127,10 +127,74 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function
 
 
 
-CSS作画处理几何图形时,会出现设置好的像素(在游览器内可获取到正确的长宽),但是在显示器上比例不正确,导致拼接时的角度也不正确.
-例如拼接五角星,就算原始的三角形长宽高都在游览器内显示正确,但是实际显示器显示并不是和设置一样,总有0.5%左右的长宽比例误差.最后只能手动调整旋转角度为70deg.而按照计算应该是72deg.
-但正常的长宽显示是正确的.也就是说像素是正方形的.
-是否是三角形会造成误差,待明日确认
+CSS作画处理几何图形时
+实际像素是正方形,并且与设计值是等比例的.
+在作图时,一定要注意旋转中心的问题
+例如五角星以三个三角形旋转形成时,旋转的中心并不是center.
+以下为代码
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正五角星</title>
+    <style>
+        .body {
+            position: relative;
+            height: 600px;
+            width: 1000px;
+            margin: auto;
+            background: skyblue;
+        }
+
+        .star {
+            font-size: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -36px;
+            margin-left: -100px;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 72.64px solid greenyellow;
+        }
+
+        .star::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -72.5px;
+            left: -100px;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 72.64px solid greenyellow;
+            transform: rotate(72deg);
+            transform-origin: 50% 32.49px;
+        }
+
+        .star::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -72.5px;
+            left: -100px;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 72.64px solid greenyellow;
+            transform: rotate(-72deg);
+            transform-origin: 50% 32.49px;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="star"></div>
+    </div>
+</body>
+</html>
 
 
 
