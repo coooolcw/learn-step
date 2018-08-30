@@ -223,3 +223,6 @@ transform矩阵使用:https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform
 参考此网页
 矩阵概念https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/comment-page-1/
 注意版权
+
+在transform-style中,注意overflow:hidden会与preserve-3d属性冲突
+https://www.jb51.net/css/462412.html
