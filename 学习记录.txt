@@ -208,3 +208,5 @@ https://github.com/jawil/blog/issues/21
 transform中的skew
 实际计算是以对应的坐标乘以tanθ°
 见笔记本,到时作图说明
+tan90°不存在,所以图像消失
+tan180°=0,所以图像不变
