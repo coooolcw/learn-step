@@ -203,3 +203,8 @@ https://en.wikipedia.org/wiki/Pixel_aspect_ratio 像素有长宽比,在一些设
 同时,像素大小对于手机端的显示也影响较大,有帖子声称0.5px高的div不能在手机端显示.
 关于像素的帖子,讲得比较细致,但是和此处的问题相关性不太大
 https://github.com/jawil/blog/issues/21
+
+
+transform中的skew
+实际计算是以对应的坐标乘以tanθ°
+见笔记本,到时作图说明
