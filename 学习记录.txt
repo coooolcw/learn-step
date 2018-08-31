@@ -248,3 +248,4 @@ transition-timing-function
 此处若能熟练使用,可制作更多特殊的特效
 其他steps的详解
 https://www.songma.com/news/txtlist_i21465v.html
+https://www.w3.org/TR/css-timing-1/#frames-timing-functions官方文档
