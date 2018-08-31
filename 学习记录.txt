@@ -226,3 +226,7 @@ transform矩阵使用:https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform
 
 在transform-style中,注意overflow:hidden会与preserve-3d属性冲突
 https://www.jb51.net/css/462412.html
+
+perspective-origin
+注意观察者位置与消失点位置是相同的.
+参看笔记本的图示
