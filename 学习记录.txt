@@ -235,3 +235,5 @@ perspective-origin
 过渡的使用
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 支持过渡的属性列表https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+CSS3有自定义属性,在后期需要关注,暂时用less
