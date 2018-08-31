@@ -237,3 +237,12 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_trans
 支持过渡的属性列表https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
 
 CSS3有自定义属性,在后期需要关注,暂时用less
+
+transition-timing-function 
+可使用自定义贝塞尔曲线达到更多的动画效果.
+所有的缓动函数地址https://easings.net/zh-cn#
+有很多无法直接使用css实现,需要各种插件或者js
+
+单纯的贝塞尔曲线有可视化工具可供参考http://cubic-bezier.com/
+但不支持一些复杂的缓动函数
+此处若能熟练使用,可制作更多特殊的特效
