@@ -246,3 +246,5 @@ transition-timing-function
 单纯的贝塞尔曲线有可视化工具可供参考http://cubic-bezier.com/
 但不支持一些复杂的缓动函数
 此处若能熟练使用,可制作更多特殊的特效
+其他steps的详解
+https://www.songma.com/news/txtlist_i21465v.html
