@@ -270,3 +270,6 @@ https://aotu.io/notes/2016/11/28/css3-animation-properties/
 
 animation-fill-mode的使用
 https://www.w3cplus.com/css3/understanding-css-animation-fill-mode-property.html
+
+注意未设置的属性出现插值的前提条件,如果from和元素本身未设置,为缺省值,突然出现新的属性会无法插值,导致瞬移
+https://blog.csdn.net/u013243347/article/details/79976352
