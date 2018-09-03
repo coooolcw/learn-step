@@ -267,3 +267,6 @@ animation-delay的妙用
 https://aotu.io/notes/2016/11/28/css3-animation-properties/
 但是mdn中有一个说明意义暂时不理解
 "如果为动画延迟指定了一个负值，但起始值是隐藏的，则从动画应用于元素的那一刻起就获取起始值。"
+
+animation-fill-mode的使用
+https://www.w3cplus.com/css3/understanding-css-animation-fill-mode-property.html
