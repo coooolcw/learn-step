@@ -279,3 +279,10 @@ will-change的使用,翻译自外国佬
 https://www.zhangxinxu.com/wordpress/2015/11/css3-will-change-improve-paint/
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/will-change要注意mdn上的提示
 https://www.tuicool.com/articles/b2uQJ3利用硬件加速的坑
+
+
+column多列布局
+属性列表
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns
+基础教程
+https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Using_multi-column_layouts
