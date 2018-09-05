@@ -311,4 +311,26 @@ For the purpose of finding the number of auto-repeated tracks, the UA must floor
 In fragmented contexts such as in paged media, user agents may perform this calculation on a per-fragment basis.
 
 The used value for column-count is calculated without regard for explicit column breaks or constrained column heights, while the actual value takes these into consideration.
-
+大体翻译如下
+下面的伪算法确定了列计数 (N) 和列宽 (W) 的使用值。伪算法中还有一个变量: U 是多列元素的容器宽度。
+函数 floor(X) 返回最大正整数 Y ≤ X.
+(01)  if ((column-width = auto) and (column-count = auto)) then
+(02)      exit; /* 不是多列布局 */
+(03)  if column-width = auto then
+(04)      N := column-count /* 列宽为auto时实际列数就是设定值 */
+(05)  else if column-count = auto then
+(06)      N := max(1,
+(07)        floor((U + column-gap)/(column-width + column-gap)))
+/* 列宽不为auto,而列数为auto,则实际列数为
+(容器宽度+列间距)/(列宽+列间距)取整,若小于1则为1列
+ */
+(08)  else
+(09)      N := min(column-count, max(1,
+(10)        floor((U + column-gap)/(column-width + column-gap))))
+/* 列宽与列数都不为auto
+ (列宽+列间距)/(列宽+列间距) 取整后的值与设定列数之间取小值
+ */
+And:
+(11)  W := max(0, ((U + column-gap)/N - column-gap))
+/* 列宽为
+(容器宽度+列间距)/已求出的列数 – 列间距 */
