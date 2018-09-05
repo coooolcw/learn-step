@@ -335,5 +335,5 @@ And:
 /* 列宽为
 (容器宽度+列间距)/已求出的列数 – 列间距 */
 
-column-rule的属性和使用
+column-rule和column-gap的属性和使用
 https://blog.csdn.net/tian361zyc/article/details/74472415
