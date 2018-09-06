@@ -337,3 +337,10 @@ And:
 
 column-rule和column-gap的属性和使用
 https://blog.csdn.net/tian361zyc/article/details/74472415
+
+column的break属性
+兼容性情况较为复杂
+参见mdn的具体介绍
+chrome现在仍然需要-webkit-column-break-*
+firefox需要page-break-*
+使用时必须测试
