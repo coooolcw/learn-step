@@ -344,3 +344,4 @@ column的break属性
 chrome现在仍然需要-webkit-column-break-*
 firefox需要page-break-*
 使用时必须测试
+而且支持的值基本仅限auto always aviod
