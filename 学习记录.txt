@@ -345,3 +345,9 @@ chrome现在仍然需要-webkit-column-break-*
 firefox需要page-break-*
 使用时必须测试
 而且支持的值基本仅限auto always aviod
+
+
+zoom的介绍https://www.cnblogs.com/foodoir/p/5821018.html
+但是现在zoom已经被用于设置基础缩放
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/@viewport
+https://drafts.csswg.org/css-device-adapt/#zoom-desc
