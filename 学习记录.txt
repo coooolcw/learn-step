@@ -351,3 +351,7 @@ zoom的介绍https://www.cnblogs.com/foodoir/p/5821018.html
 但是现在zoom已经被用于设置基础缩放
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/@viewport
 https://drafts.csswg.org/css-device-adapt/#zoom-desc
+
+pointer-events较为高级和复杂,svg学习以后再结合参阅一次
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events
+https://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/
