@@ -357,3 +357,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events
 https://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/
 none相当于阻止任何鼠标事件在本元素上发生
 可以造成类似于鼠标点击穿透了上层元素达到下层元素的效果.
+但是后代元素可以通过事件冒泡或者捕获触发
