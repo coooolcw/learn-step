@@ -355,4 +355,5 @@ https://drafts.csswg.org/css-device-adapt/#zoom-desc
 pointer-events较为高级和复杂,svg学习以后再结合参阅一次
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events
 https://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/
-相当于阻止事件在本元素上发生(仅限鼠标事件)
+none相当于阻止任何鼠标事件在本元素上发生
+可以造成类似于鼠标点击穿透了上层元素达到下层元素的效果.
