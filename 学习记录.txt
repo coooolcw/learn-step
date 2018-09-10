@@ -364,7 +364,9 @@ none相当于阻止任何鼠标事件在本元素上发生
 viewport
 MDN的教程
 https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag
-viewport的用法
+@viewport的用法
 https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport
+meta中的viewport
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 像素的区别
 https://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html
