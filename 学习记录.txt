@@ -374,3 +374,5 @@ https://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html
 viewport的基础
 https://www.cnblogs.com/2050/p/3877280.html(此篇讲述得完整,但是较难理解)
 https://zhuanlan.zhihu.com/p/21276657(initial-scale与实际宽度的关系)
+visual viewport宽度 = ideal viewpor(设备)宽度  / 当前缩放值
+当前缩放值 = ideal viewport(设备)宽度  / visual viewport(游览器可视区域)宽度
