@@ -12,3 +12,4 @@ https://www.w3cplus.com/css3/a-guide-to-flexbox-new.html
 
 flex-wrap实质上定义了侧轴的方向.
 justify-content生效的条件是所有元素都不能拉伸或已经拉伸到了最大值
+现在阶段justify-content支持较好的几个属性是flex-start,flex-end,center,space-between,space-around以及初始值normal
