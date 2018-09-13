@@ -11,3 +11,4 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 https://www.w3cplus.com/css3/a-guide-to-flexbox-new.html
 
 flex-wrap实质上定义了侧轴的方向.
+justify-content生效的条件是所有元素都不能拉伸或已经拉伸到了最大值
