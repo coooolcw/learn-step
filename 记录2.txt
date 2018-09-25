@@ -18,3 +18,6 @@ justify-content生效的条件是所有元素都不能拉伸或已经拉伸到�
 align-content
 flex-start,flex-end,center,space-between,space-around,stretch
 默认值stretch
+
+flex-grow、flex-shrink、flex-basis的理解
+http://zhoon.github.io/css3/2014/08/23/flex.html
