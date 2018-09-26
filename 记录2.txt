@@ -23,3 +23,5 @@ flex-grow、flex-shrink、flex-basis的理解
 http://zhoon.github.io/css3/2014/08/23/flex.html
 flex-basis新属性值content相当于设置为auto的同时设置元素的width.
 在兼容性不佳时可这样操作
+flex的简写对于属性会有不同的默认值优化,例如简写1  实际是1 1 0.因此推荐使用flex的简写.
+具体机制https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex
