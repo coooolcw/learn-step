@@ -21,3 +21,5 @@ flex-start,flex-end,center,space-between,space-around,stretch
 
 flex-grow、flex-shrink、flex-basis的理解
 http://zhoon.github.io/css3/2014/08/23/flex.html
+flex-basis新属性值content相当于设置为auto的同时设置元素的width.
+在兼容性不佳时可这样操作
