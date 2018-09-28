@@ -30,3 +30,7 @@ flex的简写对于属性会有不同的默认值优化,例如简写1  实际是
 @media媒体查询用于响应式布局
 综述
 https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries
+
+
+在使用图片时,对于img和background-img的区分
+https://www.jiawin.com/background-img-compare
