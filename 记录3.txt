@@ -1,10 +1,10 @@
 HTML5存储
-localStorage
+WebStorage
 https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage
 https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API详细介绍
 
 
 客户端存储数据库
-indexdb
+indexdb相当于高级版本的webStorage
 https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API
 http://www.ruanyifeng.com/blog/2018/07/indexeddb.html
