@@ -8,3 +8,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API/Using_the_Web_S
 indexdb相当于高级版本的webStorage
 https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API
 http://www.ruanyifeng.com/blog/2018/07/indexeddb.html
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API/Using_IndexedDB   MDN的使用教程,比较详细
