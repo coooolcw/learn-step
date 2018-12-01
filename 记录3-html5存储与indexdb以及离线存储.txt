@@ -18,3 +18,4 @@ https://blog.csdn.net/qq_25600055/article/details/81078635原版教程,推荐
 
 application cache 已被标准废除,改用Service Workers .
 具体https://developer.mozilla.org/zh-CN/docs/Web/HTML/Using_the_application_cache
+https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers   Service Workers介绍
