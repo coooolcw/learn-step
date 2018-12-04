@@ -74,3 +74,7 @@ jQuery拖拽
     </script>
 </body>
 </html>
+
+
+html5拖拽(拖放)
+HTML5权威手册page.787~801
