@@ -79,3 +79,4 @@ jQuery拖拽
 html5拖拽(拖放)
 HTML5权威手册page.787~801
 http://www.w3school.com.cn/html5/html_5_draganddrop.asp   w3c的教程,相对于html5书籍更新一些
+https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API MDN介绍
