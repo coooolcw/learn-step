@@ -1,2 +1,6 @@
 https://developer.mozilla.org/zh-CN/docs/Web/SVG  MDN的svg目录
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial 教程
+重点可以参看MDN的综合教程
+
+主要关键知识点有
+1.viewbox  实际上是画布上的视窗,带有放大功能,默认为画布的大小1:1
