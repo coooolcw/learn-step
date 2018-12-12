@@ -7,3 +7,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial 教程
 概念解释https://www.w3cplus.com/html5/svg-coordinate-systems.html    视窗,viewBox和preserveAspectRatio
 https://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/
 https://www.w3cplus.com/html5/svg-transformations.html  transform详解
+https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Basic_Shapes 基本形状 
