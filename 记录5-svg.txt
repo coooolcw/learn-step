@@ -10,3 +10,4 @@ https://www.w3cplus.com/html5/svg-transformations.html  transform详解
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Basic_Shapes 基本形状 
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Texts 文本
 文本注意0,0是以基线与左侧边框交点为基准
+textLength 设置所有文字的长度
