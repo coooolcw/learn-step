@@ -11,3 +11,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Basic_Shapes 基本形
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Texts 文本
 文本注意0,0是以基线与左侧边框交点为基准
 textLength 设置所有文字的长度
+lengthAdjust 调整字体宽度https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthAdjust
