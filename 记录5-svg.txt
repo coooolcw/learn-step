@@ -14,5 +14,5 @@ textLength 设置所有文字的长度
 lengthAdjust 调整字体宽度https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthAdjust
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Fills_and_Strokes 填充与描边
 可以引入css,但是有一些区别,引入语法也不同.在上一页有描述
-https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Clipping_and_masking 剪切
+https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Clipping_and_masking 剪切 设定的两个图像重合部分才会显示
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Gradients 渐变
