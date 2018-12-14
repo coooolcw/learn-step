@@ -17,3 +17,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Fills_and_Strokes 填�
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Clipping_and_masking 剪切 设定的两个图像重合部分才会显示 
 遮罩
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Gradients 渐变
+线性渐变  x1y1  x2y2  表示启示与结束的点(0.00~1.00)  stop-color设定颜色
