@@ -19,4 +19,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Clipping_and_masking �
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Gradients 渐变
 线性渐变  x1y1  x2y2  表示启示与结束的点(0.00~1.00)  stop-color设定颜色
 径向渐变  cx cy r 定义生效的圆形  fx fy定义色彩圆心(焦点)
-https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Other_content_in_SVG 光栅
+https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Other_content_in_SVG 嵌入光栅图像(png)
