@@ -26,4 +26,4 @@ svg动画
 https://developer.mozilla.org/zh-CN/docs/Web/SVG/SVG_animation_with_SMIL动画参考这个  新版chrome可以实现,并未删除
 svg动画set标签无法找到合适的说明,用法似乎与animate相似,但是无dur
 注意xml与css都有的属性最好设定attributeType
-to:最终值  by:δ值
+to:最终值  by:δ值  values:多个值相当于关键点
