@@ -32,4 +32,4 @@ to:最终值  by:δ值  values:多个值相当于关键点      有些属性可�
 
 svg引入https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Getting_Started
 http://www.w3school.com.cn/svg/svg_inhtml.asp
-也可用img插入
+也可用img插入,也可直接插入html结构
