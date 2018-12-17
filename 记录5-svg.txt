@@ -27,3 +27,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/SVG/SVG_animation_with_SMIL动画�
 svg动画set标签无法找到合适的说明,用法似乎与animate相似,但是无dur
 注意xml与css都有的属性最好设定attributeType
 to:最终值  by:δ值  values:多个值相当于关键点      有些属性可能已经删除,使用时注意查询svg2.0版本
+
+暂停恢复 svg.pauseAnimations() svg.unpauseAnimations()
