@@ -29,3 +29,5 @@ svg动画set标签无法找到合适的说明,用法似乎与animate相似,但�
 to:最终值  by:δ值  values:多个值相当于关键点      有些属性可能已经删除,使用时注意查询svg2.0版本
 
 暂停恢复 svg.pauseAnimations() svg.unpauseAnimations()
+
+svg引入https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Getting_Started
