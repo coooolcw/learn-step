@@ -2,3 +2,6 @@ MDN教程https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial
 默认大小300*150
 注意css设置宽高与html结构直接设置(js内设置)的效果不同,CSS中设置不会改变canvas内的坐标系,仍然为默认值,会将canvas内容缩放
 可同时设置,先按照canvas设置绘制,再缩放
+
+常用语法汇总
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
