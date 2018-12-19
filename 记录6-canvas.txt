@@ -13,4 +13,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Transformat
 translate移动 canvas 和它的原点.同时移动,因此在不同步骤平移会有不同效果
 注意坐标系会被改变
 rotate也是转动坐标系
-而坐标系变化以后可以叠加,继续改变.
+而坐标系变化以后可以叠加,继续改变.但是坐标系改变不会影响到之前画的
