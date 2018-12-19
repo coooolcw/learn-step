@@ -11,3 +11,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_st
 基础变形
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Transformations
 translate移动 canvas 和它的原点.同时移动,因此在不同步骤平移会有不同效果
+注意坐标系会被改变
