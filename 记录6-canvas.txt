@@ -7,3 +7,7 @@ MDN教程https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
 色彩与填充
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+
+基础变形
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Transformations
+translate移动 canvas 和它的原点.同时移动,因此在不同步骤平移会有不同效果
