@@ -16,3 +16,6 @@ translate(x, y)移动 canvas 和它的原点.同时移动,因此在不同步骤�
 rotate(angle)也是转动坐标系,顺时针为正
 scale(x, y)缩放同样也是对坐标系生效
 而坐标系变化以后可以叠加,继续改变.但是坐标系改变不会影响到之前画的
+
+渐变https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+页面的下半段
