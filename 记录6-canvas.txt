@@ -19,3 +19,7 @@ scale(x, y)缩放同样也是对坐标系生效
 
 渐变https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
 页面的下半段
+
+
+文本
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_text
