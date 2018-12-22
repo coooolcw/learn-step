@@ -23,3 +23,6 @@ scale(x, y)缩放同样也是对坐标系生效
 
 文本
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_text
+
+使用image
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Using_images
