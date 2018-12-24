@@ -28,3 +28,6 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_tex
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Using_images
 图案样式(使用图片填充),在页面下半部
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+
+裁切
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Compositing
