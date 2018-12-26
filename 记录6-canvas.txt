@@ -33,3 +33,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_st
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Compositing
 阴影,在页面最底下
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+曲线路径,在页面下部
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
