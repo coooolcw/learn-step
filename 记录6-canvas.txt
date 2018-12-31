@@ -40,3 +40,6 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_sha
 
 基本动画
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Basic_animations
+
+性能优化,canvas离屏技术
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas
