@@ -43,3 +43,8 @@ https://chartjs-doc.abingoal.com/
     }
 改变大小和定位
 用一个div包裹canvas元素,用css控制div即可
+
+
+
+https://gionkunz.github.io/chartist-js/index.html
+chartist
