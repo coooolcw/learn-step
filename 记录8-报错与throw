@@ -7,3 +7,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/try
 try catch
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 MDN错误处理教程(页面下半部)
+
+注意finally 一定会被执行,优先级最高,哪怕中途使用return也无法阻止
