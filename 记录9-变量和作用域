@@ -13,4 +13,5 @@ https://www.cnblogs.com/chengguanhui/p/4737413.html
 3.属性与对象的比较
 属性:值
 对象:引用比较.
+josn格式转换为string比较
 深度比较http://stackoverflow.com/questions/1068834/object-comparison-in-javascript
