@@ -24,3 +24,4 @@ josn格式转换为string比较
 5.检测类型
 红皮书p72
 instanceof 和typeof的区别和使用
+注意 function也是一种object
