@@ -25,4 +25,6 @@ josn格式转换为string比较
 红皮书p72
 instanceof 和typeof的区别和使用
 注意 function也是一种object
-typeof null 返回object,但是instanceof任意  都是false
+typeof null 返回object,但是null instanceof任意  都是false
+原因解释https://blog.csdn.net/weixin_42049636/article/details/81565461
+大体是历史原因,可以理解为null是尚未存在的对象的占位符,因此它是对象但又不是对象
