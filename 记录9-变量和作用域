@@ -25,3 +25,4 @@ josn格式转换为string比较
 红皮书p72
 instanceof 和typeof的区别和使用
 注意 function也是一种object
+typeof null 返回object,但是instanceof任意  都是false
