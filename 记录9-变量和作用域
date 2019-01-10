@@ -15,3 +15,7 @@ https://www.cnblogs.com/chengguanhui/p/4737413.html
 对象:引用比较.
 josn格式转换为string比较
 深度比较http://stackoverflow.com/questions/1068834/object-comparison-in-javascript
+
+4.函数参数的传递
+参数传递见红皮书page70
+参数是按照值传递的,当传递的是对象时,传递的是引用(的值),因此在函数内部的改变也会反映在外部的对象中.
