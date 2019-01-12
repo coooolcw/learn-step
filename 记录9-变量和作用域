@@ -39,3 +39,6 @@ JS没有块级作用域
 8.变量提升
 犀牛书page57~58
 某解释的ppt  https://www.slideshare.net/lijing00333/javascript-engine
+以上解释都不清晰
+最明确的说明在<你不知道的javascript>上卷
+p37.
