@@ -33,6 +33,7 @@ typeof null 返回object,但是null instanceof任意  都是false
 红皮书73
 主要概念:作用域链,变量对象
 
+
 7.块级作用域
 JS没有块级作用域
 
@@ -42,3 +43,7 @@ JS没有块级作用域
 以上解释都不清晰
 最明确的说明在<你不知道的javascript>上卷
 p37.
+
+function优先于var  且同名冲突时优先于var
+切记不可在if for等的{}内声明函数,会导致各种问题
+如有必要可用函数表达式  var fn = function(){}
