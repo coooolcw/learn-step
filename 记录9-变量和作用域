@@ -40,6 +40,10 @@ typeof null 返回object,但是null instanceof任意  都是false
 作用域链:变量对象依次从局部扩张到全局,全局环境总是最后一个
 注意函数的参数也类似于函数内定义的局部变量
 
+延长作用域:with  try catch
+with不推荐使用
+try catch尚未了解
+
 7.块级作用域
 JS没有块级作用域
 
