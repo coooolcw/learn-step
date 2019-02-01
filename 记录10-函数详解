@@ -28,3 +28,6 @@ callee参
 arguments.callee指向拥有此arguments的函数.在函数体内引用函数而运行中函数名改变引起的错误可以由此避免
 
 this指向的是环境对象(例如window或object)
+
+caller es5新属性  指向调用当前函数的函数的引用
+可与arguments.callee一起使用,即arguments.callee.caller
