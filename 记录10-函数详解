@@ -33,7 +33,7 @@ caller es5新属性  指向调用当前函数的函数的引用
 可与arguments.callee一起使用,即arguments.callee.caller
 
 
-匿名函数的自调用
+3.匿名函数的自调用
 重要
 无法自调用的原因:function的解析
 解决方法:1.(function(){
