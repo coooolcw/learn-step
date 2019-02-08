@@ -31,3 +31,16 @@ this指向的是环境对象(例如window或object)
 
 caller es5新属性  指向调用当前函数的函数的引用
 可与arguments.callee一起使用,即arguments.callee.caller
+
+
+匿名函数的自调用
+重要
+无法自调用的原因:function的解析
+解决方法:1.(function(){
+})();
+此方法与(function (){
+}());效果相同
+2. var fnname = function(){}();
+3.!function(){}();
+只要是合法的操作符就可以让解析器不识别function从而可以直接调用
+同理console.log(function(){}())可直接调用
