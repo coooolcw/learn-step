@@ -50,3 +50,6 @@ caller es5新属性  指向调用当前函数的函数的引用
 注意点
 window.onclick()也可直接调用
 可模拟点击
+
+方法调用1. window.fn()
+2.window['anything']()
