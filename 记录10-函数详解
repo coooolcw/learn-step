@@ -54,3 +54,8 @@ window.onclick()也可直接调用
 方法调用1. window.fn()
 2.window['anything']()
 []主要用于变量,不合法字符,并且可以求值,运算
+
+5.函数的间接调用(非函数名或者var命名的指针)
+红皮书p116
+.apply()
+.call()
