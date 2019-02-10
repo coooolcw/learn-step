@@ -76,3 +76,4 @@ arguments 以及参数的个数
 红皮书p64~66
 arguments对象可代替形参使用.
 arguments.length可获取有多少个参数
+arguments是个类数组的对象
