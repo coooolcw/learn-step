@@ -59,3 +59,4 @@ window.onclick()也可直接调用
 红皮书p116
 .apply()
 .call()
+apply可以传入数组,较为方便,也可以传入arguments对象(在函数中传入本函数的arguments到另外的函数,fn.apply(this, arguments));
