@@ -80,4 +80,9 @@ arguments是个类数组的对象
 
 8.arguments的重要方法
 红皮书p113
-arguments.callee  
+arguments.callee  以及阉割模式的替代方法
+在递归中使用arguments.callee替代函数名,避免函数名修改后内部未修改引起的bug
+
+9.函数的属性和方法
+length 表示函数希望接收的(形参)参数数量
+fn.length(相对的arguments.length是实参的数量)
