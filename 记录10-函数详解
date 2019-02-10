@@ -72,7 +72,7 @@ apply可以传入数组,较为方便,也可以传入arguments对象(在函数中
 当值是一个对象的指针时,传递的是这个指针的值
 
 
-参数的数量
+arguments 以及参数的个数
 红皮书p64~66
 arguments对象可代替形参使用.
 arguments.length可获取有多少个参数
