@@ -17,7 +17,7 @@
 高级概念:函数是对象,函数名是指针
 p110
 function fn(){}不需要分号结尾.
-var fn=function (){};需要分号结尾
+var fn=function (){};需要分号结尾    注意如果在此时写var fn = function fnname(){}; //fnname只能在函数内部调用,外部是无法访问的
 
 不推荐使用new Function方式声明函数,会解析两次而且不直观
 使用函数名时,不加括号访问的是指针
