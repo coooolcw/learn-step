@@ -86,3 +86,7 @@ arguments.callee  以及阉割模式的替代方法
 9.函数的属性和方法
 length 表示函数希望接收的(形参)参数数量
 fn.length(相对的arguments.length是实参的数量)
+
+10.函数设计的注意点
+当参数较多时,使用对象传参会更好
+函数作为参数传入函数是必备技能(例如setTimeout)
