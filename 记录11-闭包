@@ -1,7 +1,10 @@
 
 https://zhuanlan.zhihu.com/p/22486908?refer=study-fe
 解释得比较清楚的文章
-次要参考https://www.ibm.com/developerworks/cn/linux/l-cn-closure/
+次要参考https://www.jianshu.com/p/ebb4eccb6625  
+
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-closure/
 https://www.cnblogs.com/zhuzhenwei918/p/6131345.html
 
 1.函数外变量+函数 = 闭包  (注意:闭包不是函数,是一个整体环境)
