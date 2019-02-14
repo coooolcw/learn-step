@@ -10,16 +10,16 @@ https://zhuanlan.zhihu.com/p/22486908?refer=study-fe
 在函数内return一个函数,使外部可以调用内部的数据
 例如
 function foo(){
-  var local = 1
+  var local = 1;
   function bar(){
-    local++
-    return local
+    local++;
+    return local;
   }
-  return bar
+  return bar;
 }
 
-var func = foo()
-func()
+var func = foo();
+func();
 3.闭包是由于函数内部可以使用函数外部的变量,而不是刻意设计的
 
 4.闭包引起的垃圾收集和缓存释放的问题
