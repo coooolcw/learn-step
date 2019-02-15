@@ -8,6 +8,7 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-closure/
 https://www.cnblogs.com/zhuzhenwei918/p/6131345.html
 
 1.函数外变量+函数 = 闭包  (注意:闭包不是函数,是一个整体环境)
+严格版定义:在上面的基础上,在定义的作用域之外调用的才算
 
 2.实际使用闭包
 在函数内return一个函数,使外部可以调用内部的数据
