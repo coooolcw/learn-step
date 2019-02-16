@@ -35,3 +35,10 @@
         构造+原型
         先用this设置属性
         再用prototype设置方法
+        function fn(name) {
+            this.name = name;
+        }
+        fn.prototype.method = function() {
+            //do something
+        };
+        var obj = new fn('aaa');
