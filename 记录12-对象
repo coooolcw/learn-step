@@ -13,5 +13,8 @@
         创建的新对象会有constructor属性,该属性指向P
         var p1 = new P;
         p1.constructor == P;  //true
+        同时
+        p1. instanceof Object;
+        p1. instanceof P;
     3.原型模式
     4.
