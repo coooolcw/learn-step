@@ -1,6 +1,17 @@
 1.对象的构造方式
 红书p144开始
     1.工厂模式
+        function P(name) {
+            var obj = new Object;
+            obj.name = name;
+            return obj;
+        }
     2.构造函数
+        function P(name) {
+            this.name = name;
+        }
+        创建的新对象会有constructor属性,该属性指向P
+        var p1 = new P;
+        p1.constructor == P;  //true
     3.原型模式
     4.
