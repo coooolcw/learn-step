@@ -31,24 +31,24 @@
         }
         但也会降低封装性(全局函数会增加)
     3.原型模式
-        function fn() {}
-        fn.prototype.method = function() {
+        function Fn() {}
+        Fn.prototype.method = function() {
             //do something
         };
-        fn.prototype.name = 'abcde';
-        
+        Fn.prototype.name = 'abcde';
+        var nfn = new Fn();
         无法在new的时候传参数
         
     4.混合模式
         构造+原型
         先用this设置属性
         再用prototype设置方法
-        function fn(name) {
+        function Fn(name) {
             this.name = name;
         }
-        fn.prototype.method = function() {
+        Fn.prototype.method = function() {
             //do something
         };
-        var obj = new fn('aaa');
+        var obj = new Fn('aaa');
         
         可在new的时候传参数
