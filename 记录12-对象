@@ -16,5 +16,9 @@
         同时
         p1. instanceof Object;
         p1. instanceof P;
+        
+        调用构造函数P()
+        则:1. 可在window对象下添加属性/方法
+            2.使用call,在其他对象的作用域中调用,可以添加方法给其他对象
     3.原型模式
     4.
