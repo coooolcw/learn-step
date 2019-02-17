@@ -4,11 +4,17 @@
         function P(name) {
             var obj = new Object;
             obj.name = name;
+            obj.setSomething = function(){
+                //do something
+            }
             return obj;
         }
     2.构造函数
         function P(name) {
             this.name = name;
+            this.setSomething = function(){
+                //do something
+            }
         }
         创建的新对象会有constructor属性,该属性指向P
         var p1 = new P;
