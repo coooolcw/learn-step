@@ -52,3 +52,10 @@
         var obj = new Fn('aaa');
         
         可在new的时候传参数
+
+2.遍历对象
+for in
+for (var i in object) {
+    //do something
+    object[i]
+}
