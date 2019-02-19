@@ -22,6 +22,6 @@ p147~
 hasOwnProperty()
 5.for in返回在实例和原型中所有可访问可枚举的属性
 同名属性屏蔽了原型中不可枚举属性的属性也会被返回(所有开发人员定义的都是可枚举的)
-
+具体例子p153
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
