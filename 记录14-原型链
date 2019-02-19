@@ -5,3 +5,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new
 new Foo 等同于 new Foo()，也就是没有指定参数列表，Foo 不带任何参数调用的情况。
 3.由构造函数返回的对象就是 new 表达式的结果。如果构造函数没有显式返回一个对象，则使用步骤1创建的对象。
 （一般情况下，构造函数不返回值，但是用户可以选择主动返回对象，来覆盖正常的对象创建步骤）
+
+
+
+原型与继承的概念
+红皮书说得很清楚
+p147~
+注意点:1.prototype指向原型对象
+原型对象的constructor指向构造函数
+实例的__proto__(从 ECMAScript 6 开始，[[Prototype]] 可以通过Object.getPrototypeOf()和Object.setPrototypeOf()访问器来访问。
+这个等同于 JavaScript 的非标准但许多浏览器实现的属性 __proto__。)指向原型对象
