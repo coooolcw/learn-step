@@ -17,6 +17,6 @@ p147~
 这个等同于 JavaScript 的非标准但许多浏览器实现的属性 __proto__。)指向原型对象
 2.书中创建的实例不具有属性和方法,都是继承实现的
 3.实例化的对象不能修改原型中的值,但是可以修改
-同名属性会屏蔽从原型继承的属性
+同名属性会屏蔽从原型继承的属性,屏蔽后即使再设置为null也不会恢复指向原型的链接
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
