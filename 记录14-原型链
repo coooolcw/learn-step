@@ -15,3 +15,5 @@ p147~
 原型对象的constructor指向构造函数
 实例的__proto__(从 ECMAScript 6 开始，[[Prototype]] 可以通过Object.getPrototypeOf()和Object.setPrototypeOf()访问器来访问。
 这个等同于 JavaScript 的非标准但许多浏览器实现的属性 __proto__。)指向原型对象
+
+MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
