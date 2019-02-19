@@ -24,6 +24,6 @@ hasOwnProperty()
 同名属性屏蔽了原型中不可枚举属性的属性也会被返回(所有开发人员定义的都是可枚举的)
 具体例子p153
 Object.keys(),返回所有可枚举属性的字符串数组
-
+单独使用in 返回该属性是否在对象中.(不论在实例还是原型中)
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
