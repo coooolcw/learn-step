@@ -79,10 +79,13 @@ function a(name) {
 
 a.prototype.fn = function() {//do something
 }
-
+//继承属性
 function b(name) {
     a.call(this, name);
 }
+//继承方法
 b.prototype = new a();
+b.prototype.constructor = b;
+
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
