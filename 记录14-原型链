@@ -36,5 +36,6 @@ Object.keys(),返回所有可枚举属性的字符串数组
 例如String.prototype.somefn = function(){
   //dosomething
 }
+注意:一般不推荐修改原生对象的原型
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
