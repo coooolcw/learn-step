@@ -69,11 +69,20 @@ Person.prototype = {
 function a(name) {
     this.name = name;
 }
-function b() {
+function b(name) {
     a.call(this, name);
 }
+4.组合继承
+function a(name) {
+    this.name = name;
+}
 
+a.prototype.fn = function() {//do something
+}
 
-
+function b(name) {
+    a.call(this, name);
+}
+b.prototype = new a();
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
