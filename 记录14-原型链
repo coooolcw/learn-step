@@ -65,4 +65,15 @@ Person.prototype = {
 2.如果原型对象包括引用类型的数据,例如数组,修改其中一个会导致其他实例的此属性同时被修改.
 在继承中这一点容易失误.
 
+3.借用构造函数模式
+function a(name) {
+    this.name = name;
+}
+function b() {
+    a.call(this, name);
+}
+
+
+
+
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
