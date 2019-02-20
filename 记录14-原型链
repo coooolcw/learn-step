@@ -57,8 +57,8 @@ Person.prototype = {
 也可将方法用if包裹,只有不存在方法的时候才进行原型对象的设置
 
 10重要方法:
-实例 instanceof 构造函数
-原型.isPrototypeOf(实例)
+实例 instanceof 原型对象  instanceof运算符用于测试构造函数的prototype属性是否出现在对象的原型链中的任何位置
+原型.isPrototypeOf(实例)   isPrototypeOf() 方法用于测试一个对象是否存在于另一个对象的原型链上
 
 继承
 1.在设置继承a.prototype = new someObject();后,修改原型不能使用字面量方法,否则会切断原型链,原型转为Object的实例.
