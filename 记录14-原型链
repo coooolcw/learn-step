@@ -60,4 +60,9 @@ Person.prototype = {
 实例 instanceof 构造函数
 原型.isPrototypeOf(实例)
 
+继承
+1.在设置继承a.prototype = new someObject();后,修改原型不能使用字面量方法,否则会切断原型链,原型转为Object的实例.
+2.如果原型对象包括引用类型的数据,例如数组,修改其中一个会导致其他实例的此属性同时被修改.
+在继承中这一点容易失误.
+
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
