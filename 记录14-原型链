@@ -56,4 +56,8 @@ Person.prototype = {
 }
 也可将方法用if包裹,只有不存在方法的时候才进行原型对象的设置
 
+10重要方法:
+实例 instanceof 构造函数
+原型.isPrototypeOf(实例)
+
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
