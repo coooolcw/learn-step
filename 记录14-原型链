@@ -87,6 +87,6 @@ function b(name) {
 b.prototype = new a();
 b.prototype.constructor = b;
 5.寄生组合继承
-在组合继承基础上用call调用其他函数
+
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
