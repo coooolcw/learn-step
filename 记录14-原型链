@@ -30,6 +30,11 @@ Object.keys(),返回所有可枚举属性的字符串数组
 7.[[prototype]](__prpto__)指向原型对象,而不是构造函数.
 重写原型对象以后实例指向旧的原型对象,无法读取修改后的原型对象
 
-
+8.原生对象也是在构造函数的原型上添加的方法.
+例如Array.prototype上有sort()方法
+给原生对象添加方法也可以使用prototype
+例如String.prototype.somefn = function(){
+  //dosomething
+}
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
