@@ -25,5 +25,11 @@ hasOwnProperty()
 具体例子p153
 Object.keys(),返回所有可枚举属性的字符串数组
 单独使用in 返回该属性是否在对象中.(不论在实例还是原型中)
+6.修改原型对象会立即在实例中体现,哪怕实例在修改前new;
+
+7.[[prototype]](__prpto__)指向原型对象,而不是构造函数.
+重写原型对象以后实例指向旧的原型对象,无法读取修改后的原型对象
+
+
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
