@@ -41,5 +41,17 @@ Object.keys(),返回所有可枚举属性的字符串数组
 9.原型模式的缺陷
 1.无法传参
 2.如果原型对象包括引用类型的数据,例如数组,修改其中一个会导致其他实例的此属性同时被修改.
+因此一般将构造函数模式和原型模式混合使用
+例如
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype = {
+  construstor : Person,
+  function fn() {
+      //do something
+  }
+}
 
 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
