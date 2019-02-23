@@ -1,4 +1,5 @@
 参阅js模式p143
+不论初始化几次都只返回同一个对象
 最终的解决方案:
     var Person = (function() {
         var instance = null;
