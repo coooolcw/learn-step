@@ -3,6 +3,8 @@
 
 一creat
     1.document.createElement('')
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement
     2.document.createTextNode('')
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode
     2.document.createDocumentFragment('')
     2.document.createComment('')
