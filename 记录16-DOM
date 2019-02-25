@@ -1,2 +1,8 @@
 1.document.write()方法虽然方便,但是一旦在document加载完成以后使用,会造成整个页面被覆盖
 因此很少使用
+
+一creat
+    1.document.createElement('')
+    2.document.createTextNode('')
+    2.document.createDocumentFragment('')
+    2.document.createComment('')
