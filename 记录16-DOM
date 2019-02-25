@@ -7,4 +7,6 @@
     2.document.createTextNode('')
         https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode
     2.document.createDocumentFragment('')
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment
+        
     2.document.createComment('')
