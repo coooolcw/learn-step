@@ -17,4 +17,5 @@
     2.document.createComment('')
         https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment
 二inner outer
-    1.
+    1.innerHTML
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML
