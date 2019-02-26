@@ -38,4 +38,7 @@
 
 四DOM遍历
     红皮书p248~253
-        
+        常用的遍历属性见p251的图.
+        另有childNodes[]列表可以进行遍历
+        同时还有 1.hasChildNodes()用于查询元素是否含有子节点
+                2.ownerDocument属性指向整个文档的文档节点
