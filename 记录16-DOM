@@ -26,6 +26,7 @@
         https://developer.mozilla.org/zh-CN/docs/Web/API/Element/outerHTML
         不常用
 三innerText outerText
+    红皮书p301~303
     1.innerText
         https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
       替代
