@@ -42,3 +42,8 @@
         另有childNodes[]列表可以进行遍历
         同时还有 1.hasChildNodes()用于查询元素是否含有子节点
                 2.ownerDocument属性指向整个文档的文档节点
+                3.Document.documentElement返回文档根元素,只读;
+                HTML 文档通常包含一个子节点 <html>，可能在它前面还有个 DOCTYPE 声明。
+                XML 文档通常包含多个子节点：根元素，DOCTYPE 声明，和 processing instructions。
+                所以你应该使用 document.documentElement 来获取根元素, 而不是 document.firstChild。
+                实际上不用document.也可以,其他元素节点的此方法也返回根元素
