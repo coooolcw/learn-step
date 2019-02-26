@@ -4,7 +4,7 @@
 一creat
     1.document.createElement('')
         https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement
-        可创建游览器不支持的标签(IE6~8)
+        可创建游览器不支持的标签(IE6~8),具体方法https://blog.csdn.net/yuwq123/article/details/52198612
     2.document.createTextNode('')
         https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode
     2.document.createDocumentFragment('')
