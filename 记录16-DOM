@@ -14,3 +14,4 @@
         常用方法fragment.appendChild(xx);
         多次添加子对象,一次添加至真实dom.
     2.document.createComment('')
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment
