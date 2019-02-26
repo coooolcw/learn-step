@@ -35,3 +35,7 @@
       个人认为直接使用textContent更好
     2.outerText
         会删除原有元素,不推荐使用
+
+四DOM遍历
+    红皮书p288
+        
