@@ -20,3 +20,6 @@
     1.innerHTML
         https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML
         注意:用 innerHTML 插入文本到网页中并不罕见。但这有可能成为网站攻击的媒介，从而产生潜在的安全风险问题。
+    2.outerHTML
+        https://developer.mozilla.org/zh-CN/docs/Web/API/Element/outerHTML
+        不常用
