@@ -32,3 +32,5 @@
       替代
       textContent
         https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent
+    2.outerText
+        会删除原有元素,不推荐使用
