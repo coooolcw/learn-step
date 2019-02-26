@@ -12,4 +12,5 @@
         因此，使用文档片段通常会带来更好的性能。
         常用于创建一大段的dom结构
         常用方法fragment.appendChild(xx);
+        多次添加子对象,一次添加至真实dom.
     2.document.createComment('')
