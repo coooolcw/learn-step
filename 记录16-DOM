@@ -37,6 +37,7 @@
         会删除原有元素,不推荐使用
 
 四DOM遍历
+    基础方法
     红皮书p248~253
         常用的遍历属性见p251的图.
         另有childNodes[]列表可以进行遍历
@@ -56,3 +57,11 @@
         重要属性:nodeType nodeName tagName
         
         nodeType的属性值可以用于判断节点类型   红皮书p248有具体信息,一般常用的值是1==普通节点
+    元素遍历方法
+        红皮书p288
+        指向的对象不包括文本节点和注释节点
+        childElementCount;返回子节点个数(不包括文本节点和注释)
+        firstElementChild;
+        lastElementChild;
+        previousElementSibling;
+        nextElementSibling;
