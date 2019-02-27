@@ -53,3 +53,4 @@
                     </p>
             此处p的第一个子节点(使用firstChild)是文本节点,空格与回车形成的文本节点
             
+        重要属性:nodeType nodeName 
