@@ -65,3 +65,4 @@
         lastElementChild;
         previousElementSibling;
         nextElementSibling;
+        children[i];子元素列表list;children同样也有length属性;基本与childNodes类似
