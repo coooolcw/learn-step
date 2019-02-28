@@ -128,4 +128,9 @@ NamedNodeMap
 操作节点
         1.appendChild()
         P251
+        在目标元素的childNodes末尾添加新元素
         返回新增的节点.如果传入的节点是已经在DOM树中的,则将其移动到新的位置,旧的位置清除.
+        2.insertBefore()
+        p252
+        传入被添加的节点和参照节点,若参照元素为null则与appendChild行为一样
+        传入的位置位于参照节点的前方(previousSibling)
