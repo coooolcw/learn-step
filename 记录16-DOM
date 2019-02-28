@@ -90,4 +90,7 @@ NamedNodeMap
         一般只用在遍历元素特性上,普通情况下使用get/setAttribute();
 
 获取节点
-        1.
+        1.document.getElementById();
+        p256~257
+        IE7以前会将name匹配的元素也返回,现在基本不需要考虑这个.
+        
