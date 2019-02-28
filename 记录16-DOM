@@ -72,3 +72,4 @@ Nodelist
         特点:实时更新  每次访问都会重新查询   类数组
         一般尽量少访问,同时将length属性保存起来减少查询次数
         常将内容遍历后保存到数组中
+        Array.prototype.slice.call(Nodelist);调用后可直接返回新数组
