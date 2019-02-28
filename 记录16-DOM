@@ -134,3 +134,5 @@ NamedNodeMap
         p252
         传入被添加的节点和参照节点,若参照元素为null则与appendChild行为一样
         传入的位置位于参照节点的前方(previousSibling)
+        3.replaceChild()
+        p252
