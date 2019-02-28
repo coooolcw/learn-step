@@ -100,3 +100,4 @@ NamedNodeMap
         3.document.getElementsByTagName();
         p256~257
         只有document才有此方法
+        传入*可获得所有元素
