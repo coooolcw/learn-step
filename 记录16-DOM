@@ -104,3 +104,7 @@ NamedNodeMap
 
         需要现代游览器的方法
         4.getElementsByClassName();
+        p289
+        可在元素上调用,返回后代啧红匹配的元素;
+        可传入多个class(以空格隔开);
+        返回的是一个nodelist.实时更新,也会有性能问题.
