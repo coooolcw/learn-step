@@ -84,7 +84,7 @@ HTMLCollection
         document.anchors等
 
 NamedNodeMap
-        保存元素的特性节点  集合(并非类数组)  ,该节点的nodeValue值就是特性的值.
+        保存元素的特性节点  集合(也算一种类数组)  ,该节点的nodeValue值就是特性的值.
         红皮书p266
         主要方法:item();getNamedItem();removeNamedItem();
         一般只用在遍历元素特性上,普通情况下使用get/setAttribute();
