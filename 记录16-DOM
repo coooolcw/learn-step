@@ -75,7 +75,7 @@ Nodelist
         Array.prototype.slice.call(Nodelist);调用后可直接返回新数组
 HTMLCollection
         红书p257,相当于特殊化的nodelist
-        重要方法: namedItem()  可根据元素name值查询
+        重要方法: namedItem()  可根据元素id和name值查询
         https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCollection
         犀牛书p367的介绍更具体
         此类数组可使用[数字][字符串]访问具体元素
