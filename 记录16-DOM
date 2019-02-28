@@ -101,3 +101,6 @@ NamedNodeMap
         p256~257
         只有document才有此方法
         传入*可获得所有元素
+
+        需要现代游览器的方法
+        4.getElementsByClassName();
