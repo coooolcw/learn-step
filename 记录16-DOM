@@ -88,3 +88,6 @@ NamedNodeMap
         红皮书p266
         主要方法:item();getNamedItem();removeNamedItem();
         一般只用在遍历元素特性上,普通情况下使用get/setAttribute();
+
+获取节点
+        1.
