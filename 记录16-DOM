@@ -68,5 +68,6 @@
         children[i];子元素列表list;children同样也有length属性;基本与childNodes类似
 
 Nodelist
-       特点:实时更新  每次访问都会重新查询
-       一般尽量少访问,同时将length属性保存起来减少查询次数
+        用各种get到的(除byid以外)的结果集合
+        特点:实时更新  每次访问都会重新查询   类数组
+        一般尽量少访问,同时将length属性保存起来减少查询次数
