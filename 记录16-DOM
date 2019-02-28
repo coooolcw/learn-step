@@ -94,3 +94,8 @@ NamedNodeMap
         p256~257
         IE7以前会将name匹配的元素也返回,现在基本不需要考虑这个.
         
+        2.document.getElementsByName();
+        p256~257
+
+        3.document.getElementsByTagName();
+        p256~257
