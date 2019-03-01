@@ -137,3 +137,7 @@ NamedNodeMap
         3.someNode.replaceChild(newNode, oldNode)
         p252
         替换子元素,返回被替换的节点
+        4.someNode.cloneNode()
+        p252
+        传入true则为深度复制,复制整个子节点树.false则只复制节点本身.
+        5.someNode.normalize()
