@@ -143,3 +143,5 @@ NamedNodeMap
         5.someNode.normalize()
         p272
         在包含多个文本节点的父节点上调用,会把所有文本节点合并.nodeValue值为各个节点拼接.不常用
+        6.splitText()
+        p273
