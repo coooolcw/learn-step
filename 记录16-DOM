@@ -153,4 +153,5 @@ NamedNodeMap
         返回被移除的节点
         p252
         
-        2.
+        2.innerHTML('');
+        传入空可清空子节点
