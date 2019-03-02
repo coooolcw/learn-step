@@ -9,11 +9,12 @@
         1.getNamedItem(name)
         2.removeNamedItem(name)
         3.setNamedItem(node)
-            传入节点
-            使用document.cteateAttribute()创建,再修改创建节点的value值(name.value);
+            需要传入特性节点
+            使用document.cteateAttribute()创建,再修改创建节点的value值(name.value);(page.276-277)
             最后传入此节点
         4.item(pos)
         示例:
         var id = element.attributes.getNamedItem('id').nodeValue;
-        此类方法不够方便,一般使用setAttribute(),getAttribute(),removeAttribute();
         一般只用于遍历元素的特性;见p267
+        重要:
+        此类方法不够方便,一般使用setAttribute(),getAttribute(),removeAttribute();
