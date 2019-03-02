@@ -1,3 +1,16 @@
 分类:
     固有属性
     自定义属性
+
+元素特性的集合
+    NamedNodeMap
+    高程p266
+    主要方法
+        1.getNamedItem(name)
+        2.removeNamedItem(name)
+        3.setNamedItem(node)
+        4.item(pos)
+        示例:
+        var id = element.attributes.getNamedItem('id').nodeValue;
+        此类方法不够方便,一般使用setAttribute(),getAttribute(),removeAttribute();
+        一般只用于遍历元素的特性;见p267
