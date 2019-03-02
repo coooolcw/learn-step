@@ -24,3 +24,5 @@
                 以点获得的是一个CSS对象,而getAttribute获得的是一个字符串
         onclick也会不同
                 以点获得的是一个函数对象,而getAttribute获得的是一个字符串
+    
+    一般使用点获取值,只有获取自定义属性时才使用getAttribute
