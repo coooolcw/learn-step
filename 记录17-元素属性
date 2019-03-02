@@ -9,6 +9,9 @@
         1.getNamedItem(name)
         2.removeNamedItem(name)
         3.setNamedItem(node)
+            传入节点
+            使用document.cteateAttribute()创建,再修改创建节点的value值(name.value);
+            最后传入此节点
         4.item(pos)
         示例:
         var id = element.attributes.getNamedItem('id').nodeValue;
