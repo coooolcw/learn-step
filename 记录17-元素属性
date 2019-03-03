@@ -31,3 +31,8 @@
 
 
     removeAttribute有些属性无法删除,例如checked
+
+    对于CSS的操作  见犀牛书p433~435
+    主要内容:1.className属性
+    2.classList属性(HTML5).
+        方法:add(),remove(),toggle().不支持的替代方案见书本代码.
