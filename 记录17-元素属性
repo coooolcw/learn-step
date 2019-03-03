@@ -28,3 +28,6 @@
     一般使用点获取值,只有获取自定义属性时才使用getAttribute
 
     element.setAttribute('name', 'value');
+
+
+    removeAttribute有些属性无法删除,例如checked
