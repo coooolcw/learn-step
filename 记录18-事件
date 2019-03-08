@@ -13,3 +13,5 @@
 
     DOM2级事件处理
       p.351
+      addEventListener();
+      注意,removeEventListener无法移除匿名函数.因此大多数时候都把函数另外定义,再在add中传入.
