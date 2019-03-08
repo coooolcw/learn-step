@@ -10,3 +10,6 @@
       p.350
       btn.onclick = function() {
       };
+
+    DOM2级事件处理
+      p.351
