@@ -7,4 +7,6 @@
       直接在HTML上写,一般不使用.
     
     DOM0事件处理
-      
+      p.350
+      btn.onclick = function() {
+      };
