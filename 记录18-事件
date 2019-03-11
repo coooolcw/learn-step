@@ -15,3 +15,8 @@
       p.351
       addEventListener();
       注意,removeEventListener无法移除匿名函数.因此大多数时候都把函数另外定义,再在add中传入.
+
+    IE事件处理
+      p.352
+      现在应该已不常用.
+      注意点:IE的事件this指向window,而且listener指向的触发元素.
