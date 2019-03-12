@@ -30,4 +30,4 @@
       event.type  事件类型
       event.target  事件的目标
       event.curretTarget  事件处理程序当前正在处理事件的元素(例如事件委托在父元素上,那就是父元素)
-      event.preventDefault()  方法,只读,取消事件的默认行为,cancelable是true时可以使用.
+      event.preventDefault()  方法,只读,取消事件的默认行为,cancelable是true时可以使用.(同样在事件句柄中使用,取消目标默认的行为)
