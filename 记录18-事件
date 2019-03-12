@@ -24,3 +24,10 @@
     兼容的处理程序
       p.353
       但现阶段应该不常用
+3.事件对象
+    p355~358
+    常用/重要的事件对象属性
+      event.type  事件类型
+      event.target  事件的目标
+      event.curretTarget  事件处理程序当前正在处理事件的元素(例如事件委托在父元素上,那就是父元素)
+      event.preventDefault()  方法,只读,取消事件的默认行为,cancelable是true时可以使用.
