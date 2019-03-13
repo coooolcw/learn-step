@@ -56,4 +56,14 @@
               3CSS的link也可以使用load(新建link元素,设置属性,绑定事件,最后插入到head)
       unload:不常用
       resize:在window上触发,可在body上指定
+      scroll:滚动事件,在window上触发
+    焦点事件
+      p367
+      blur:input失去焦点触发,不会冒泡,但可以捕获
+      focus:元素获得焦点触发,不会冒泡,但可以捕获
+      focusin:同focus,支持冒泡
+      focusout:同blur,支持冒泡
+      此类元素触发顺序见书p368
+    鼠标事件
+      
             
