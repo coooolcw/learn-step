@@ -38,3 +38,7 @@
       event.pageX,event.pageY     页面坐标
       event.screenX,event.screenY 屏幕坐标
       p370~372
+  
+    IE8事件对象
+      p358
+      由于不常用,不记录
