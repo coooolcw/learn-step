@@ -54,3 +54,6 @@
         重点: 1用于预加载图片p354~365,注意要先绑定事件再指定src
               2script也可以使用该事件
               3CSS的link也可以使用load(新建link元素,设置属性,绑定事件,最后插入到head)
+      unload:不常用
+      resize:在window上触发,可在body上指定
+            
