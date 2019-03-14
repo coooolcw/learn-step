@@ -104,4 +104,5 @@
           
           注意:event.keyCode:一般用于非字符按键,对于字符键,会有游览器不同的情况,而且和charCode不一定统一
               event.charCode:keypress触发时event会有的属性,推荐在keypres使用charCode而不是keyCode.此属性返回ASC码
+                  charCode支持稍差
               DOM3新属性event.key,char
