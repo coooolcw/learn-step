@@ -65,5 +65,19 @@
       focusout:同blur,支持冒泡
       此类元素触发顺序见书p368
     鼠标事件
+      p368开始
+      基础事件
+        mouseenter  不冒泡,移入到后代元素上不会触发
+        mouseleave  不冒泡,移出到后代元素上不会触发
+        mousemove   鼠标在元素内部时不断触发,可冒泡,不可通过键盘触发
+        mouseout    鼠标移出元素时触发,移出到子元素也会触发,可冒泡,不可通过键盘触发
+        mouseover   鼠标移入元素时触发,移入到子元素也会触发,可冒泡,不可通过键盘触发
       
-            
+        click       单击鼠标触发,可通过键盘回车键触发
+        dbclick     双击鼠标触发
+        mousedown   按下鼠标触发,不可通过键盘触发
+        mouseup     释放鼠标触发,不可通过键盘触发
+            按照双击触发顺序
+            mousedown==>mouseup==>click==>mousedown==>mouseup==>click==>dbclick
+
+      
