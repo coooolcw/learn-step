@@ -80,4 +80,6 @@
             按照双击触发顺序
             mousedown==>mouseup==>click==>mousedown==>mouseup==>click==>dbclick
 
-      
+      click可通过event获取按下鼠标时同时按下的alt ctrl shift和window键
+        evnet.shiftKey,evnet.altKey,evnet.ctrlKey,evnet.metaKey
+        p372
