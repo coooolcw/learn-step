@@ -106,3 +106,15 @@
               event.charCode:keypress触发时event会有的属性,推荐在keypres使用charCode而不是keyCode.此属性返回ASC码
                   charCode支持稍差
               DOM3新属性event.key,char
+          
+          textInput事件
+          DOM3中用于替代keypress
+            具体与keypress的区别p383
+            此事件的event有data属性.属性值就是输入的内容(非编码)
+            
+     变动事件
+        p385
+        删除节点
+        按照触发顺序
+        DOMNodeRemoved  删除节点(removeChild,replaceChild)时触发,会冒泡.
+        
