@@ -93,3 +93,15 @@
         
     键盘事件
         p379~
+          keydown     按下任意键触发,按住不放则重复触发
+          keypress    按下字符键触发,按住不放则重复触发
+          keyup       释放任意键触发
+          textInput   
+          
+          按下字符:keydown==>keypress==>文本框变化==>keyup
+          按下非字符:keydown==>keyup
+          同样有shiftKey等属性
+          
+          注意:event.keyCode:一般用于非字符按键,对于字符键,会有游览器不同的情况,而且和charCode不一定统一
+              event.charCode:keypress触发时event会有的属性,推荐在keypres使用charCode而不是keyCode
+              DOM3新属性event.key,char
