@@ -83,3 +83,13 @@
       click可通过event获取按下鼠标时同时按下的alt ctrl shift和window键
         evnet.shiftKey,evnet.altKey,evnet.ctrlKey,evnet.metaKey
         p372
+
+      鼠标按钮
+        click可通过event.button获取点击的是哪个按钮
+          0   鼠标主按钮
+          1   中间按钮(滚轮)
+          2   次按钮
+         注意:IE8有一套另外的对应值
+        
+    键盘事件
+        p379~
