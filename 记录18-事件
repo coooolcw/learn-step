@@ -131,6 +131,16 @@
         haschange           URL参数列表(#后的部分)发生变化时触发.只能绑定给window对象.
 
   
-    设备事件(移动端)
+    触摸与手势事件(移动端)
+      重要 p399
+        touchstart      手指触摸屏幕时触发
+        touchmove       手指在屏幕上滑动时连续触发,在发生期间调用preventDefault()可以阻止滚动
+        touchend        手指从屏幕上离开时触发
+        touchcancel     系统停止跟踪触摸时触发(例如来电话)
+      触摸事件的event特殊属性(普通属性同鼠标事件)
       重要
-        
+        event.touches       表示当前跟踪的触摸操作的Touch对象的数组
+        event.targetTouchs  特定事件目标的Touch对象的数组(也就是在事件绑定的目标上方的Touch对象,不包含其他不在目标对象上的Touch)
+        event.changedTouches 自上次触摸以来发生了什么改变的Touch对象的数组,用于touch行为结束后调用
+      Touch对象包括以下属性:clientX,clientY,identifier,pageX,pageY,screenX,screenY,target
+        事件发生顺序:touchstart==>mouseover==>mousemove(一次)==>mousedowm==>mouseup==>click==>touchend
