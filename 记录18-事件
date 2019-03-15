@@ -116,5 +116,16 @@
         p385
         删除节点
         按照触发顺序
-        DOMNodeRemoved  删除节点(removeChild,replaceChild)时触发,会冒泡.
-        
+        DOMNodeRemoved       删除节点(removeChild,replaceChild)时触发,会冒泡.
+        DOMSubtreeModified   DOM结构发生任何变化时触发
+        DOMNodeRemovedFromDocument  在节点被从DOM树中移除之前触发,触发时机在DOMNodeRemoved之后
+        DOMNodeInserted      一个节点作为子节点插入到另一个节点时触发
+        DOMNodeInsertedIntoDocument   在节点被从DOM树中添加之后触发,触发时机在DOMNodeRemoved之后
+
+
+    HTML5事件
+      重要
+        p388
+        DOMContentLoaded    与load需要全部加载完毕不同,此事件只关注DOM结构加载是否完成,始终在load之前触发
+        readystatechange    不稳定的事件,用于在一些游览器中替代DOMContentLoaded.具体内容见p390~392
+        haschange           URL参数列表(#后的部分)发生变化时触发.只能绑定给window对象.
