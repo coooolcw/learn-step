@@ -21,4 +21,4 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
             \     基础转义
             \n    换行
             \t    tab
-            \xhh  与代码hh匹配字符(两个十六进制数字)
+            \xhh  与代码hh匹配字符(两个十六进制数字)  不常用
