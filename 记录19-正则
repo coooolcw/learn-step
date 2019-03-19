@@ -2,7 +2,8 @@
 https://deerchao.net/tutorials/regex/regex.htm
 MDN   查找特殊字符时使用
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
-
+MSDN的正则教程
+https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-language-quick-reference
 
 重点代码/标识符/等
     一.创建方式
