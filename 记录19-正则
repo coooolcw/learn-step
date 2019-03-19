@@ -22,4 +22,5 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
             \n      换行
             \t      tab
             \xhh    与代码hh匹配字符(两个十六进制数字)  不常用 ASC码
-            \uhhhh	与代码 hhhh 匹配字符(四个十六进制数字)不常用 unicode码
+            \uhhhh	与代码 hhhh 匹配字符(四个十六进制数字) 稍常用 unicode码 常用于匹配汉字.大多数汉字范围都位于4e00 9fa5之间
+                    因此[\u4e00-\u9fa5]可匹配绝大多数汉字
