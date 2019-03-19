@@ -18,7 +18,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
     二.转义字符
         转义字符列表见MDN.
         常用的转义字符
-            \     基础转义
-            \n    换行
-            \t    tab
-            \xhh  与代码hh匹配字符(两个十六进制数字)  不常用
+            \       基础转义
+            \n      换行
+            \t      tab
+            \xhh    与代码hh匹配字符(两个十六进制数字)  不常用 ASC码
+            \uhhhh	与代码 hhhh 匹配字符(四个十六进制数字)不常用 unicode码
