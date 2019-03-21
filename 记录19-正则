@@ -57,7 +57,7 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
             *       匹配前面一个表达式1次或者多次.等价于 {0,}.
 
 
-            贪婪匹配与非贪婪匹配
+            贪婪匹配与非贪婪匹配的匹配规则
                 a.*?b匹配最短的,以a开始,以b结束的字符串.如果把它应用于aabab的话,它会匹配aab(第一到第三个字符)和ab(第四到第五个字符)
                 为什么第一个匹配是aab(第一到第三个字符)而不是ab(第二到第三个字符)?
                 简单地说,因为正则表达式有另一条规则,
