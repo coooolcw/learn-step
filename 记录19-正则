@@ -59,6 +59,7 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
             (x)     匹配'x'并且记住匹配项.括号被称为捕获括号.
                     模式/(foo)(bar)\1\2/中的'(foo)'和'(bar)'匹配并记住字符串"foo bar foo bar"中前两个单词。
                     模式中的\1和\2匹配字符串的后两个单词.
+                    
                     注意\1,\2,\n是用在正则表达式的匹配环节.
                     在正则表达式的替换环节,则要使用像$1,$2,$n这样的语法,例如,'bar foo'.replace(/(...) (...)/,'$2 $1').
             (?:x)   匹配'x'但是不记住匹配项.这种叫作非捕获括号,使得你能够定义为与正则表达式运算符一起使用的子表达式.
@@ -71,3 +72,14 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                 为什么第一个匹配是aab(第一到第三个字符)而不是ab(第二到第三个字符)?
                 简单地说,因为正则表达式有另一条规则,
                 比懒惰/贪婪规则的优先级更高:最先开始的匹配拥有最高的优先权——The match that begins earliest wins.
+            
+            分组和引用
+                较为复杂,讲解得较好的见https://deerchao.net/tutorials/regex/regex.htm教程==>后向引用
+                
+                
+    三.方法
+        .exec() 如果匹配成功,exec()方法返回一个数组,并更新正则表达式对象的属性.
+                返回的数组将完全匹配成功的文本作为第一项,将正则括号里匹配成功的作为数组填充到后面.
+                如果匹配失败,exec()方法返回null.
+                它会改变regexp对象的属性,具体属性改变列表见MDN  
+                https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
