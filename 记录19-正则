@@ -96,6 +96,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                 它会改变regexp对象的属性,具体属性改变列表见MDN  
                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
                 
+                当正则表达式使用"g"标志时,可以多次执行 exec 方法来查找同一个字符串中的成功匹配.
+                当你这样做时,查找将从正则表达式的 lastIndex 属性指定的位置开始.(test()也会更新 lastIndex 属性).
         
 
 
