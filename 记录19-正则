@@ -5,6 +5,8 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression
 MSDN的正则教程
 https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-language-quick-reference
 
+此章参考内容见犀牛书,红皮书有方向性错误
+
 重点代码/标识符/等
     一.创建方式
         字面量
@@ -98,6 +100,9 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                 
                 当正则表达式使用"g"标志时,可以多次执行 exec 方法来查找同一个字符串中的成功匹配.
                 当你这样做时,查找将从正则表达式的 lastIndex 属性指定的位置开始.(test()也会更新 lastIndex 属性).
-        
+                
+                犀牛书p264~266
 
+   四.属性
+        partten.lastIndex      犀牛书p264~266  会被exec和test修改,表示最后一次匹配结束的下一个位置,用于下一次匹配的初始位置.
 
