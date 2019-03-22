@@ -74,6 +74,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                     也就是说,有匹配的是边界,而不是边界后的空格(或换行).\w和\W之间的间隙就是\b(间隙中的间隔符号是\W)
                     \w\b\W   例如  x(间隙)#
                     
+            x(?=y)  匹配'x'仅仅当'x'后面跟着'y'.这种叫做正向肯定查找.(也叫前瞻性匹配)
+            x(?!y)  匹配'x'仅仅当'x'后面不跟着'y',这个叫做正向否定查找.
 
 
             贪婪匹配与非贪婪匹配的匹配规则
