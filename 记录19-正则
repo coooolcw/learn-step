@@ -110,4 +110,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
    四.属性
         partten.lastIndex      犀牛书p264~266  会被exec和test修改,表示最后一次匹配结束的下一个位置,用于下一次匹配的初始位置.
                                非g时,lastIndex一直是0
+        partten.ignoreCase     犀牛书p264 bull值,i
+        partten.global         犀牛书p264 bull值,g
+        partten.multiline      犀牛书p264 bull值,m
+        partten.source         犀牛书p264,字符串,包含正则的文本
 
