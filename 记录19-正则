@@ -116,7 +116,10 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
         partten.source         犀牛书p264,字符串,包含正则的文本
 
 
-    五,构造函数属性
+    五.构造函数属性
         非常不常用,仅了解
         见红皮书p.107~109
         需要了解的:RegExp.$1(可用的有$1到$9)  用于存储捕获的组(括号内的分组内容)
+        
+    六.string对象的正则方法
+        犀牛书p261~263
