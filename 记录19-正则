@@ -107,7 +107,7 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
         .test() test() 方法执行一个检索，用来查看正则表达式与指定的字符串是否匹配.返回 true 或 false.
                 MDNhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
 
-   四.属性
+   四.实例对象属性
         partten.lastIndex      犀牛书p264~266  会被exec和test修改,表示最后一次匹配结束的下一个位置,用于下一次匹配的初始位置.
                                非g时,lastIndex一直是0
         partten.ignoreCase     犀牛书p264 bull值,i
@@ -115,3 +115,7 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
         partten.multiline      犀牛书p264 bull值,m
         partten.source         犀牛书p264,字符串,包含正则的文本
 
+
+    五,构造函数属性
+        非常不常用,仅了解
+        
