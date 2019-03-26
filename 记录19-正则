@@ -137,14 +137,16 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                                 以将字符串分隔为子字符串,以确定每个拆分的位置.
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split
         str.replace(regexp|substr, newSubStr|function)
-                                重要
+                                重要,红皮书p.127~129
                                 replace()方法返回一个由替换值(replacement)替换一些或所有匹配的模式(pattern)后的新字符串.
                                 模式可以是一个字符串或者一个正则表达式,替换值可以是一个字符串或者一个每次匹配都要调用的函数.
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
                                 常用于修改HTML,关键词屏蔽等
                         替换字符串可以插入下面的特殊变量名：
                         $n      假如第一个参数是 RegExp对象，并且 n 是个小于100的非负整数，
-                                那么插入第 n 个括号匹配的字符串。提示：索引是从1开始        
+                                那么插入第 n 个括号匹配的字符串。提示：索引是从1开始
+                                
+                                replace()传入函数时,会向函数传递3个参数,模式匹配项(匹配出的结果部分),匹配项在字符串中的index,原始字符串
     七.匹配选项
         i       忽略大小写
         g       全局匹配
