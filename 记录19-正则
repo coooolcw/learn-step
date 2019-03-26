@@ -135,4 +135,4 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
     七.匹配选项
         i       忽略大小写
         g       全局匹配
-        m       多行匹配
+        m       多行匹配,一般和首尾匹配以及g全局匹配组合使用
