@@ -142,8 +142,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                                 模式可以是一个字符串或者一个正则表达式,替换值可以是一个字符串或者一个每次匹配都要调用的函数.
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
                                 常用于修改HTML,关键词屏蔽等
-                                替换字符串可以插入下面的特殊变量名：
-                                $n假如第一个参数是 RegExp对象，并且 n 是个小于100的非负整数，
+                        替换字符串可以插入下面的特殊变量名：
+                        $n      假如第一个参数是 RegExp对象，并且 n 是个小于100的非负整数，
                                 那么插入第 n 个括号匹配的字符串。提示：索引是从1开始        
     七.匹配选项
         i       忽略大小写
