@@ -5,6 +5,9 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression
 MSDN的正则教程
 https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-language-quick-reference
 
+常见的正则表达式
+https://github.com/cdoco/common-regex
+
 此章参考内容见犀牛书,红皮书有方向性错误
 
 重点代码/标识符/等
