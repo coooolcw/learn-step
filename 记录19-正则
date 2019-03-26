@@ -130,3 +130,9 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
                                 如果未使用g标志,则仅返回第一个完整匹配及其相关的捕获组(Array).
                                 在这种情况下,返回的项目将具有如下所述的其他属性，或者未匹配null.
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match
+                                
+                                
+    七.匹配选项
+        i       忽略大小写
+        g       全局匹配
+        m       多行匹配
