@@ -125,7 +125,8 @@ https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/regular-expression-l
         犀牛书p261~263
         str.search(regexp)      如果匹配成功,则 search() 返回正则表达式在字符串中首次匹配项的索引.否则,返回 -1.忽略g.类似test
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/search
-        str.match(regexp)       如果使用g标志,则将返回与完整正则表达式匹配的所有结果(Array),但不会返回捕获组，或者未匹配 null.
+        str.match(regexp)       如果正则表达式不包含 g 标志,str.match()将返回与RegExp.exec().相同的结果.
+                                如果使用g标志,则将返回与完整正则表达式匹配的所有结果(Array),但不会返回捕获组，或者未匹配 null.
                                 如果未使用g标志,则仅返回第一个完整匹配及其相关的捕获组(Array).
                                 在这种情况下,返回的项目将具有如下所述的其他属性，或者未匹配null.
                                 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match
