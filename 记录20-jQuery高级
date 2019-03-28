@@ -1,1 +1,6 @@
+        普通方法:设置class:block/none;
+        通过addClass  removeClass操作
 
+jQ方法1.
+        .show()
+        .hide()
