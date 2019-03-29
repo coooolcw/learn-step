@@ -50,4 +50,6 @@ jQ方法
                         类型: PlainObject
                         一个CSS属性和值的对象,动画将根据这组对象移动。
                         可进行运算,但需要用''包裹
+                .animate( properties, options )
+                options 具体见https://www.html.cn/jqapi-1.9/animate/
                         
