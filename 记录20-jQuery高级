@@ -45,3 +45,7 @@ jQ方法
                         https://j11y.io/demos/jquery/easing/
                 
                 
+        自定义动画
+                .animate( properties [, duration ] [, easing ] [, complete ] )
+                        类型: PlainObject
+                        一个CSS属性和值的对象,动画将根据这组对象移动。
