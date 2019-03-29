@@ -15,3 +15,8 @@ jQ方法1.
 
         调整透明度
         .fadeTo(duration, opacity [, easing ] [, complete ])
+        
+        单纯形变,修改高度
+        .slideDown( [duration ] [, easing ] [, complete ] )
+        .slideUp( [duration ] [, easing ] [, complete ] )
+        .slideToggle( [duration ] [, easing ] [, complete ] )
