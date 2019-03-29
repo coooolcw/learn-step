@@ -24,3 +24,5 @@ jQ方法1.
         
         停止正在进行的动画
         .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
+        clearQueue:true表示删除在队列中等待的其他动画
+        jumpToEnd:一个布尔值指示是否当前动画立即完成
