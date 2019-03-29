@@ -52,4 +52,5 @@ jQ方法
                         可进行运算,但需要用''包裹
                 .animate( properties, options )
                 options 具体见https://www.html.cn/jqapi-1.9/animate/
+                                参考网站缺少了start的回调函数
                         
