@@ -37,3 +37,11 @@ jQ方法
                 jQuery.fx.off
                         当这个属性设置为true的时,调用时所有动画方法将立即设置元素为他们的最终状态,而不是显示效果.
                 
+
+        动画过渡插件
+                jquery.easing
+                        https://github.com/gdsmith/jquery.easing
+                        效果查找站
+                        https://j11y.io/demos/jquery/easing/
+                
+                
