@@ -11,3 +11,7 @@ jQ方法1.
         .fadeIn( [duration ] [, easing ] [, complete ] )
         .fadeOut( [duration ] [, easing ] [, complete ] )
         .fadeToggle( [duration ] [, easing ] [, complete ] )
+
+
+        调整透明度
+        .fadeTo(duration, opacity [, easing ] [, complete ])
