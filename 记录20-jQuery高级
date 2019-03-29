@@ -7,7 +7,7 @@ jQ方法1.
         .hide([duration ] [, easing ] [, complete ])
         .toggle([duration ] [, easing ] [, complete ]) 
 
-        淡入淡出
+        淡入淡出,修改透明度
         .fadeIn( [duration ] [, easing ] [, complete ] )
         .fadeOut( [duration ] [, easing ] [, complete ] )
         .fadeToggle( [duration ] [, easing ] [, complete ] )
