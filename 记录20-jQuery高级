@@ -1,35 +1,39 @@
         普通方法:设置class:block/none;
         通过addClass  removeClass操作
 
-jQ方法1.
+jQ方法
         操作display,以形变的方式消失/出现
-        .show([duration ] [, easing ] [, complete ])
-        .hide([duration ] [, easing ] [, complete ])
-        .toggle([duration ] [, easing ] [, complete ]) 
+                .show([duration ] [, easing ] [, complete ])
+                .hide([duration ] [, easing ] [, complete ])
+                .toggle([duration ] [, easing ] [, complete ]) 
 
         淡入淡出,修改透明度
-        .fadeIn( [duration ] [, easing ] [, complete ] )
-        .fadeOut( [duration ] [, easing ] [, complete ] )
-        .fadeToggle( [duration ] [, easing ] [, complete ] )
+                .fadeIn( [duration ] [, easing ] [, complete ] )
+                .fadeOut( [duration ] [, easing ] [, complete ] )
+                .fadeToggle( [duration ] [, easing ] [, complete ] )
 
 
         调整透明度
-        .fadeTo(duration, opacity [, easing ] [, complete ])
+                .fadeTo(duration, opacity [, easing ] [, complete ])
         
         单纯形变,修改高度
-        .slideDown( [duration ] [, easing ] [, complete ] )
-        .slideUp( [duration ] [, easing ] [, complete ] )
-        .slideToggle( [duration ] [, easing ] [, complete ] )
+                .slideDown( [duration ] [, easing ] [, complete ] )
+                .slideUp( [duration ] [, easing ] [, complete ] )
+                .slideToggle( [duration ] [, easing ] [, complete ] )
         
         
         停止正在进行的动画
-        .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
-        clearQueue:true表示删除在队列中等待的其他动画
-        jumpToEnd:一个布尔值指示是否当前动画立即完成
-        
-        .finish( [queue ] )
-        停止当前正在运行的动画，删除所有排队的动画，并完成匹配元素所有的动画。
-        
-        stop与finish的区别
-        .finish()方法和.stop(true, true)很相似,.stop(true, true)将清除队列,并且[目前]的动画跳转到其最终值.
-        但是,不同的是,.finish() 会导致所有排队的动画的CSS属性跳转到他们的最终值.
+                .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
+                        clearQueue:true表示删除在队列中等待的其他动画
+                        jumpToEnd:一个布尔值指示是否当前动画立即完成
+
+                .finish( [queue ] )
+                        停止当前正在运行的动画，删除所有排队的动画，并完成匹配元素所有的动画。
+
+                stop与finish的区别
+                        .finish()方法和.stop(true, true)很相似,.stop(true, true)将清除队列,并且[目前]的动画跳转到其最终值.
+                        但是,不同的是,.finish() 会导致所有排队的动画的CSS属性跳转到他们的最终值.
+
+                jQuery.fx.off
+                        当这个属性设置为true的时,调用时所有动画方法将立即设置元素为他们的最终状态,而不是显示效果.
+                
