@@ -20,3 +20,7 @@ jQ方法1.
         .slideDown( [duration ] [, easing ] [, complete ] )
         .slideUp( [duration ] [, easing ] [, complete ] )
         .slideToggle( [duration ] [, easing ] [, complete ] )
+        
+        
+        停止正在进行的动画
+        .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
