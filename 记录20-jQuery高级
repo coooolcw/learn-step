@@ -2,6 +2,12 @@
         通过addClass  removeClass操作
 
 jQ方法1.
-        .show()
-        .hide()
-        .toggle() 自动切换可见/不可见状态
+        操作display,以形变的方式消失/出现
+        .show([duration ] [, easing ] [, complete ])
+        .hide([duration ] [, easing ] [, complete ])
+        .toggle([duration ] [, easing ] [, complete ]) 
+
+        淡入淡出
+        .fadeIn( [duration ] [, easing ] [, complete ] )
+        .fadeOut( [duration ] [, easing ] [, complete ] )
+        .fadeToggle( [duration ] [, easing ] [, complete ] )
