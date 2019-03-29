@@ -49,3 +49,5 @@ jQ方法
                 .animate( properties [, duration ] [, easing ] [, complete ] )
                         类型: PlainObject
                         一个CSS属性和值的对象,动画将根据这组对象移动。
+                        可进行运算,但需要用''包裹
+                        
