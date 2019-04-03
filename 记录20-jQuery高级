@@ -53,4 +53,13 @@ jQ方法
                 .animate( properties, options )
                 options 具体见https://www.html.cn/jqapi-1.9/animate/
                                 参考网站缺少了start的回调函数
-                        
+                                
+                                
+                                
+       jquery动画队列
+                https://blog.csdn.net/qq_42564846/article/details/81666008
+                .queue()    
+                        .queue( [queueName ] )
+                        .queue( [queueName ], newQueue )
+                        .queue( [queueName ], callback( next ) )
+
