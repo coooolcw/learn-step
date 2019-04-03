@@ -62,4 +62,5 @@ jQ方法
                         .queue( [queueName ] )
                         .queue( [queueName ], newQueue )
                         .queue( [queueName ], callback( next ) )
+                        http://www.w3school.com.cn/jquery/data_queue.asp
 
