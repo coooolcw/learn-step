@@ -86,3 +86,5 @@ jQ与其他插件共存
                 jQuery.noConflict( [removeAll ] )
                         放弃jQuery控制$ 变量。
                         旧引用的$ 被保存在jQuery的初始化; noConflict() 简单的恢复它们。(在引入冲突以后也可以消除冲突,并且复原其他插件)
+                        如果必要的话，我们可以释放jQuery名字，传递true作为一个参数给这个方法。 
+                        但是大多数插件依靠jQuery存在的变量,这种情况下，可能导致插件不能正常操作。
