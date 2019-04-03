@@ -82,3 +82,7 @@ jQ方法
                         设置一个延时来推迟执行队列中后续的项。
                         
 
+jQ与其他插件共存
+                jQuery.noConflict( [removeAll ] )
+                        放弃jQuery控制$ 变量。
+                        旧引用的$ 被保存在jQuery的初始化; noConflict() 简单的恢复它们。(在引入冲突以后也可以消除冲突,并且复原其他插件)
