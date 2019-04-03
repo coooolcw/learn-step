@@ -57,10 +57,22 @@ jQ方法
                                 
                                 
        jquery动画队列
+                基础介绍
                 https://blog.csdn.net/qq_42564846/article/details/81666008
+                详细说明
+                https://www.cnblogs.com/snandy/archive/2013/02/18/2892749.html 
                 .queue()    
                         .queue( [queueName ] )
                         .queue( [queueName ], newQueue )
                         .queue( [queueName ], callback( next ) )
                         http://www.w3school.com.cn/jquery/data_queue.asp
+                        
+                .dequeue( [queueName ] )
+                        当.dequeue()被调用的时候，列队中的下一个函数将从这个列队中被移除，然后再执行。
+                        这个执行的函数中也应当直接或间接的包含 .dequeue()语句，这样才能继续执行队列中的其它函数，所以,这个序列可以继续。
+                .clearQueue( [queueName ] )
+                        从列队中移除所有未执行的项。
+                .delay( duration [, queueName ] )
+                        设置一个延时来推迟执行队列中后续的项。
+                        
 
