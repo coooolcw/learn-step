@@ -66,6 +66,12 @@ jQ方法
                         .queue( [queueName ], newQueue )
                         .queue( [queueName ], callback( next ) )
                         http://www.w3school.com.cn/jquery/data_queue.asp
+                        从jQuery 1.4开始，向队列中追加函数时，可以向该函数中传入另一个函数，作为第一个参数。
+                        当调用函数时，会自动从函数队列中弹出下一个项目，保证队列中函数的继续进行。我们可以像下面这样使用：
+                                $("#test").queue(function(next) {
+                                    // Do some stuff...
+                                    next();
+                                });
                         
                 .dequeue( [queueName ] )
                         当.dequeue()被调用的时候，列队中的下一个函数将从这个列队中被移除，然后再执行。
