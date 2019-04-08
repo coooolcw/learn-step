@@ -118,3 +118,11 @@ jQ兼容性判断
                 该过滤器函数必须返回'true'以包含在结果数组项。
                 function第一个参数是正在被检查的数组的元素，第二个参数是该元素的索引值。
                 该函数应返回一个布尔值。this将是全局的window对象。
+转换数组/对象
+                jQuery.map( array, callback(elementOfArray, indexInArray) )
+                jQuery.map( arrayOrObject, callback( value, indexOrKey ) )
+                $.map()方法会在数组的每一个元素或对象上应用一个函数并将结果映射到一个新的数组中。
+                该函数可以返回：
+                        转换后的值，该值会被映射到最终的结果数组中
+                        null或者undefined, 用于移除该元素
+                        数组，会将该数组中的元素添加到最终的结果数组中
