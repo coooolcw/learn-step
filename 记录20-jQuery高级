@@ -126,3 +126,10 @@ jQ兼容性判断
                         转换后的值，该值会被映射到最终的结果数组中
                         null或者undefined, 用于移除该元素
                         数组，会将该数组中的元素添加到最终的结果数组中(因此可使用split(),将数组中的字符串拆分成为一整个大数组)
+其他数组方法
+                jQuery.inArray( value, array [, fromIndex ] )
+                在数组中查找指定值并返回它的索引（如果没有找到，则返回-1）.
+                jQuery.makeArray( obj )
+                转换一个类似数组的对象成为真正的JavaScript数组。
+                jQuery.merge( first, second )
+                合并两个数组内容到第一个数组。
