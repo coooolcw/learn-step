@@ -137,7 +137,8 @@ jQ兼容性判断
                 Query.extend( [deep ], target, object1 [, objectN ] )
                 将两个或更多对象的内容合并到第一个对象。
                 deep
-                如果是 true，合并成为递归（又叫做深拷贝）。不支持给这个参数传递 false
+                如果是 true，合并成为递归（又叫做深拷贝）。不支持给这个参数传递 false.区别见
+                https://www.html.cn/jqapi-1.9/jQuery.extend/
                 当我们提供两个或多个对象给$.extend()，对象的所有属性都添加到目标对象（target参数）。
                 如果只有一个参数提供给$.extend()，这意味着目标参数被省略。
                 在这种情况下，jQuery对象本身被默认为目标对象。
