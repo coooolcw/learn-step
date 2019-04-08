@@ -133,3 +133,7 @@ jQ兼容性判断
                 转换一个类似数组的对象成为真正的JavaScript数组。
                 jQuery.merge( first, second )
                 合并两个数组内容到第一个数组。
+对象方法
+                Query.extend( [deep ], target, object1 [, objectN ] )
+                将两个或更多对象的内容合并到第一个对象。
+                
