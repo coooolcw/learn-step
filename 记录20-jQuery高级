@@ -144,3 +144,16 @@ jQ兼容性判断
                 在这种情况下，jQuery对象本身被默认为目标对象。
                 这样，我们可以在jQuery的命名空间下添加新的功能。
                 这对于插件开发者希望向 jQuery 中添加新函数时是很有用的。
+判断类型
+                jQuery.isArray( obj )
+                确定的参数是一个数组。
+                jQuery.isEmptyObject( object )
+                检查对象是否为空（不包含任何属性）。
+                jQuery.isFunction( obj )
+                确定参数是否为一个Javascript 函数。
+                jQuery.isNumeric( value )
+                确定它的参数是否是一个JavaScript数字。
+                jQuery.isPlainObject( object )
+                测试对象是否是纯粹的对象（通过 "{}" 或者 "new Object" 创建的）
+                jQuery.isWindow( obj )
+                确定参数是否为一个window对象。
