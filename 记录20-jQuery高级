@@ -161,3 +161,13 @@ jQ兼容性判断
                 jQuery.type( obj )
                 确定JavaScript 对象的类型[[Class]] 。
                 较常用,具体见https://www.html.cn/jqapi-1.9/jQuery.type/
+
+其他方法
+                jQuery.noop()
+                当你仅仅想要传递一个空函数的时候，就用他吧。
+                这对一些插件作者很有用，当插件提供了一个可选的回调函数接口，
+                那么如果调用的时候没有传递这个回调函数，就用jQuery.noop来代替执行。
+                
+                jQuery.contains( container, contained )
+                检查一个DOM元素是另一个DOM元素的后代。
+                
