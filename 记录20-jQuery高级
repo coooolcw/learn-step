@@ -157,3 +157,7 @@ jQ兼容性判断
                 测试对象是否是纯粹的对象（通过 "{}" 或者 "new Object" 创建的）
                 jQuery.isWindow( obj )
                 确定参数是否为一个window对象。
+
+                jQuery.type( obj )
+                确定JavaScript 对象的类型[[Class]] 。
+                较常用,具体见https://www.html.cn/jqapi-1.9/jQuery.type/
