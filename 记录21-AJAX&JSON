@@ -1,4 +1,20 @@
-MDN的ajax目录https://developer.mozilla.org/zh-CN/docs/Web/Guide/AJAX
-MDN入门教程https://developer.mozilla.org/zh-CN/docs/Web/Guide/AJAX/Getting_Started
+MDN的ajax目录
+        https://developer.mozilla.org/zh-CN/docs/Web/Guide/AJAX
+MDN入门教程
+        https://developer.mozilla.org/zh-CN/docs/Web/Guide/AJAX/Getting_Started
 
-中文教程,入门可用http://www.runoob.com/ajax/ajax-tutorial.html
+中文教程,主要使用
+        http://www.runoob.com/ajax/ajax-tutorial.html
+
+
+
+
+XMLHttpRequest.open()
+        1.默认方式为GET
+        2.除url外都可不指定
+        
+XMLHttpRequest.status属性
+        1.有较多属性值
+        2.一般判断 值>=200 && 值<300 || 值 == 304  都可以
+
+        
