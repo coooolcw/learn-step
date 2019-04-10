@@ -15,6 +15,6 @@ XMLHttpRequest.open()
         
 XMLHttpRequest.status属性
         1.有较多属性值
-        2.一般判断 值>=200 && 值<300 || 值 == 304  都可以
+        2.一般判断 值>=200 && 值<300 || 值 == 304
 
         
