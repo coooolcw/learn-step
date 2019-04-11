@@ -32,3 +32,6 @@ JSON
         http://www.json.org/json-zh.html
         教程
         http://www.runoob.com/json/json-intro.html
+
+        1.只能使用十进制,不能使用NaN和Infinity
+        2.不支持undefined
