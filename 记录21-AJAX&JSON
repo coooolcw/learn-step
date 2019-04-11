@@ -23,3 +23,8 @@ XMLHttpRequest.status属性
 .setRequestHeader
         如果你使用 POST 数据，那就需要设置请求的MIME类型。比如，在调用 send() 方法获取表单数据前要有下面这个：
         httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+
+JSON 
+        in MDN
+        https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON
