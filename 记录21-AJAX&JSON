@@ -35,3 +35,6 @@ JSON
 
         1.只能使用十进制,不能使用NaN和Infinity
         2.不支持undefined
+        
+        parse和eval的区别,概括结论是出于安全考虑尽量使用parse
+        http://www.cnblogs.com/lovesong/p/6036650.html
