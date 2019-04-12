@@ -43,3 +43,10 @@ JSON
         parse的逆方法
         JSON 不能存储 Date 对象。
         JSON.stringify() 会将所有日期转换为字符串。
+        JSON 不允许包含函数，JSON.stringify() 会删除 JavaScript 对象的函数，包括 key 和 value。
+        我们可以在执行 JSON.stringify() 函数前将函数转换为字符串来避免以上问题的发生
+        不建议在 JSON 中使用函数。
+        
+$.ajax
+        
+        
