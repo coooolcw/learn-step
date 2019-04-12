@@ -38,3 +38,8 @@ JSON
         
         parse和eval的区别,概括结论是出于安全考虑尽量使用parse
         http://www.cnblogs.com/lovesong/p/6036650.html
+        
+        JSON.stringify()
+        parse的逆方法
+        JSON 不能存储 Date 对象。
+        JSON.stringify() 会将所有日期转换为字符串。
