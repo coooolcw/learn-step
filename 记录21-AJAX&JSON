@@ -47,6 +47,13 @@ JSON
         我们可以在执行 JSON.stringify() 函数前将函数转换为字符串来避免以上问题的发生
         不建议在 JSON 中使用函数。
         
-$.ajax
+jQuery的ajax方法
+        jQuery.ajax( url [, settings ] )
+        内容较多
+        https://www.html.cn/jqapi-1.9/jQuery.ajax/
+        主要参数:async complete dataType error success type url 
         
+        
+        
+跨域
         
