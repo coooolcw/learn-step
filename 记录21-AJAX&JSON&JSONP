@@ -61,7 +61,7 @@ jQuery的ajax方法
 跨域
                 红皮书p582
         重点:JSONP p587
-        教程:
-        https://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html
-        维基的基础说明非常清楚
+        基础教程:
+        https://segmentfault.com/a/1190000007935557
+        维基的基础说明概念清楚
         https://zh.wikipedia.org/wiki/JSONP
