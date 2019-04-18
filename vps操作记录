@@ -6,6 +6,8 @@ vps阿里云国际-新加坡(如果开放云计算市场会考虑国外服务商
 https://github.com/creationix/nvm
 参考教程为:(在页面较下位置)
 https://www.ostechnix.com/install-node-js-linux/
+待学习的使用方法说明
+https://www.kancloud.cn/summer/nodejs-install/71975
 
 验证
 输入nvm list
