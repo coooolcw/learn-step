@@ -7,6 +7,11 @@ https://github.com/creationix/nvm
 参考教程为:(在页面较下位置)
 https://www.ostechnix.com/install-node-js-linux/
 
+验证
+输入nvm list
+输出default -> node (-> v11.14.0)
+node -> stable (-> v11.14.0) (default)
+stable -> 11.14 (-> v11.14.0) (default)
 
 
 
