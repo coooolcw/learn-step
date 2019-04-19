@@ -15,6 +15,12 @@ https://www.kancloud.cn/summer/nodejs-install/71975
 node -> stable (-> v11.14.0) (default)
 stable -> 11.14 (-> v11.14.0) (default)
 
+在vps上建立项目文件夹
+cd到该文件夹
+
+安装express
+https://expressjs.com/zh-cn/starter/installing.html
+输入npm init 全部回车解决
 
 
 
