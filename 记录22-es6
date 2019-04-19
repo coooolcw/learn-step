@@ -1,1 +1,22 @@
 
+1.let
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let
+    
+    let允许你声明一个作用域被限制在块级中的变量、语句或者表达式。
+    与var关键字不同的是，var声明的变量只能是全局或者整个函数块的。
+    
+    注意点:
+        1.在同一个作用域中用let重复定义一个变量将引起 TypeError.
+        2.在 ECMAScript 2015 中，let 绑定不受变量提升的约束，这意味着 let  声明不会被提升到当前执行上下文的顶部。
+        在块中的变量初始化之前，引用它将会导致 ReferenceError（而使用 var 声明变量则恰恰相反，该变量的值是 undefined ）。
+        这个变量处于从块开始到 let 初始化处理的"暂存死区"之中。
+        3.暂存死区
+        let foo = 1;
+            function do_something() {
+              console.log(bar); // undefined
+              console.log(foo); // ReferenceError: foo is not defined 暂存死区
+              var bar = 1;
+              let foo = 2;
+            }
+            详细解释(实质上let也有类似于提升的行为,只是不同于var的提升)
+            https://blog.csdn.net/A13330069275/article/details/81264890
