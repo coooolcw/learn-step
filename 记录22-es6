@@ -20,3 +20,15 @@
             }
             详细解释(实质上let也有类似于提升的行为,只是不同于var的提升)
             https://blog.csdn.net/A13330069275/article/details/81264890
+
+2.const
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const
+    
+    常量,不可改变
+    与var变量不同，全局常量不会变为窗口对象的属性。
+    需要一个常数的初始化器,也就是说，必须在声明的同一语句中指定它的值。
+    const声明创建一个值的只读引用。
+    但这并不意味着它所持有的值是不可变的，只是变量标识符不能重新分配。
+    例如，在引用内容是对象的情况下，这意味着可以改变对象的内容（例如，其参数）。
+    关于“暂存死区”的所有讨论都适用于let和const。
+    一个常量不能和它所在作用域内的其他变量或函数拥有相同的名称。
