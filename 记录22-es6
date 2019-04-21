@@ -32,3 +32,7 @@
     例如，在引用内容是对象的情况下，这意味着可以改变对象的内容（例如，其参数）。
     关于“暂存死区”的所有讨论都适用于let和const。
     一个常量不能和它所在作用域内的其他变量或函数拥有相同的名称。
+    
+    可同时使用Object.freeze() 彻底冻结一个对象使该对象无法被修改
+    作用目标为数组时,被冻结，其元素不能被修改。没有数组元素可以被添加或移除。
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
