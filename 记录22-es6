@@ -44,3 +44,4 @@
         2.Object.defineProperty()
             使用方法见
             https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+            红皮书p139开始
