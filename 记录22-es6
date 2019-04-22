@@ -50,7 +50,9 @@
             
             当需要变为常量的是对象时,还同时需要使用Object.seal()
             Object.seal()方法封闭一个对象，阻止添加新属性并将所有现有属性标记为不可配置。当前属性的值只要可写就可以改变。
-            简单封装的方法
+            
+            
+            简单封装的const引用类型的方法
             Object.defineProperty(Object, 'noChange', {
                 value: function(obj) {
                     for (var i in obj) {
