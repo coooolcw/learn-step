@@ -45,3 +45,6 @@
             使用方法见
             https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
             红皮书p139开始
+            
+            在window上设置即可模仿全局常量
+
