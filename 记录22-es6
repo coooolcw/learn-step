@@ -36,3 +36,11 @@
     可同时使用Object.freeze() 彻底冻结一个对象使该对象无法被修改
     作用目标为数组时,被冻结，其元素不能被修改。没有数组元素可以被添加或移除。
     https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+
+无ES6的常量设置模拟
+    方法1.假装
+            变量大写假装不可修改
+            
+        2.Object.defineProperty()
+            使用方法见
+            https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
