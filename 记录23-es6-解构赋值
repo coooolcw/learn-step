@@ -24,3 +24,16 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             console.log(a); // 10
             console.log(b); // 20
             console.log(rest); // {c: 30, d: 40}
+
+为了防止从数组中取出一个值为undefined的对象，可以在表达式左边的数组中为任意对象预设默认值。
+            var a, b;
+            [a=5, b=7] = [1];
+            console.log(a); // 1
+            console.log(b); // 7
+            
+在一个解构表达式中可以交换两个变量的值。
+            var a = 1;
+            var b = 3;
+            [a, b] = [b, a];
+            console.log(a); // 3
+            console.log(b); // 1
