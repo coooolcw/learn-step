@@ -3,3 +3,24 @@ http://es6.ruanyifeng.com/#docs/destructuring
 深入理解ES6 p89
 MDN 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+            var a, b, rest;
+            [a, b] = [10, 20];
+            console.log(a); // 10
+            console.log(b); // 20
+
+            [a, b, ...rest] = [10, 20, 30, 40, 50];
+            console.log(a); // 10
+            console.log(b); // 20
+            console.log(rest); // [30, 40, 50]
+
+            ({ a, b } = { a: 10, b: 20 });
+            console.log(a); // 10
+            console.log(b); // 20
+
+
+            // Stage 4（已完成）提案中的特性
+            ({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
+            console.log(a); // 10
+            console.log(b); // 20
+            console.log(rest); // {c: 30, d: 40}
