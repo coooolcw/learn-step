@@ -28,13 +28,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             console.log(b); // 20
             console.log(rest); // {c: 30, d: 40}
 
-为了防止从数组中取出一个值为undefined的对象，可以在表达式左边的数组中为任意对象预设默认值。
+        为了防止从数组中取出一个值为undefined的对象，可以在表达式左边的数组中为任意对象预设默认值。
             var a, b;
             [a=5, b=7] = [1];
             console.log(a); // 1
             console.log(b); // 7
             
-在一个解构表达式中可以交换两个变量的值。
+        在一个解构表达式中可以交换两个变量的值。
             var a = 1;
             var b = 3;
             [a, b] = [b, a];
@@ -42,17 +42,17 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             console.log(b); // 1
 
 对象
-            对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的取值由它的位置决定；
-            而对象的属性没有次序，变量必须与属性同名，才能取到正确的值。
+        对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的取值由它的位置决定；
+        而对象的属性没有次序，变量必须与属性同名，才能取到正确的值。
             
-            如果变量名与属性名不一致，必须写成下面这样。
+        如果变量名与属性名不一致，必须写成下面这样。
             let obj = { first: 'hello', last: 'world' };
             let { first: f, last: l } = obj;
-            这实际上说明，对象的解构赋值是下面形式的简写
+        这实际上说明，对象的解构赋值是下面形式的简写
             let { foo: foo, bar: bar } = { foo: 'aaa', bar: 'bbb' };
             
-            代码有三次解构赋值，分别是对loc、start、line三个属性的解构赋值。
-            注意，最后一次对line属性的解构赋值之中，只有line是变量，loc和start都是模式，不是变量。
+        代码有三次解构赋值，分别是对loc、start、line三个属性的解构赋值。
+        注意，最后一次对line属性的解构赋值之中，只有line是变量，loc和start都是模式，不是变量。
             const node = {
               loc: {
                 start: {
@@ -66,8 +66,8 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             line // 1
             loc  // Object {start: Object}
             start // Object {line: 1, column: 5}
-            Rest/Spread Properties for ECMAScript 提案（阶段 3）将 rest 语法添加到解构中。
-            Rest 属性收集那些尚未被解构模式拾取的剩余可枚举属性键。
+        Rest/Spread Properties for ECMAScript 提案（阶段 3）将 rest 语法添加到解构中。
+        Rest 属性收集那些尚未被解构模式拾取的剩余可枚举属性键。
             let {a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40}
             a; // 10 
             b; // 20 
