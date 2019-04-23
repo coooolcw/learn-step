@@ -66,3 +66,9 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             line // 1
             loc  // Object {start: Object}
             start // Object {line: 1, column: 5}
+            Rest/Spread Properties for ECMAScript 提案（阶段 3）将 rest 语法添加到解构中。
+            Rest 属性收集那些尚未被解构模式拾取的剩余可枚举属性键。
+            let {a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40}
+            a; // 10 
+            b; // 20 
+            rest; // { c: 30, d: 40 }
