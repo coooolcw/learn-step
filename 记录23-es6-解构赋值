@@ -51,6 +51,17 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             [a, b] = [b, a];
             console.log(a); // 3
             console.log(b); // 1
+            
+            
+        从一个函数返回一个数组是十分常见的情况。解构使得处理返回值为数组时更加方便。
+        function f() {
+              return [1, 2];
+            }
+
+            var a, b; 
+            [a, b] = f(); 
+            console.log(a); // 1
+            console.log(b); // 2
 
 对象
         对象的解构与数组有一个重要的不同。数组的元素是按次序排列的，变量的取值由它的位置决定；
