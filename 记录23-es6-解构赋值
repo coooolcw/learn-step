@@ -129,3 +129,9 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             上面代码中，数值和布尔值的包装对象都有toString属性，因此变量s都能取到值。
             解构赋值的规则是，只要等号右边的值不是对象或数组，就先将其转为对象。
             由于undefined和null无法转为对象，所以对它们进行解构赋值，都会报错。
+函数参数
+            函数的参数也可以使用解构赋值。
+            function add([x, y]){
+              return x + y;
+            }
+            add([1, 2]); // 3
