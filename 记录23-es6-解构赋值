@@ -94,3 +94,15 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             a; // 10 
             b; // 20 
             rest; // { c: 30, d: 40 }
+            
+        常用于函数的传参
+            function drawES2015Chart({size = 'big', cords = { x: 0, y: 0 }, radius = 25} = {}) 
+            {
+              console.log(size, cords, radius);
+              // do some chart drawing
+            }
+
+            drawES2015Chart({
+              cords: { x: 18, y: 30 },
+              radius: 30
+            });
