@@ -115,5 +115,6 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Dest
             d // "l"
             e // "o"
             类似数组的对象都有一个length属性，因此还可以对这个属性解构赋值。
-            let {length : len} = 'hello';
+            let {length : len,split} = 'hello';
             len // 5
+            split可以取出,不过不常用
