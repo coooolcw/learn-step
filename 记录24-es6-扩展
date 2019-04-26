@@ -12,9 +12,19 @@
                         它会在模板字符串处理后被调用，在输出最终结果前，你都可以通过该函数来对模板字符串进行操作处理。
                         在模版字符串内使用反引号（`）时，需要在它前面加转义符（\）。
                         
-                        换行无需转义字符
-                        console.log(`string text line 1
-                        string text line 2`);
-                        // "string text line 1
-                        // string text line 2"
-        
+                        如果使用模板字符串表示多行字符串，所有的空格和缩进都会被保留在输出之中。
+                        $('#list').html(`
+                        <ul>
+                          <li>first</li>
+                          <li>second</li>
+                        </ul>
+                        `);
+                        上面代码中，所有模板字符串的空格和换行，都是被保留的，
+                        比如<ul>标签前面会有一个换行。如果你不想要这个换行，可以使用trim方法消除它。
+                        $('#list').html(`
+                        <ul>
+                          <li>first</li>
+                          <li>second</li>
+                        </ul>
+                        `.trim());
+
