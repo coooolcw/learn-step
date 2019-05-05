@@ -109,7 +109,9 @@
                         es6的提案,暂时查不到具体消息,有可转化为es3的插件可以使用
                         https://github.com/es-shims/String.prototype.at
 
-
+2.正则扩展
+        http://es6.ruanyifeng.com/#docs/regex
+                
                         
                         
 
