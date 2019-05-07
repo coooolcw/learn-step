@@ -251,6 +251,27 @@
                           // 等同于hello: function ()...
                           hello() { console.log('我的名字是', this.name); }
                         };
+                        
+                属性名表达式
+                        // 方法二
+                        obj['a' + 'bc'] = 123;
+                        ES6 允许字面量定义对象时，用方法二（表达式）作为对象的属性名，即把表达式放在方括号内。
+                        表达式还可以用于定义方法名。
+                        let obj = {
+                          ['h' + 'ello']() {
+                            return 'hi';
+                          }
+                        };
+                        obj.hello() // hi
+                        注意，属性名表达式与简洁表示法，不能同时使用，会报错。
+                        // 报错
+                        const foo = 'bar';
+                        const bar = 'abc';
+                        const baz = { [foo] };
+                        // 正确
+                        const foo = 'bar';
+                        const baz = { [foo]: 'abc'};
+                        注意，属性名表达式如果是一个对象，默认情况下会自动将对象转为字符串[object Object]，这一点要特别小心。
 
 
 
