@@ -237,6 +237,8 @@
                             return f(arg1,arg2); 
                         } 
                         foo(1,2);  //2
+                        
+                        箭头函数没有prototype属性。设计初衷是"即用即弃"
 
 
 
