@@ -223,6 +223,20 @@
                           }, 1000);
                         }
                         var p = new Person();
+                        
+                        箭头函数不绑定Arguments 对象。
+                        在大多数情况下，使用剩余参数是相较使用arguments对象的更好选择。
+                        function foo(arg) { 
+                          var f = (...args) => args[0]; 
+                          return f(arg); 
+                        }
+                        foo(1); // 1
+
+                        function foo(arg1,arg2) { 
+                            var f = (...args) => args[1]; 
+                            return f(arg1,arg2); 
+                        } 
+                        foo(1,2);  //2
 
 
 
