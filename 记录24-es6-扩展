@@ -241,7 +241,16 @@
                         箭头函数没有prototype属性。设计初衷是"即用即弃"
 
 5.对象扩展
-                
+                属性简洁表示法
+                        ES6 允许直接写入变量和函数，作为对象的属性和方法。这样的书写更加简洁。
+                        let birth = '2000/01/01';
+                        const Person = {
+                          name: '张三',
+                          //等同于birth: birth
+                          birth,
+                          // 等同于hello: function ()...
+                          hello() { console.log('我的名字是', this.name); }
+                        };
 
 
 
