@@ -208,6 +208,10 @@
                         arguments对象不是数组，而是一个类似数组的对象。
                         所以为了使用数组的方法，必须使用Array.prototype.slice.call先将其转为数组。
                         rest 参数就不存在这个问题，它就是一个真正的数组，数组特有的方法都可以使用。
+                箭头函数   重点
+                        ES6入门讲得不好,参看mdn和深入理解es6
+                        https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+                        深入理解es6p60开始
 
 
 
