@@ -337,7 +337,18 @@
                                         const target = {};
                                         Object.assign(target, source)
                                         // { foo: 1 }
-                                
+                                        
+                        Object.keys() Object.values() Object.entries()
+                                Object.keys()
+                                ES5 引入了Object.keys方法，返回一个数组，
+                                成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键名。
+                                Object.values()
+                                Object.values方法返回一个数组，成员是参数对象自身的（不含继承的）
+                                所有可遍历（enumerable）属性的键值。
+                                Object.entries()
+                                Object.entries()方法返回一个数组，成员是参数对象自身的（不含继承的）
+                                所有可遍历（enumerable）属性的键值对数组。
+                        
 
 
 
