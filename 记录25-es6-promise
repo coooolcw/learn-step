@@ -9,6 +9,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 ES6入门
 http://es6.ruanyifeng.com/#docs/promise
 
+你不知道的js  p136 初步感觉这本讲得更清楚
 
     基本语法
         new Promise( function(resolve, reject) {...} /* executor */  );
