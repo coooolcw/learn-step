@@ -9,7 +9,11 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 ES6入门
 http://es6.ruanyifeng.com/#docs/promise
 
-你不知道的js  p136 初步感觉这本讲得更清楚
+
+深入理解ES6除了nodejs部分其他部分较为容易理解
+api介绍由浅入深
+es6可作为api补充查看
+你不知道的js  p136 讲得更清楚但是过于深入,留待未来进一步学习
 
     基本语法
         new Promise( function(resolve, reject) {...} /* executor */  );
