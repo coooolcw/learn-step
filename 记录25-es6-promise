@@ -21,3 +21,8 @@ http://es6.ruanyifeng.com/#docs/promise
                 executor 内部通常会执行一些异步操作，一旦异步操作执行完毕(可能成功/失败)，
                 要么调用resolve函数来将promise状态改成fulfilled，要么调用reject 函数将promise的状态改为rejected。
                 如果在executor函数中抛出一个错误，那么该promise 状态为rejected。executor函数的返回值被忽略。
+
+    基本概念非常复杂,略
+    使用重点
+        深入理解es6p258
+        return一个新的promise达成目的:一个promise解决后再触发下一个
