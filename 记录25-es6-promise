@@ -74,3 +74,4 @@ es6可作为api补充查看
     注意细节:
         1.在promise中调用多次resolve,只有第一次调用生效
         2.在resolve和reject中只能传递一个参数
+        3.Promise链的返回值可以是值也可以是promise对象.深入理解es6p255开始
