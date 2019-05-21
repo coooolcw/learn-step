@@ -30,6 +30,9 @@ es6可作为api补充查看
     使用重点
         深入理解es6p258
         return一个新的promise达成目的:一个promise解决后再触发下一个
+        
+        书籍上普遍未提到的finally
+        https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally
 
 
     未来重点
