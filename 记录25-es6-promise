@@ -50,6 +50,19 @@ es6可作为api补充查看
             
             重点:resolve thenable的对象
             见深入理解es6 p245
+            
+        4.Promise.reject()
+            Promise.reject()方法的参数，会原封不动地作为reject的理由，变成后续方法的参数。这一点与Promise.resolve方法不一致。
+                const thenable = {
+                  then(resolve, reject) {
+                    reject('出错了');
+                  }
+                };
+                Promise.reject(thenable)
+                .catch(e => {
+                  console.log(e === thenable)
+                })
+                // true
 
 
     未来重点
