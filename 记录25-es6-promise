@@ -40,6 +40,13 @@ es6可作为api补充查看
         2.Promise.race()
             https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
             如果传的迭代是空的，则返回的 promise 将永远等待。
+            
+        3.Promise.resolve()
+            https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
+            如果这个值是个thenable（即带有then方法），返回的promise会“跟随”这个thenable的对象，
+            采用它的最终状态（指resolved/rejected/pending/settled）；
+            如果传入的value本身就是promise对象，则该对象作为Promise.resolve方法的返回值返回；
+            否则以该值为成功状态返回promise对象。
 
 
     未来重点
