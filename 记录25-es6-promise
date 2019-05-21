@@ -33,6 +33,9 @@ es6可作为api补充查看
         
         书籍上普遍未提到的finally
         https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally
+        
+        1.Promise.all()
+        2.Promise.race()
 
 
     未来重点
