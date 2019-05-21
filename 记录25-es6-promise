@@ -47,6 +47,9 @@ es6可作为api补充查看
             采用它的最终状态（指resolved/rejected/pending/settled）；
             如果传入的value本身就是promise对象，则该对象作为Promise.resolve方法的返回值返回；
             否则以该值为成功状态返回promise对象。
+            
+            重点:resolve thenable的对象
+            见深入理解es6 p245
 
 
     未来重点
