@@ -4,7 +4,14 @@
     MDN中的介绍,内容较为简单
     https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
 
+API参考
+    ES6入门
+        http://es6.ruanyifeng.com/#docs/class
+        http://es6.ruanyifeng.com/#docs/class-extends
+
 深入理解ES6
     p181
     从早期的类模拟开始
     
+    重点:
+        1.
