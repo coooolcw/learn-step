@@ -55,3 +55,6 @@ API参考
             // setter: 123
             inst.prop
             // 'getter'
+        5.(次要内容)name
+            name属性总是返回紧跟在class关键字后面的类名。
+            若匿名则返回绑定的变量名
