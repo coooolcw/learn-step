@@ -65,3 +65,5 @@ API参考
             因此这个属性可以用来确定构造函数是怎么调用的。
         7.es5的模拟类
             代码见深入理解ES6 p184
+            new的时候发生的事情
+            https://www.cnblogs.com/mcray/p/6640113.html
