@@ -31,4 +31,9 @@ API参考
         3.类表达式
             const person = class {
                 //...
-            }
+            };
+            
+            自执行
+            const person = new class {
+                //...
+            }();
