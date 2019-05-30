@@ -138,7 +138,11 @@ API参考
             
             注意，使用super的时候，必须显式指定是作为函数、还是作为对象使用，否则会报错。
             
-            
+        10.多态和重载
+            https://blog.csdn.net/weixin_40387601/article/details/80529351
+            重载:函数参数类型不同行为不同
+            多态:同名函数行为不同,js中基本只能使用class不同函数名相同来模拟
+                多态的参考https://segmentfault.com/q/1010000003056336
             
             
             
