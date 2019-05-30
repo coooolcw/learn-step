@@ -79,3 +79,33 @@ API参考
             得到与父类同样的实例属性和方法，然后再对其进行加工，加上子类自己的实例属性和方法。
             如果不调用super方法，子类就得不到this对象。
             
+        9.super
+            super这个关键字，既可以当作函数使用，也可以当作对象使用。在这两种情况下，它的用法完全不同。
+            
+            第一种情况，super作为函数调用时，代表父类的构造函数。ES6 要求，子类的构造函数必须执行一次super函数。
+            作为函数时，super()只能用在子类的构造函数之中，用在其他地方就会报错。
+            class A {}
+            class B extends A {
+              constructor() {
+                super();
+              }
+            }
+            第二种情况，super作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类。
+            class A {
+              p() {
+                return 2;
+              }
+            }
+            class B extends A {
+              constructor() {
+                super();
+                console.log(super.p()); // 2
+              }
+            }
+            let b = new B();
+            这里需要注意，由于super指向父类的原型对象，所以定义在父类实例上的方法或属性，是无法通过super调用的。
+            
+            
+            
+            
+            
