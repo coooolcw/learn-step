@@ -7,3 +7,6 @@ babel 官网
     https://cli.vuejs.org/zh/guide/browser-compatibility.html
     
     
+开发模式
+    babel-cli
+    npm install --save-dev @babel/core @babel/cli
