@@ -5,4 +5,22 @@
 
     简单教程
         http://www.ruanyifeng.com/blog/2012/06/sass.html
+        https://www.cnblogs.com/morong/p/4329957.html
         
+        重点:
+            1.变量
+                sass的变量名必须是一个$符号开头，后面紧跟变量名
+                $red: #f00;
+                特殊变量：如果变量嵌套在字符串中，则需要写在 #{} 符号里面
+                $top: top;
+                div {
+                    margin-#{$top}: 10px;       /* margin-top: 10px; */
+                }
+                默认变量：仅需在值后面加入 !default即可， 默认变量一般用来设置默认值，当该变量出现另外一个值时，
+                无论定义先后，都会使用另外一个值，覆盖默认值
+                $color: red;
+                $color: blue !default;
+                div {
+                    color: $color;    /* color:red; */
+                }
+                
