@@ -124,3 +124,19 @@
                             如果值，或值的一部分，是变量或者函数的返回值
                             如果值被圆括号包裹
                             如果值是算数表达式的一部分
+                            
+                        例子
+                            p {
+                              font: 10px/8px;             // Plain CSS, no division
+                              $width: 1000px;
+                              width: $width/2;            // Uses a variable, does division
+                              width: round(1.5)/2;        // Uses a function, does division
+                              height: (500px/2);          // Uses parentheses, does division
+                              margin-left: 5px + 8px/2px; // Uses +, does division
+                            }
+                            编译为
+                            p {
+                              font: 10px/8px;
+                              width: 500px;
+                              height: 250px;
+                              margin-left: 9px; }
