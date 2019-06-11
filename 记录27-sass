@@ -88,6 +88,15 @@
                         数组的使用方法:
                             https://sass-lang.com/documentation/functions/list(英文)
                         
+                    map
+                        Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。
+                        
+                        使用map
+                            https://sass-lang.com/documentation/values/maps
+                            Maps are all about associating keys and values, 
+                            so naturally there’s a way to get the value associated with a key: the map-get($map, $key) function!
+                            This function returns the value in the map associated with the given key.
+                            It returns null if the map doesn’t contain the key.
                         
                         
                         
