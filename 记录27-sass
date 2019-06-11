@@ -85,6 +85,9 @@
                         而 (1 2 3,) 表示包含 1 2 3 这个以空格分隔的数组的数组。
                         
                         
+                        数组的使用方法:
+                            https://sass-lang.com/documentation/functions/list(英文)
+                        
                         
                         
                         
