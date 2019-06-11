@@ -93,10 +93,34 @@
                         
                         使用map
                             https://sass-lang.com/documentation/values/maps
+                            
+                        map-get
                             Maps are all about associating keys and values, 
                             so naturally there’s a way to get the value associated with a key: the map-get($map, $key) function!
                             This function returns the value in the map associated with the given key.
                             It returns null if the map doesn’t contain the key.
-                        
-                        
-                        
+                        例子
+                            $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+                            @debug map-get($font-weights, "medium"); // 500
+                            @debug map-get($font-weights, "extra-bold"); // null
+                        @each
+                            This doesn’t actually use a function, but it’s still one of the most common ways to use maps. 
+                            The @each rule evaluates a block of styles for each key/value pair in a map. 
+                            The key and the value are assigned to variables so they can easily be accessed in the block.
+                        例子
+                            $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+                            @each $name, $glyph in $icons {
+                              .icon-#{$name}:before {
+                                display: inline-block;
+                                font-family: "Icon Font";
+                                content: $glyph;
+                              }
+                            }
+                
+                3.运算
+                    除法
+                        以下三种情况 / 将被视为除法运算符号： 
+                            如果值，或值的一部分，是变量或者函数的返回值
+                            如果值被圆括号包裹
+                            如果值是算数表达式的一部分
