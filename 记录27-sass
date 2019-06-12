@@ -308,7 +308,25 @@
                           $i: $i - 2;
                         }
                     4.each
-                        
+                        对list
+                            @each 指令的格式是 $var in <list>, $var 可以是任何变量名，
+                            比如 $length 或者 $name，而 <list> 是一连串的值，也就是值列表。
+                            @each 将变量 $var 作用于值列表中的每一个项目，然后输出结果
+                            语法:@each $size in $sizes
+                        对map
+                            https://sass-lang.com/documentation/at-rules/control/each
+                            语法:@each <variable>, <variable> in <expression> { ... }
+                            例子
+                                $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+                                @each $name, $glyph in $icons{
+                                  .icon-#{$name}:before {
+                                    display: inline-block;
+                                    font-family: "Icon Font";
+                                    content: $glyph;
+                                  }
+                                }
+                            
+                            
 
 
 
