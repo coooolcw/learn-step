@@ -145,5 +145,15 @@
                             使用 color functions 比计算颜色值更方便一些。
                                 https://sass-lang.com/documentation/functions/color
                                 常用  mix()  red()  green()  blue() 等,详见网页
-
+                4.minin
+                    混合指令的用法是在 @mixin 后添加名称与样式
+                    混合也需要包含选择器和属性，甚至可以用 & 引用父选择器
+                    @mixin clearfix {
+                      display: inline-block;
+                      &:after {
+                        content: ".";
+                        //...省略
+                      }
+                      * html & { height: 1px }
+                    }
 
