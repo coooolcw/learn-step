@@ -187,5 +187,22 @@
                         
                     
                 5.继承和嵌套
-                    
+                    继承
+                        @extend
+                            .error {
+                              border: 1px #f00;
+                              background-color: #fdd;
+                            }
+                            .seriousError {
+                              @extend .error;
+                              border-width: 3px;
+                            }
+                            上面代码的意思是将 .error 下的所有样式继承给 .seriousError,
+                            border-width: 3px; 是单独给 .seriousError 设定特殊样式，
+                            这样，使用 .seriousError 的地方可以不再使用 .error。
+                            其他使用到 .error 的样式也会同样继承给 .seriousError，
+                            例如，另一个样式 .error.intrusion 使用了 hacked.png 做背景，
+                            <div class="seriousError intrusion"> 也同样会使用 hacked.png 背景。
+                            
+                            即:继承的是整个css树结构.相同的子结构也会继承属性
 
