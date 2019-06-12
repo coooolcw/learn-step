@@ -146,14 +146,33 @@
                                 https://sass-lang.com/documentation/functions/color
                                 常用  mix()  red()  green()  blue() 等,详见网页
                 4.minin
-                    混合指令的用法是在 @mixin 后添加名称与样式
-                    混合也需要包含选择器和属性，甚至可以用 & 引用父选择器
-                    @mixin clearfix {
-                      display: inline-block;
-                      &:after {
-                        content: ".";
-                        //...省略
-                      }
-                      * html & { height: 1px }
-                    }
+                    定义
+                        混合指令的用法是在 @mixin 后添加名称与样式
+                        混合也需要包含选择器和属性，甚至可以用 & 引用父选择器
+                        @mixin clearfix {
+                          display: inline-block;
+                          &:after {
+                            content: ".";
+                            //...省略
+                          }
+                          * html & { height: 1px }
+                        }
+
+                    使用
+                        @include 指令引用混合样式，格式是在其后添加混合名称，以及需要的参数（可选）
+
+                        混合样式中也可以包含其他混合样式
+                        @mixin compound {
+                          @include highlighted-background;
+                          @include header-text;
+                        }
+                        @mixin highlighted-background { background-color: #fc0; }
+                        @mixin header-text { font-size: 20px; }
+
+                        混合样式中应该只定义后代选择器，这样可以安全的导入到文件的任何位置。
+                        原因:不会自动覆盖同级别的属性.会按照引入顺序输出
+                    
+                    
+                5.
+                    
 
