@@ -220,4 +220,37 @@
                                   background-image: url("/image/hacked.png"); }
                                 .seriousError {
                                   border-width: 3px; }
+                        链式继承
+                            可嵌套进行继承
+                            
+                        伪类继承
+                            Class 选择器并不是唯一可以被延伸 (extend) 的，
+                            Sass 允许延伸任何定义给单个元素的选择器，比如 .special.cool，a:hover 或者 a.user[href^="http://"] 等
+                            例子
+                                .hoverlink {
+                                  @extend a:hover;
+                                }
+                                a:hover {
+                                  text-decoration: underline;
+                                }
+                                输出
+                                a:hover, .hoverlink {
+                                  text-decoration: underline; }
+                                所有 a:hover 的样式将继承给 .hoverlink，包括其他使用到 a:hover 的样式
+                                    .hoverlink {
+                                      @extend a:hover;
+                                    }
+                                    .comment a.user:hover {
+                                      font-weight: bold;
+                                    }
+                                    编译为
+                                    .comment a.user:hover, .comment .user.hoverlink {
+                                      font-weight: bold; }
+                                
+
+
+
+
+
+
 
