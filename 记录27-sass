@@ -298,7 +298,17 @@
                                 //something
                             }
                         }
-                    3.each
+                        
+                    3.while
+                        @while 指令重复输出格式直到表达式返回结果为 false。这样可以实现比 @for 更复杂的循环，只是很少会用到
+                        记得在循环内操作$i
+                        $i: 6;
+                        @while $i > 0 {
+                          .item-#{$i} { width: 2em * $i; }
+                          $i: $i - 2;
+                        }
+                    4.each
+                        
 
 
 
