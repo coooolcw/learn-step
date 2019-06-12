@@ -197,12 +197,27 @@
                               @extend .error;
                               border-width: 3px;
                             }
-                            上面代码的意思是将 .error 下的所有样式继承给 .seriousError,
-                            border-width: 3px; 是单独给 .seriousError 设定特殊样式，
-                            这样，使用 .seriousError 的地方可以不再使用 .error。
-                            其他使用到 .error 的样式也会同样继承给 .seriousError，
-                            例如，另一个样式 .error.intrusion 使用了 hacked.png 做背景，
-                            <div class="seriousError intrusion"> 也同样会使用 hacked.png 背景。
+                            上面代码的意思是将 .error 下的所有样式继承给 .seriousError
                             
-                            即:继承的是整个css树结构.相同的子结构也会继承属性
+                            注意:继承的是整个css树结构.相同的子结构也会继承属性
+                            解释:@extend 的作用是将重复使用的样式延伸 (extend) 给需要包含这个样式的特殊样式
+                                .error {
+                                  border: 1px #f00;
+                                  background-color: #fdd;
+                                }
+                                .error.intrusion {
+                                  background-image: url("/image/hacked.png");
+                                }
+                                .seriousError {
+                                  @extend .error;
+                                  border-width: 3px;
+                                }
+                                输出
+                                .error, .seriousError {
+                                  border: 1px #f00;
+                                  background-color: #fdd; }
+                                .error.intrusion, .seriousError.intrusion {
+                                  background-image: url("/image/hacked.png"); }
+                                .seriousError {
+                                  border-width: 3px; }
 
