@@ -246,7 +246,38 @@
                                     编译为
                                     .comment a.user:hover, .comment .user.hoverlink {
                                       font-weight: bold; }
-                                
+
+                    嵌套
+                        规则:
+                            1.内层的样式将它外层的选择器作为父选择器
+                            2.用 & 代表嵌套规则外层的父选择器
+                                a {
+                                  font-weight: bold;
+                                  text-decoration: none;
+                                  &:hover { text-decoration: underline; }
+                                  body.firefox & { font-weight: normal; }
+                                }
+                                输出
+                                a {
+                                  font-weight: bold;
+                                  text-decoration: none; }
+                                  a:hover {
+                                    text-decoration: underline; }
+                                  body.firefox a {
+                                    font-weight: normal; }
+                            3.Sass 允许将属性嵌套在命名空间中,命名空间也可以包含自己的属性值
+                                .funky {
+                                  font: 20px/24px {
+                                    family: fantasy;
+                                    weight: bold;
+                                  }
+                                }
+                                输出
+                                .funky {
+                                  font: 20px/24px;
+                                    font-family: fantasy;
+                                    font-weight: bold; }
+
 
 
 
