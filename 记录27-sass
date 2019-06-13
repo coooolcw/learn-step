@@ -397,7 +397,23 @@
                                       $comment: #800,
                                       $variable: #60b,
                                     )
+                        5.自定义函数
+                            https://sass-lang.com/documentation/at-rules/function
+                            Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用
+                            
+                            例子
+                                @function pow($base, $exponent) {
+                                  $result: 1;
+                                  @for $_ from 1 through $exponent {
+                                    $result: $result * $base;
+                                  }
+                                  @return $result;
+                                }
 
+                                .sidebar {
+                                  float: left;
+                                  margin-left: pow(4, 3) * 1px;
+                                }
 
 
 
