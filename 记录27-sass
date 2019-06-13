@@ -145,7 +145,7 @@
                             使用 color functions 比计算颜色值更方便一些。
                                 https://sass-lang.com/documentation/functions/color
                                 常用  mix()  red()  green()  blue() 等,详见网页
-                4.minin
+                4.mixin
                     定义
                         混合指令的用法是在 @mixin 后添加名称与样式
                         混合也需要包含选择器和属性，甚至可以用 & 引用父选择器
@@ -184,7 +184,11 @@
                           }
                         }
                         p { @include sexy-border(blue, 1in); }
-                        
+                        有时，不能确定混合指令需要使用多少个参数。
+                        这时，可以使用参数变量 … 声明（写在参数的最后方）告诉 Sass 将这些参数视为值列表处理
+                        @mixin box-shadow($shadows...)  {
+                        //something
+                        }
                     
                 5.继承和嵌套
                     继承
@@ -327,8 +331,72 @@
                                 }
                             
                 7.函数
-                    1.
+                    函数列表(总)
+                        https://sass-lang.com/documentation/functions
+                        
+                        1.数字
+                            number函数列表
+                            https://sass-lang.com/documentation/functions/math
+                            重点函数
+                                1.random($limit: null)
+                                    如果$limit是1,输出0~1之间的随机数
+                                    如果$limit是1以上的整数,输出1~$limiti之间的随机整数
+                            常见函数
+                                1.abs($number) //=> number 
+                                2.ceil($number) //=> number 
+                                3.floor($number) //=> number 
+                                4.max($number...) //=> number 
+                                5.min($number...) //=> number
+                                6.percentage($number) //=> number 
+                                7.round($number) //=> number 
+                                
+                        2.数组
+                            https://sass-lang.com/documentation/functions/list
+                            常见函数
+                                1.length($list) //=> number 
+                                2.nth($list, $n) 
+                                3.set-nth($list, $n, $value) //=> list 
+                                4.join($list1, $list2, $separator: auto, $bracketed: auto) //=> list 
+                                    用于合并两个数组
+                                5.append($list, $val, $separator: auto) //=> list 
+                                    在数组的最后添加新的值
+                                5.index($list, $value) //=> number | null 
+                        3.字符串
+                            https://sass-lang.com/documentation/functions/string
+                            常见函数
+                                1.quote($string) //=> string 
+                                2.str-index($string, $substring) //=> number 
+                                3.str-insert($string, $insert, $index) //=> string 
+                                    插入字符.
+                                4.str-length($string) //=> number 
+                                5.to-upper-case($string) //=> string 
+                                  to-lower-case($string) //=> string
+                        4.map函数
+                            https://sass-lang.com/documentation/functions/map
+                            常见函数
+                                1.map-get($map, $key) 
+                                2.map-remove($map, $keys...) //=> map 
+                                3.map-keys($map) //=> list 
+                                4.map-values($map) //=> list 
+                                5.map-has-key($map, $key) //=> boolean 
+                                6.keywords($args) //=> map 
+                                    重点
+                                    用于mixin
+                                    @mixin syntax-colors($args...) {
+                                      @debug keywords($args); // (string: #080, comment: #800, $variable: $60b)
 
+                                      @each $name, $color in keywords($args) {
+                                        pre span.stx-#{$name} {
+                                          color: $color;
+                                        }
+                                      }
+                                    }
+
+                                    @include syntax-colors(
+                                      $string: #080,
+                                      $comment: #800,
+                                      $variable: #60b,
+                                    )
 
 
 
