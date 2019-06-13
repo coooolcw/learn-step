@@ -1,4 +1,8 @@
 官网
+    vue官方文档
     https://cn.vuejs.org/
+    vue-cli
+    https://cli.vuejs.org/zh/
     
-    vue3
+    vue3对于vue2的目录结构有较大的改动
+    但是会替代vue2 因此直接参考vue3 cli 的官方文档 
