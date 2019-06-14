@@ -31,7 +31,15 @@
                 待使用一段时间后补充常用方法
                 
             4.生命周期钩子
-                
+                生命周期图示https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA
+                重要的时间点
+                    mounted
+                        el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。
+                        如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。
+                        注意:该钩子在服务器端渲染期间不被调用。
+                        
+                        注意:不要在选项属性或回调上使用箭头函数，比如 created: () => console.log(this.a) 或
+                        vm.$watch('a', newValue => this.myMethod())。
                 
                 
 
