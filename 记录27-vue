@@ -3,6 +3,8 @@
     https://cn.vuejs.org/
     vue-cli
     https://cli.vuejs.org/zh/
+    cli3的配置参考
+    https://cli.vuejs.org/zh/config/
     
     vue3对于vue2的目录结构有较大的改动
     但是会替代vue2 因此直接参考vue3 cli 的官方文档 
