@@ -8,3 +8,28 @@
     
     vue3对于vue2的目录结构有较大的改动
     但是会替代vue2 因此直接参考vue3 cli 的官方文档 
+
+
+学习历程
+    1.基础用法
+        直接在html中引入
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
+        vue的一些常用函数/方法/语法(如有重点会标注☆)
+            1.创建实例
+            2.data数据绑定☆
+                // 我们的数据对象
+                var data = { a: 1 }
+
+                // 该对象被加入到一个 Vue 实例中
+                var vm = new Vue({
+                  data: data
+                })
+                注意点:只有当实例被创建时 data 中存在的属性才是响应式的
+            3.vue实例方法
+                https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7
+                
+                
+
+    
+        
