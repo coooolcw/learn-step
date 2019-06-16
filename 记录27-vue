@@ -159,9 +159,29 @@
                             }
                           }
                         }
-                    
-                    
-                
+                    数组语法
+                        我们可以把一个数组传给 v-bind:class，以应用一个 class 列表
+                        <div v-bind:class="[activeClass, errorClass]"></div>
+                        data: {
+                          activeClass: 'active',
+                          errorClass: 'text-danger'
+                        }
+                        输出
+                        <div class="active text-danger"></div>
+                        在数组语法中也可以使用对象语法
+                        <div v-bind:class="[{ active: isActive }, errorClass]"></div>
+                    在组件上使用
+                        https://cn.vuejs.org/v2/guide/class-and-style.html#%E7%94%A8%E5%9C%A8%E7%BB%84%E4%BB%B6%E4%B8%8A
+                        暂缓
+                style
+                    v-bind:style 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。
+                    CSS 属性名可以用驼峰式 (camelCase) 或短横线分隔 (kebab-case，记得用引号括起来) 来命名
+                        <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
+                        data: {
+                          activeColor: 'red',
+                          fontSize: 30
+                        }
+
 
 
 
