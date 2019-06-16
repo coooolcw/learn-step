@@ -137,6 +137,30 @@
                     赋值vm.变量时会调用setter
                     
             7.Class 与 Style 绑定
+                class
+                    对象语法
+                        <div v-bind:class="{ active: isActive }"></div>
+                        上面的语法表示 active 这个 class 存在与否将取决于数据属性 isActive 的 truthiness
+                        你可以在对象中传入更多属性来动态切换多个 class。
+                        此外，v-bind:class 指令也可以与普通的 class 属性共存。
+                        
+                        绑定的数据对象不必内联定义在模板里
+                        也可以在这里绑定一个返回对象的计算属性。这是一个常用且强大的模式：
+                        <div v-bind:class="classObject"></div>
+                        data: {
+                          isActive: true,
+                          error: null
+                        },
+                        computed: {
+                          classObject: function () {
+                            return {
+                              active: this.isActive && !this.error,
+                              'text-danger': this.error && this.error.type === 'fatal'
+                            }
+                          }
+                        }
+                    
+                    
                 
 
 
