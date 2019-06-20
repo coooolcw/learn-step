@@ -19,22 +19,14 @@
             1.创建实例
                 略
             2.data数据绑定☆
-                // 我们的数据对象
-                var data = { a: 1 }
-                // 该对象被加入到一个 Vue 实例中
-                var vm = new Vue({
-                  data: data
-                })
                 注意点:只有当实例被创建时 data 中存在的属性才是响应式的
             3.vue实例方法
                 https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7
                 待使用一段时间后补充常用方法
-                
             4.生命周期钩子
                 生命周期图示https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA
                 重要的时间点
                     mounted
-                        el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。
                         如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。
                         注意:该钩子在服务器端渲染期间不被调用。
                         
@@ -45,13 +37,6 @@
                         Uncaught TypeError: this.myMethod is not a function 之类的错误。
             5.模板语法☆
                 文本
-                    数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值：
-                    <span>Message: {{ msg }}</span>
-                    Mustache 标签将会被替代为对应数据对象上 msg 属性的值。
-                    无论何时，绑定的数据对象上 msg 属性发生了改变，插值处的内容都会更新。
-                    通过使用 v-once 指令，你也能执行一次性地插值，当数据改变时，插值处的内容不会更新。
-                    
-               
                 指令
                     v-html v-bind v-on
                         v-html
@@ -72,18 +57,11 @@
                             
                             
                 js表达式
-                    对于所有的数据绑定，Vue.js 都提供了完全的 JavaScript 表达式支持。
-                        {{ ok ? 'YES' : 'NO' }}
-                        {{ message.split('').reverse().join('') }}
-                        <div v-bind:id="'list-' + id"></div>
-                    这些表达式会在所属 Vue 实例的数据作用域下作为 JavaScript 被解析。
-                    有个限制就是，每个绑定都只能包含单个表达式。
-                    
                     重点:1.if语句不生效,必须使用三元表达式
                         2.模板表达式都被放在沙盒中，只能访问全局变量的一个白名单，如 Math 和 Date
                 
                 动态参数☆
-                    从 2.6.0 开始，可以用方括号括起来的 JavaScript 表达式作为一个指令的参数
+                    可以用方括号括起来的 JavaScript 表达式作为一个指令的参数
                     动态参数预期会求出一个字符串，异常情况下值为 null。这个特殊的 null 值可以被显性地用于移除绑定。
                     任何其它非字符串类型的值都将会触发一个警告。
                     动态参数表达式有一些语法约束，因为某些字符，例如空格和引号，放在 HTML 特性名里是无效的。
@@ -99,19 +77,6 @@
                 模板内的表达式非常便利，但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻辑会让模板过重且难以维护。
                     对于任何复杂逻辑，都应当使用计算属性
                     例子见https://cn.vuejs.org/v2/guide/computed.html#%E5%9F%BA%E7%A1%80%E4%BE%8B%E5%AD%90
-                    var vm = new Vue({
-                      el: '#example',
-                      data: {
-                        message: 'Hello'
-                      },
-                      computed: {
-                        // 计算属性的 getter
-                        reversedMessage: function () {
-                          // `this` 指向 vm 实例
-                          return this.message.split('').reverse().join('')
-                        }
-                      }
-                    })
                     
                 vs方法
                     我们可以将同一函数定义为一个方法而不是一个计算属性。
@@ -124,14 +89,11 @@
                     相比之下，每当触发重新渲染时，调用方法将总会再次执行函数
                     
                 侦听☆
-                    虽然计算属性在大多数情况下更合适，但有时也需要一个自定义的侦听器。
                     常用于需要ajax的数据改变
                     https://cn.vuejs.org/v2/guide/computed.html#%E4%BE%A6%E5%90%AC%E5%99%A8
                     watch的api
                         https://cn.vuejs.org/v2/api/#watch
-                        
-                    
-                
+
                 setter
                     计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter
                     赋值vm.变量时会调用setter
@@ -139,35 +101,9 @@
             7.Class 与 Style 绑定
                 class
                     对象语法
-                        <div v-bind:class="{ active: isActive }"></div>
-                        上面的语法表示 active 这个 class 存在与否将取决于数据属性 isActive 的 truthiness
-                        你可以在对象中传入更多属性来动态切换多个 class。
-                        此外，v-bind:class 指令也可以与普通的 class 属性共存。
-                        
                         绑定的数据对象不必内联定义在模板里
-                        也可以在这里绑定一个返回对象的计算属性。这是一个常用且强大的模式：
-                        <div v-bind:class="classObject"></div>
-                        data: {
-                          isActive: true,
-                          error: null
-                        },
-                        computed: {
-                          classObject: function () {
-                            return {
-                              active: this.isActive && !this.error,
-                              'text-danger': this.error && this.error.type === 'fatal'
-                            }
-                          }
-                        }
+                        也可以在这里绑定一个返回对象的计算属性。
                     数组语法
-                        我们可以把一个数组传给 v-bind:class，以应用一个 class 列表
-                        <div v-bind:class="[activeClass, errorClass]"></div>
-                        data: {
-                          activeClass: 'active',
-                          errorClass: 'text-danger'
-                        }
-                        输出
-                        <div class="active text-danger"></div>
                         在数组语法中也可以使用对象语法
                         <div v-bind:class="[{ active: isActive }, errorClass]"></div>
                     在组件上使用
@@ -175,13 +111,6 @@
                         暂缓
                 style
                     对象语法
-                        v-bind:style 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。
-                        CSS 属性名可以用驼峰式 (camelCase) 或短横线分隔 (kebab-case，记得用引号括起来) 来命名
-                            <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
-                            data: {
-                              activeColor: 'red',
-                              fontSize: 30
-                            }
                         直接绑定到一个样式对象通常更好,同样的，对象语法常常结合返回对象的计算属性使用。
                     数组语法
                         v-bind:style 的数组语法可以将多个样式对象应用到同一个元素上
@@ -227,28 +156,11 @@
                         v-for 指令需要使用 item in items 形式的特殊语法，其中 items 是源数据数组，而 item 则是被迭代的数组元素的别名.
 
                         在 v-for 块中，我们可以访问所有父作用域的属性。v-for 还支持一个可选的第二个参数，即当前项的索引。
-                        <li v-for="(item, index) in items">
-                            {{ parentMessage }} - {{ index }} - {{ item.message }}
-                        </li>
-                        data: {
-                            parentMessage: 'Parent',
-                            items: [
-                              { message: 'Foo' },
-                              { message: 'Bar' }
-                            ]
-                          }
                         你也可以用 of 替代 in 作为分隔符，因为它更接近 JavaScript 迭代器的语法
                     
                     对象
                         你也可以用 v-for 来遍历一个对象的属性。
                         你也可以提供第二个的参数为 property 名称 (也就是键名)
-                        <div v-for="(value, name) in object">
-                          {{ name }}: {{ value }}
-                        </div>
-                        还可以用第三个参数作为索引
-                        <div v-for="(value, name, index) in object">
-                          {{ index }}. {{ name }}: {{ value }}
-                        </div>
                         在遍历对象时，会按 Object.keys() 的结果遍历，但是不能保证它的结果在不同的 JavaScript 引擎下都一致。
                         因此index不能作为判断基准
                     更新/维护状态
