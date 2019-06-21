@@ -246,6 +246,13 @@
                         更推荐在第一个位置提供一个值为空的禁用选项。
                         7.select多选时会根据设定内容的顺序填充数组,而不是选择的顺序push
                         8.可与v-for搭配使用
+                值的绑定
+                    https://cn.vuejs.org/v2/guide/forms.html#%E5%80%BC%E7%BB%91%E5%AE%9A
+                    难以概括,参见官网
+                        主要:v-bind:value
+                修饰符
+                    .lazy.number.trim
+                            
                         
                         
 
