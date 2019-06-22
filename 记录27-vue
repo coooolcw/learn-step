@@ -254,6 +254,7 @@
                     .lazy.number.trim
             12.组件基础
                 https://cn.vuejs.org/v2/guide/components.html
+                重要概念:https://wiki.imooc.com/vue/vuejscomponent.html
                 内容较多,仅摘要
                     重点:
                         1.一个组件的 data 选项必须是一个函数，因此每个实例可以维护一份被返回对象的独立的拷贝
