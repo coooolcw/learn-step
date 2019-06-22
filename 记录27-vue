@@ -263,7 +263,12 @@
                         3.可以使用 v-bind 来动态传递 prop
                         4.子组件可以通过调用内建的 $emit 方法 并传入事件名称来触发一个事件
                         
-                        
+            13.DOM操作
+                重点
+                    this(vue).$refs
+                    说明:https://cn.vuejs.org/v2/api/#ref
+                    dom元素绑定ref="***"
+                    this.$refs.***
                     
                         
                         
