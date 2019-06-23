@@ -294,6 +294,9 @@
                         <router-link to="/foo">Go to Foo</router-link>
                     JS跳转
                         https://router.vuejs.org/zh/guide/essentials/navigation.html
+                        语法router.push(location, onComplete?, onAbort?)
+                        在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
+                        
                         
                         
                         
