@@ -292,6 +292,9 @@
                         <!-- 通过传入 `to` 属性指定链接. -->
                         <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
                         <router-link to="/foo">Go to Foo</router-link>
+                    传参
+                        https://router.vuejs.org/zh/guide/essentials/passing-props.html#%E5%B8%83%E5%B0%94%E6%A8%A1%E5%BC%8F
+                        
                     JS跳转
                         https://router.vuejs.org/zh/guide/essentials/navigation.html
                         语法router.push(location, onComplete?, onAbort?)
