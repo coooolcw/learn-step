@@ -285,8 +285,13 @@
                     v-leave-to
             15.路由
                 https://cn.vuejs.org/v2/guide/routing.html
+                route文档
+                    https://router.vuejs.org/zh/guide/#javascript
                     HTML跳转
-                        
+                        <!-- 使用 router-link 组件来导航. -->
+                        <!-- 通过传入 `to` 属性指定链接. -->
+                        <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+                        <router-link to="/foo">Go to Foo</router-link>
                     JS跳转
                         
                         
