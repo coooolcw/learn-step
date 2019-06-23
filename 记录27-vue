@@ -319,6 +319,11 @@
                             $route.path
                             $route.params
                             $route.query
+                        重要路由实例方法
+                            router.push
+                            
+                            
+                        ☆注意在独立需要封装路由的组件中可以直接使用$router实例进行操作
                             
                         
                         
