@@ -269,7 +269,20 @@
                     说明:https://cn.vuejs.org/v2/api/#ref
                     dom元素绑定ref="***"
                     this.$refs.***
-                    
+            14.过渡效果
+                https://cn.vuejs.org/v2/guide/transitions.html
+                在以下情形中可以给任何元素和组件添加进入/离开过渡
+                    条件渲染 (使用 v-if)
+                    条件展示 (使用 v-show)
+                    动态组件
+                    组件根节点
+                在进入/离开的过渡中，会有 6 个 class 切换
+                    v-enter
+                    v-enter-active
+                    v-enter-to
+                    v-leave
+                    v-leave-active
+                    v-leave-to
                         
                         
 
