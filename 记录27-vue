@@ -285,6 +285,12 @@
                     v-leave-to
             15.路由
                 https://cn.vuejs.org/v2/guide/routing.html
+                重要API
+                    to的用法☆
+                    https://router.vuejs.org/zh/api/#to
+                    https://router.vuejs.org/zh/api/#router-link
+                    路由对象,获取信息用
+                    https://router.vuejs.org/zh/api/#%E8%B7%AF%E7%94%B1%E5%AF%B9%E8%B1%A1
                 route文档
                     https://router.vuejs.org/zh/guide/#javascript
                     HTML跳转
@@ -296,6 +302,17 @@
                         https://router.vuejs.org/zh/guide/essentials/navigation.html
                         语法router.push(location, onComplete?, onAbort?)
                         在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
+                    传参
+                        基础传参
+                        const User = {
+                          template: '<div>User {{ $route.params.id }}</div>'
+                        }
+                        const router = new VueRouter({
+                          routes: [
+                            { path: '/user/:id', component: User }
+                          ]
+                        })
+                        
                         
                     点击 <router-link :to="..."> 等同于调用 router.push(...)。
                         该方法的参数可以是一个字符串路径，或者一个描述地址的对象。
