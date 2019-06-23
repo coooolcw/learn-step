@@ -292,15 +292,21 @@
                         <!-- 通过传入 `to` 属性指定链接. -->
                         <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
                         <router-link to="/foo">Go to Foo</router-link>
-                    传参
-                        https://router.vuejs.org/zh/guide/essentials/passing-props.html#%E5%B8%83%E5%B0%94%E6%A8%A1%E5%BC%8F
-                        
                     JS跳转
                         https://router.vuejs.org/zh/guide/essentials/navigation.html
                         语法router.push(location, onComplete?, onAbort?)
                         在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
                         
-                        
+                    点击 <router-link :to="..."> 等同于调用 router.push(...)。
+                        该方法的参数可以是一个字符串路径，或者一个描述地址的对象。
+                            // 字符串
+                            router.push('home')
+                            // 对象
+                            router.push({ path: 'home' })
+                            // 命名的路由
+                            router.push({ name: 'user', params: { userId: '123' }})
+                            // 带查询参数，变成 /register?plan=private
+                            router.push({ path: 'register', query: { plan: 'private' }})
                         
                         
                         
