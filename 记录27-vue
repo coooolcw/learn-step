@@ -283,6 +283,12 @@
                     v-leave
                     v-leave-active
                     v-leave-to
+            15.路由
+                https://cn.vuejs.org/v2/guide/routing.html
+                    HTML跳转
+                        
+                    JS跳转
+                        
                         
                         
 
