@@ -1,1 +1,9 @@
 
+    vue-cli3取消了初始配置build文件夹
+    现在配置需要在根目录下创建vue.config.js文件进行配置
+        官网配置页面https://cli.vuejs.org/zh/config/
+        语法格式为
+        module.exports = {
+          // 选项...
+        }
+        
