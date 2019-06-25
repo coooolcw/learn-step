@@ -18,10 +18,13 @@
         https://cli.vuejs.org/zh/config/#pages
         修改pages配置,暂时不需要修改
         默认的入口为src/main.js
-        
+
+
+一些文件介绍
     postcss
         暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
-        
+    gitignore
+        上传至git时不上传的清单
         
         
     devServer
