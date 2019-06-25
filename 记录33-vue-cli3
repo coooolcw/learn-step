@@ -6,4 +6,10 @@
         module.exports = {
           // 选项...
         }
+重要配置选项
+    
+    配置入口
+        https://cli.vuejs.org/zh/config/#pages
+        修改pages配置,暂时不需要修改
+        默认的入口为src/main.js
         
