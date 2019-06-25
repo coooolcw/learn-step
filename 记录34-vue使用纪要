@@ -1,5 +1,5 @@
 入口文件main.js
 一般从入口导入app.vue
-app.xue一般为主要内容
+app.vue一般导入主页,在主页中进行各种导入
 router.js修改路由
 store.js
