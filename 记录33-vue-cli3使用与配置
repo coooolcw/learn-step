@@ -21,8 +21,8 @@
         
     public/index
         https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
-        此index是最终被导入app的模板文件
-        在构建过程中，资源链接会被自动注入
+        此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+        
         
         
     devServer
