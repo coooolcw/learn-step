@@ -37,7 +37,13 @@
         assets   主要的资源文件夹
                     图片,字体等
                  js和css(scss/less)的公共文件也放在这里
-        
+        components  公共页面组件文件夹
+                        多个页面通用的组件
+        base      基础组件(多个项目可用型)
+                    banner组件,button组件,loading组件等
+        views     页面级组件
+                      本身就是一个页面的组件
+                
         
     devServer
         https://cli.vuejs.org/zh/config/#devserver
