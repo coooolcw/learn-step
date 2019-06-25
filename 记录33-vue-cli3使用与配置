@@ -19,9 +19,8 @@
         修改pages配置,暂时不需要修改
         默认的入口为src/main.js
         
-    public/index
-        https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
-        此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+    postcss
+        暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
         
         
         
@@ -41,6 +40,11 @@
                     port: 8000
                   }
                 };
+        
+public/index
+    https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
+    此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+        
         
 整体过程
         main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
