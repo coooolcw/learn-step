@@ -32,7 +32,11 @@
         
         public/index.html
         此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
-        
+    
+    src:主要编写的区域
+        assets   主要的资源文件夹
+                    图片,字体等
+                 js和css(scss/less)的独立文件也放在这里
         
         
     devServer
