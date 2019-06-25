@@ -5,7 +5,3 @@ app.vue一般导入主页,近似于全局作用域
 router.js修改路由
 store.js
 
-
-
-配置
-  
