@@ -25,6 +25,14 @@
         暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
     gitignore
         上传至git时不上传的清单
+    public文件夹
+        https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
+        相当于老版本的静态文件夹(static)+index.html
+        此处的文件不会经过webpack直接打包
+        
+        public/index.html
+        此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+        
         
         
     devServer
@@ -45,8 +53,7 @@
                 };
         
 public/index
-    https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
-    此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+    
         
         
 整体过程
