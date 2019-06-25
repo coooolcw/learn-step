@@ -15,4 +15,9 @@
         
     public/index
         https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
-        具体用途暂时没看明白
+        此index是最终被导入app的模板文件
+        在构建过程中，资源链接会被自动注入
+        
+整体过程
+        main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
+        最终所有的资源和文件被导出到public/index.html中发布到dist
