@@ -13,3 +13,6 @@
         修改pages配置,暂时不需要修改
         默认的入口为src/main.js
         
+    public/index
+        https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
+        具体用途暂时没看明白
