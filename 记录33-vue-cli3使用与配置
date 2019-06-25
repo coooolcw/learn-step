@@ -6,6 +6,12 @@
         module.exports = {
           // 选项...
         }
+        
+重要指令
+    1.npm run lint -- --fix
+    2.npm run serve
+        
+        
 重要配置选项
     
     配置入口
