@@ -7,7 +7,7 @@
           // 选项...
         }
     在使用cli创建时,以下选项选择In package.json后会将一些插件(Babel, PostCSS, ESLint等)配置选项放在package.json内
-    默认是在分别单独的文件夹内进行配置
+    默认是在分别单独的文件内进行配置
     Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In package.json
 
 
