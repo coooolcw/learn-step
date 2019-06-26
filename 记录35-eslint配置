@@ -31,7 +31,7 @@ https://www.html.cn/archives/8345
           "named": "never",
           "asyncArrow": "always"
       }],                                   //匿名函数命名函数括号前都没有空格,箭头函数有
-      "indent": ["error", 2],               //一般js文件中缩进两个空格
+      "indent": ["off"],               //一般js文件中缩进两个空格,在vue中必须关闭否则引起冲突
       "vue/script-indent": ["error", 2, {             //vue中eslint对于script标签的缩进处理
         "baseIndent": 1,            //顶级标签下语句的缩进倍数
         "switchCase": 1,            //case/default 下语句的缩进的倍数  
