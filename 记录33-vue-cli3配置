@@ -32,7 +32,9 @@
         https://cli.vuejs.org/zh/config/#devserver
         支持webpack的选项
         内容较多,参考https://webpack.js.org/configuration/dev-server/
+        中文的webpack的devserve配置说明https://www.webpackjs.com/configuration/dev-server/
         这里待学习webpack,内容很多,留坑
+        
         主要是
             host与port
             https://webpack.js.org/configuration/dev-server/#devserverhost
