@@ -22,21 +22,22 @@
     
     配置入口
         https://cli.vuejs.org/zh/config/#pages
-        修改pages配置,暂时不需要修改
         默认的入口为src/main.js
-
+        在运行多页面任务时需要修改这里
 
 
         
     devServer
+        代理的设置在这里
         https://cli.vuejs.org/zh/config/#devserver
         支持webpack的选项
         内容较多,参考https://webpack.js.org/configuration/dev-server/
+        这里待学习webpack,内容很多,留坑
         主要是
             host与port
             https://webpack.js.org/configuration/dev-server/#devserverhost
             
-            vue.config.js
+            //vue.config.js文件
                 module.exports = {
                   //...
                   devServer: {
@@ -46,7 +47,7 @@
                 };
         
     
-        
+    
 
 
 
