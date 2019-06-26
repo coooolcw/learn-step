@@ -1,4 +1,4 @@
-
+注意
     vue-cli3取消了初始配置build文件夹
     现在配置需要在根目录下创建vue.config.js文件进行配置
         官网配置页面https://cli.vuejs.org/zh/config/
@@ -6,7 +6,12 @@
         module.exports = {
           // 选项...
         }
-        
+    在使用cli创建时,以下选项选择In package.json后会将一些常见配置选项放在package.json内方便配置
+    默认是在vue.config.js(需要自行创建)中配置
+    Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In package.json
+
+
+
 重要指令
     1.npm run lint --fix
     2.npm run serve
