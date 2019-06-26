@@ -2,6 +2,7 @@ eslint官网
 https://eslint.org/
 中文网
 http://eslint.cn/
+具体的规则更改方式可在http://eslint.cn/docs/rules/中查找
 
 https://www.html.cn/archives/8345
   airbnb的js代码规范
@@ -15,3 +16,10 @@ https://www.html.cn/archives/8345
   trim_trailing_whitespace = true
   insert_final_newline = true
   max_line_length = 100
+
+
+
+个人使用的风格
+  空格遵循大部分标准改为两个space
+  rules:{semi: ["error", "always"]}  必须分号结尾
+  其他暂时跟随vscode的prettier插件进行美化,不在vue中安装
