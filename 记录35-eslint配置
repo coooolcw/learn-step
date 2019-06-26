@@ -1,8 +1,10 @@
+
+
 https://www.html.cn/archives/8345
-  使用airbnb的js代码规范
+  airbnb的js代码规范
 
 
-//.editorconfig
+//.editorconfig  选用airbnb风格自动创建的文件
   [*.{js,jsx,ts,tsx,vue}]
   indent_style = space
   indent_size = 2
