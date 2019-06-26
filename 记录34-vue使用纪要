@@ -5,6 +5,12 @@ app.vue一般导入主页,近似于全局作用域
 router.js修改路由
 store.js
 
+        
+整体过程
+        main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
+        最终所有的资源和文件被导出到public/index.html中发布到dist
+
+
 一些文件介绍
     postcss
         暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
