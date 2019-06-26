@@ -34,6 +34,7 @@ store.js
                     banner组件,button组件,loading组件等
         views     页面级组件
                       本身就是一个页面的组件
+                      子组件也放在同目录下(非通用的)
         api/ajax/jsonp  服务器通讯组件
                 
 插件配置
