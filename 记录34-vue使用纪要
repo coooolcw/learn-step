@@ -5,3 +5,28 @@ app.vue一般导入主页,近似于全局作用域
 router.js修改路由
 store.js
 
+一些文件介绍
+    postcss
+        暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
+    gitignore
+        上传至git时不上传的清单
+    public文件夹
+        https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
+        相当于老版本的静态文件夹(static)+index.html
+        此处的文件不会经过webpack直接打包
+        
+        public/index.html
+        此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+    
+    src:主要编写的区域
+        assets   主要的资源文件夹
+                    图片,字体等
+                 js和css(scss/less)的公共文件也放在这里
+        components  公共页面组件文件夹
+                        多个页面通用的组件
+        base      基础组件(多个项目可用型)
+                    banner组件,button组件,loading组件等
+        views     页面级组件
+                      本身就是一个页面的组件
+        api/ajax/jsonp  服务器通讯组件
+                
