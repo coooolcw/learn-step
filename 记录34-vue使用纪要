@@ -23,6 +23,7 @@ store.js
         
         public/index.html
         此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
+        meta在此书写:主要是user-scalable=no
     
     src:主要编写的区域
         assets   主要的资源文件夹
