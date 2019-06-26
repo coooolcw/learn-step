@@ -41,9 +41,6 @@
         
     
         
-        
-整体过程
-        main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
-        最终所有的资源和文件被导出到public/index.html中发布到dist
+
 
 
