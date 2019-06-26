@@ -37,6 +37,7 @@
         
         主要是
             host与port
+            在局域网内测试时需要修改此处(例如手机测试)
             https://webpack.js.org/configuration/dev-server/#devserverhost
             
             //vue.config.js文件
