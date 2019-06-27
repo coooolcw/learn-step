@@ -35,6 +35,7 @@ store.js
                         3.reset
                         4.icon图标css
                         5.以上几个按顺序导入的index
+                        6.公共组件的scss文件夹
                  
         components  公共页面组件文件夹
                         多个页面通用的组件
