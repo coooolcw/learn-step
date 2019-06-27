@@ -49,8 +49,12 @@ prettier
   使用时script后的内容会自动缩进到顶格,与eslint冲突
       
       冲突原因
-        vutur中的Format › Options: Use Tabs
-        必须选择为勾选(true)
+        vutur中的
+          Format: Script Initial Indent
+          Format: Style Initial Indent
+        需要选择为勾选(true)
+        注意此选项并不在prettier中
+        
       
 
 
