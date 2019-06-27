@@ -51,9 +51,10 @@ store.js
         https://cli.vuejs.org/zh/guide/browser-compatibility.html#polyfill
         一般不需要另外配置,只需修改适配游览器版本
     fastclick
+        根据介绍,2015年以后基本不需要使用
         https://github.com/ftlabs/fastclick
         安装
-            
+            npm install fastclick --save(安装到发布依赖)
         使用
             import FastClick from 'fastclick'
             FastClick.attach(document.body);
