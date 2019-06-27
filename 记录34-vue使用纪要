@@ -28,6 +28,14 @@ store.js
         assets   主要的资源文件夹
                     图片,字体等
                  js和css(scss/less)的公共文件也放在这里
+                 
+                 scss常用文件梳理:
+                        1.变量variable
+                        2.mixin
+                        3.reset
+                        4.icon图标css
+                        5.以上几个按顺序导入的index
+                 
         components  公共页面组件文件夹
                         多个页面通用的组件
         base      基础组件(多个项目可用型)
@@ -50,6 +58,8 @@ store.js
         public/
             index.html
             favicon.ico
+        
+            
         
         
         
