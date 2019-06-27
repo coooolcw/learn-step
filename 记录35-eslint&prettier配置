@@ -48,6 +48,9 @@ prettier
       https://prettier.io/docs/en/options.html
   使用时script后的内容会自动缩进到顶格,与eslint冲突
       
+      冲突原因
+        vutur中的Format › Options: Use Tabs
+        必须选择为勾选(true)
       
 
 
