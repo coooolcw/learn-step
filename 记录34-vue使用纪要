@@ -1,10 +1,3 @@
-一般从入口导入app.vue
-app.vue一般导入主页
-在主页中进行各种导入
-router.js修改路由
-store.js
-
-        
 整体过程
         main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
         最终所有的资源和文件被导出到public/index.html中发布到dist
@@ -60,15 +53,24 @@ store.js
             FastClick.attach(document.body);
         
 编写区域
-    main.js
+    需要修改/删除的文件(有自动创建信息的)
+    
+      public/
+            index.html    //meta添加user-scalable=no
+            favicon.ico
+            
+            
+      main.js
         入口文件
         用于引入全局的插件/css等
         //scss文件夹中的全局index.scss
-
-    需要修改/删除的文件(有自动创建信息的)
-        public/
-            index.html    //meta添加user-scalable=no
-            favicon.ico
+  
+      app.vue
+        根组件
+        
+      router.js
+        路由配置
+        具体见router的总结
         
             
         
