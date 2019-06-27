@@ -18,5 +18,5 @@ vue中的babel
     polyfill
         https://cli.vuejs.org/zh/guide/browser-compatibility.html#polyfill
         一个默认的 Vue CLI 项目会使用 @vue/babel-preset-app，它通过 @babel/preset-env 和 browserslist 配置来决定项目需要的 polyfill。
-        一般设置游览器即可
+        一般设置游览器即可,不需要特别引入
         
