@@ -63,10 +63,11 @@
       main.js
         入口文件
         用于引入全局的插件/css等
-        //scss文件夹中的全局index.scss
+        //scss文件夹中的全局index.scss,大多数是icons文件之类
   
       app.vue
         根组件
+        主页面的编写(游览时的首页)
         
       router.js
         路由配置
