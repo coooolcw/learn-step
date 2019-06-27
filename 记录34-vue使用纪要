@@ -49,6 +49,14 @@ store.js
 插件配置
     babel
         https://cli.vuejs.org/zh/guide/browser-compatibility.html#polyfill
+        一般不需要另外配置,只需修改适配游览器版本
+    fastclick
+        https://github.com/ftlabs/fastclick
+        安装
+            
+        使用
+            import FastClick from 'fastclick'
+            FastClick.attach(document.body);
         
 编写区域
     main.js
