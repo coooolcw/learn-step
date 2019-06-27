@@ -54,10 +54,11 @@ store.js
     main.js
         入口文件
         用于引入全局的插件/css等
+        //scss文件夹中的全局index.scss
 
     需要修改/删除的文件(有自动创建信息的)
         public/
-            index.html
+            index.html    //meta添加user-scalable=no
             favicon.ico
         
             
