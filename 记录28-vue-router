@@ -1,10 +1,10 @@
 https://cn.vuejs.org/v2/guide/routing.html
 重要API
-  to的用法☆
-  https://router.vuejs.org/zh/api/#to
-  https://router.vuejs.org/zh/api/#router-link
-  路由对象,获取信息用
-  https://router.vuejs.org/zh/api/#%E8%B7%AF%E7%94%B1%E5%AF%B9%E8%B1%A1
+
+  router实例的基础配置
+    https://router.vuejs.org/zh/api/#routes
+
+
 route文档
 https://router.vuejs.org/zh/guide/#javascript
 HTML跳转
@@ -18,14 +18,14 @@ JS跳转
   在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
 传参
   基础传参
-  const User = {
-    template: '<div>User {{ $route.params.id }}</div>'
-  }
-  const router = new VueRouter({
-    routes: [
-    { path: '/user/:id', component: User }
-  ]
-  })
+    const User = {
+      template: '<div>User {{ $route.params.id }}</div>'
+    }
+    const router = new VueRouter({
+      routes: [
+      { path: '/user/:id', component: User }
+    ]
+    })
                         
                         
 点击 <router-link :to="..."> 等同于调用 router.push(...)。
@@ -38,3 +38,39 @@ JS跳转
                             
                             
 ☆注意在独立需要封装路由的组件中可以直接使用$router实例进行操作
+
+
+基本配置
+  在router.js中
+  import Home from './views/Home.vue'
+  先导入文件就会在进入首页时加载
+  export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      //普通模式
+      path: '/',
+      name: 'home',
+      component: Home,
+      //二级路由
+      children: {
+        
+      }
+    },
+    {
+      //懒加载模式,懒加载不需要先导入,会在点击后进行加载
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      //匹配其他所有未定义的路径
+      path: '*',
+      redirect: '/home',  //同path
+    }
+  ]
+})
