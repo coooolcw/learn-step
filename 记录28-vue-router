@@ -42,8 +42,10 @@ JS跳转
 
 基本配置
   在router.js中
-  import Home from './views/Home.vue'
-  先导入文件就会在进入首页时加载
+  import Home from './views/home/index.vue'
+  import xxxx from './views/home/xxxx.vue'
+  import about from './views/about/index.vue'
+  普通的文件会在进入首页时就加载,懒加载的会在点击后开始加载
   export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -55,7 +57,9 @@ JS跳转
       component: Home,
       //二级路由
       children: {
-        
+        name: 'home-xxxx'
+        path: 'xxxx',
+        component: xxxx
       }
     },
     {
