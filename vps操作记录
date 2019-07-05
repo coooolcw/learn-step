@@ -50,3 +50,7 @@ http://javascript.ruanyifeng.com/nodejs/basic.html
 
 git的使用教程
 https://www.liaoxuefeng.com/wiki/896043488029600
+
+git无法安装,使用
+sudo apt-get update更新一下再进行安装
+指令为  apt-get install git
