@@ -32,7 +32,7 @@ http://www.ruanyifeng.com/blog/2014/03/server_setup.html
 
 # ssh端口配置修改
 修改不需要前面带#
-直接输入Port ****即可
+直接输入Port *****   即可
 https://blog.csdn.net/Wangdada111/article/details/77406423
 https://help.aliyun.com/knowledge_detail/41212.html?spm=5176.2000002.0.0.63052f4aVdPs58
 
