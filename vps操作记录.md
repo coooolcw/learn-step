@@ -9,7 +9,7 @@ https://www.ostechnix.com/install-node-js-linux/
 待学习的使用方法说明
 https://www.kancloud.cn/summer/nodejs-install/71975
 
-#验证
+# 验证
 输入nvm list
 输出default -> node (-> v11.14.0)
 node -> stable (-> v11.14.0) (default)
@@ -19,7 +19,7 @@ stable -> 11.14 (-> v11.14.0) (default)
 cd到该文件夹
 将资源文件上传至vps
 
-#安装express
+# 安装express
 https://expressjs.com/zh-cn/starter/installing.html
 输入npm init 全部回车解决
 
@@ -30,7 +30,7 @@ https://expressjs.com/zh-cn/starter/installing.html
 ssh基础参考(未使用)
 http://www.ruanyifeng.com/blog/2014/03/server_setup.html
 
-#ssh端口配置修改
+# ssh端口配置修改
 修改不需要前面带#
 直接输入Port ****即可
 https://blog.csdn.net/Wangdada111/article/details/77406423
@@ -48,7 +48,7 @@ https://wangdoc.com/javascript/elements/index.html
 nodejs
 http://javascript.ruanyifeng.com/nodejs/basic.html
 
-#git的使用教程
+# git的使用教程
 https://www.liaoxuefeng.com/wiki/896043488029600
 
 git无法安装,使用
