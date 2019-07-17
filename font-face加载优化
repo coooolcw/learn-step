@@ -12,3 +12,7 @@
   https://github.com/bramstein/fontfaceobserver
   类似于1的方案,可以解决兼容性问题
   但是需要耦合js
+
+
+还是需要找一个更好的解决方案,暂时留坑,现在初次加载问题比较严重,虽然会自动按照使用的(bold normal之类)自动加载
+但是延时在本地都有接近1ms,上线后再进行观察
