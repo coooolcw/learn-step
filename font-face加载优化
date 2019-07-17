@@ -8,4 +8,7 @@
   而且似乎无法与webpack(包括vue)一起使用
   也很久没有更新了
 
-
+3.fontfaceobserver
+  https://github.com/bramstein/fontfaceobserver
+  类似于1的方案,可以解决兼容性问题
+  但是需要耦合js
