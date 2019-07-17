@@ -1,0 +1,7 @@
+1.font-display
+  https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face/font-display
+  在@font-face中定义,可统一各游览器,但有兼容性问题
+  
+2.font-spider
+  https://github.com/aui/font-spider
+  优化字体文件的大小,但是动态内容据悉无法优化
