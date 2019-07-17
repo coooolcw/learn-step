@@ -54,3 +54,6 @@ https://www.liaoxuefeng.com/wiki/896043488029600
 git无法安装,使用
 sudo apt-get update更新一下再进行安装
 指令为  apt-get install git
+
+安装pm2
+npm install -g pm2
