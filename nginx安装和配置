@@ -42,5 +42,7 @@ server {
 
 	location / {
 		try_files $uri $uri/ =404;#匹配到的页面都导向404页面
+		此段修改为
+		try_files $uri $uri/ /web/dist;
 	}
 }
