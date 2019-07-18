@@ -7,8 +7,11 @@ nginx -v
 启动
 service nginx start
 
+各个指令
+sudo service nginx {start|stop|restart|reload|force-reload|status|configtest|rotate|upgrade}
+
+
 配置教程
-基础https://segmentfault.com/a/1190000015797789
 
 /usr/sbin/目录下是nginx命令所在目录，在/etc/nginx/目录下是nginx所有的配置文件，用于配置nginx服务器以及负载均衡等信息
 
