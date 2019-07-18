@@ -1,0 +1,12 @@
+安装
+sudo su root
+apt-get install nginx
+
+版本确认
+nginx -v
+
+启动
+service nginx start
+
+配置教程
+https://www.runoob.com/linux/nginx-install-setup.html
