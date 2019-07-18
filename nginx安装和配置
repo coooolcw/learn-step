@@ -25,6 +25,7 @@ $ nginx -s quit
 http://www.nginx.cn/doc/index.html
 
 简单的静态部署
+文件位置在/etc/nginx/
 拷贝sites-enabled中的default文件到conf.d并且修改名字为**.conf
 server {
     #服务启动时监听的端口
