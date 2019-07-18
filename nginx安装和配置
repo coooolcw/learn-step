@@ -23,3 +23,16 @@ $ nginx -s quit
 
 中文手册
 http://www.nginx.cn/doc/index.html
+
+简单的静态部署
+在http字段下添加
+server {
+          listen       80;
+          server_name  localhost;
+
+
+          location / {
+              root   /root/project/www; #默认访问目录
+              index  index.html; #默认访问文件
+              try_files $uri $uri/ /index.html; #目录不存在则执行index.html
+          }
