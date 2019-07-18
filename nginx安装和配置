@@ -18,3 +18,8 @@ nginx
 $ nginx -s stop
 or
 $ nginx -s quit
+
+
+
+中文手册
+http://www.nginx.cn/doc/index.html
