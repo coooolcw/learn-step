@@ -29,20 +29,18 @@ http://www.nginx.cn/doc/index.html
 
 简单的静态部署
 文件位置在/etc/nginx/
-拷贝sites-enabled中的default文件到conf.d并且修改名字为**.conf
-server {
-    #服务启动时监听的端口
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    #服务启动时文件加载的路径
-    root /web/dist;
-    #默认加载的第一个文件
-    index index.php index.html index.htm index.nginx-debian.html;
-    #页面访问域名，如果没有域名也可以填写_
-    server_name www.xxxx.com;
+修改sites-enabled中的default文件并重命名
 
-    location / {
-        #页面加载失败后所跳转的页面
-        try_files $uri $uri/ =404;
-    }
+修改其中的字段
+server {
+	listen 80;#监听端口
+
+	root /web/dist;#静态文件目录
+
+
+	server_name www.cooolcw.com;
+
+	location / {
+		try_files $uri $uri/ =404;#暂时不理解,留坑
+	}
 }
