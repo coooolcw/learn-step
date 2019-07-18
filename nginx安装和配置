@@ -8,7 +8,7 @@ nginx -v
 service nginx start
 
 配置教程
-https://www.runoob.com/linux/nginx-install-setup.html
+
 
 /usr/sbin/目录下是nginx命令所在目录，在/etc/nginx/目录下是nginx所有的配置文件，用于配置nginx服务器以及负载均衡等信息
 
