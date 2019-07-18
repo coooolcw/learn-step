@@ -8,7 +8,7 @@ nginx -v
 service nginx start
 
 配置教程
-
+基础https://segmentfault.com/a/1190000015797789
 
 /usr/sbin/目录下是nginx命令所在目录，在/etc/nginx/目录下是nginx所有的配置文件，用于配置nginx服务器以及负载均衡等信息
 
@@ -25,14 +25,20 @@ $ nginx -s quit
 http://www.nginx.cn/doc/index.html
 
 简单的静态部署
-在http字段下添加
+拷贝sites-enabled中的default文件到conf.d并且修改名字为**.conf
 server {
-          listen       80;
-          server_name  localhost;
+    #服务启动时监听的端口
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    #服务启动时文件加载的路径
+    root /web/dist;
+    #默认加载的第一个文件
+    index index.php index.html index.htm index.nginx-debian.html;
+    #页面访问域名，如果没有域名也可以填写_
+    server_name www.xxxx.com;
 
-
-          location / {
-              root   /root/project/www; #默认访问目录
-              index  index.html; #默认访问文件
-              try_files $uri $uri/ /index.html; #目录不存在则执行index.html
-          }
+    location / {
+        #页面加载失败后所跳转的页面
+        try_files $uri $uri/ =404;
+    }
+}
