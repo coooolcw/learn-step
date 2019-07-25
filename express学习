@@ -46,3 +46,9 @@ module.exports = {
   }
 };
 
+
+配置package.json
+"scripts": {
+    "lint": "eslint src/**" //检查src下所有文件
+  },
+  之后可以npm run lint
