@@ -52,3 +52,7 @@ module.exports = {
     "lint": "eslint src/**" //检查src下所有文件
   },
   之后可以npm run lint
+
+
+express生成器安装
+npm install express-generator -g
