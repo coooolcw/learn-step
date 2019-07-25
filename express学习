@@ -11,3 +11,35 @@ npm install express
 
 启动服务
 node 文件名.js
+
+别忘了eslint
+npm install eslint --save-dev
+
+配置eslint
+
+module.exports = {
+  root: true,
+  env: {
+    node: true
+  },
+  extends: ["plugin:vue/essential", "eslint:recommended"],
+  rules: {
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    semi: ["error", "always"], //必须分号结尾
+    "arrow-spacing": ["error", { before: true, after: true }], //箭头函数括号前后都有空格
+    "space-before-function-paren": [
+      "error",
+      {
+        anonymous: "never",
+        named: "never",
+        asyncArrow: "always"
+      }
+    ], //匿名函数命名函数括号前都没有空格,箭头函数有
+    indent: ["on"], //与vue项目需要不同配置
+  },
+  parserOptions: {
+    parser: "babel-eslint"
+  }
+};
+
