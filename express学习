@@ -18,14 +18,20 @@ npm install eslint --save-dev
 配置eslint
 
 module.exports = {
-  root: true,
   env: {
-    node: true
+    browser: true,
+    commonjs: true,
+    es6: true
   },
-  extends: ["plugin:vue/essential", "eslint:recommended"],
+  extends: "eslint:recommended",
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
+  },
+  parserOptions: {
+    ecmaVersion: 2018
+  },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
     semi: ["error", "always"], //必须分号结尾
     "arrow-spacing": ["error", { before: true, after: true }], //箭头函数括号前后都有空格
     "space-before-function-paren": [
@@ -36,10 +42,7 @@ module.exports = {
         asyncArrow: "always"
       }
     ], //匿名函数命名函数括号前都没有空格,箭头函数有
-    indent: ["on"], //与vue项目需要不同配置
-  },
-  parserOptions: {
-    parser: "babel-eslint"
+    indent: ["error", 2] //与vue项目需要不同配置
   }
 };
 
