@@ -1,0 +1,13 @@
+MDN上的学习路径
+https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs
+
+安装
+npm,node(略)
+
+npm init 创建package文件
+
+安装express
+npm install express
+
+启动服务
+node 文件名.js
