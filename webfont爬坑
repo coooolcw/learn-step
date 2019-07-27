@@ -23,7 +23,8 @@
     360cdn炸了以后有https://cdn.baomitu.com/    无中文字体cdn
     另外独立的有https://cdn.geekzu.org/cached.html   字体齐全
   5.中科院反向代理
-    但是没找到怎么用
+    https://lug.ustc.edu.cn/wiki/lug/services/revproxy
+    具体与cdn啥区别不太清楚
     
       
     
@@ -42,3 +43,13 @@
     如果在vue中使用,只能先把web导出为静态页面然后使用处理后的字体文件
     地址:http://font-spider.org/index.html
     
+
+其他
+  1.font-display
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face/font-display
+    在@font-face中定义,可统一各游览器,但有兼容性问题
+
+  2.fontfaceobserver
+    https://github.com/bramstein/fontfaceobserver
+    类似于1的方案,可以解决兼容性问题
+    但是需要耦合js
