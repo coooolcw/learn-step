@@ -27,7 +27,7 @@
     具体与极客族哪个好待尝试
     
       
-    
+
     
     
     
@@ -53,3 +53,12 @@
     https://github.com/bramstein/fontfaceobserver
     类似于1的方案,可以解决兼容性问题
     但是需要耦合js
+
+
+
+
+实际尝试以后,直接@import  googlefonts可以正常使用
+webfonts的管理方式总是会有几个字无法获取到字体文件,mouted和created都试过,可能和vue有所不兼容,
+会和微软雅黑混杂显示
+
+先用一段时间的谷歌字体,如果发现有不稳定情况再更换反向代理的@import
