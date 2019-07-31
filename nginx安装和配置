@@ -38,7 +38,7 @@ server {
 	root /web/dist;#静态文件目录
 
 
-	server_name www.cooolcw.com;
+	server_name www.cooolcw.com; #匹配域名或者子域名
 
 	location / {
 		try_files $uri $uri/ =404;#匹配到的页面都导向404页面
@@ -46,3 +46,5 @@ server {
 		try_files $uri $uri/ /index.html;  #将各种请求都重定向到index.html(毕竟单页应用)
 	}
 }
+
+
