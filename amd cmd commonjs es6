@@ -1,0 +1,11 @@
+amd
+  requirejs
+  https://requirejs.org/
+  
+  简略的介绍
+    http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html
+cmd
+  seajs
+  https://seajs.github.io/seajs/docs/
+  
+  
