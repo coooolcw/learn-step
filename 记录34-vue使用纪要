@@ -64,6 +64,10 @@
         入口文件
         用于引入全局的插件
         一些公共的样式文件，可以在这里引入
+        初始的代码意义:
+          render 作用类似于template
+          $mount 作用类似于el:''
+
         
   
       app.vue
@@ -86,8 +90,6 @@
         
         
         
-render 作用类似于template
-$mount 作用类似于el:''
 
         
         
