@@ -86,8 +86,9 @@
         
         
         
-        
-        
+render 作用类似于template
+$mount 作用类似于el:''
+
         
         
         
