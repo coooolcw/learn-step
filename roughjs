@@ -1,0 +1,8 @@
+官网
+  https://roughjs.com/
+  API
+    https://github.com/pshihn/rough/wiki
+  注意引入方法
+    引入../../node_modules/roughjs/bin/wrappers/rough
+    即可使用全局变量
+    一般直接import rough from "../../node_modules/roughjs/bin/wrappers/rough";
