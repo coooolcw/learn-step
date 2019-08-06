@@ -193,6 +193,8 @@ step4：【关键步骤】
 
 vue.config.js 文件中：最头部添加 “const webpack = require('webpack')”；module.exports中，添加：
 
+
+const webpack = require("webpack");
 configureWebpack: {
     plugins: [
     new webpack.ProvidePlugin({
