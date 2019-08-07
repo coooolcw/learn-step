@@ -17,5 +17,7 @@
       const rc = rough.svg(svg);
       let node = rc.rectangle(10, 10, 200, 200); // x, y, width, height
       svg.appendChild(node);
+      node = rc.rectangle(120, 15, 80, 80, { fill: 'red' }); //svg模式中每次添加一个图形都需要appendchild一次
+      svg.appendChild(node);
       
       注意api写得不是很清楚,dom都没定义
