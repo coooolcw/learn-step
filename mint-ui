@@ -1,7 +1,0 @@
-mint-ui在vue-cli3更新以后未进行适配
-
-
-适配的解决
-https://github.com/ElemeFE/mint-ui/issues/1455
-
-两年未更新,大概弃坑了,转用vant
