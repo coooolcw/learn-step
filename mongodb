@@ -1,0 +1,5 @@
+1.安装
+  主要注意点:
+    https://stackoverflow.com/questions/52092528/invalid-domain-user-password-while-installing-mongodb-on-windows10
+  在选择安装到系统服务/本地服务时,需要输入的账号密码是windows的账号密码
+  domain则为.
