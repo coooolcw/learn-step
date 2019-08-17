@@ -1,3 +1,7 @@
+基础教程
+  https://www.runoob.com/mongodb/mongodb-tutorial.html
+  菜鸟站
+
 1.安装
   主要注意点:
     https://stackoverflow.com/questions/52092528/invalid-domain-user-password-while-installing-mongodb-on-windows10
@@ -6,3 +10,9 @@
 
 2.windows平台记得使用cmd不要使用powershell,不识别可执行文件
   win10打开管理员权限的cmd方法:搜索cmd然后右键.在运行中输入cmd则无法选择权限
+
+使用:
+  1.运行
+    使用cmd管理员权限cd到安装目录C:\Program Files\MongoDB\Server\4.2\bin
+    语法
+    $ cd "C:\Program Files\MongoDB\Server\4.2\bin"
