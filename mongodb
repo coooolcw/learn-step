@@ -27,16 +27,17 @@
     
 基础指令
   https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/
-  默认值启用:mongod(一般不配置是会报错的)
+  默认值启用:mongod(一般不配置会报错)
   
-  指定存储目录(例如存储在/srv/mongodb路径中)
-  mongod --dbpath /srv/mongodb/
+  启动配置项:
+    指定存储目录(例如存储在/srv/mongodb路径中)
+    mongod --dbpath /srv/mongodb/
   
-  指定tcp端口(端口12345)
-  mongod --port 12345
+    指定tcp端口(端口12345)
+    mongod --port 12345
   
-  守护进程启动,并且输出日志
-  mongod --fork --logpath /var/log/mongodb.log
+    守护进程启动,并且输出日志
+    mongod --fork --logpath /var/log/mongodb.log
     
 atlas
   配置和使用
