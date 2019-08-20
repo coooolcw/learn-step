@@ -12,8 +12,12 @@ npm install express
 启动服务
 node 文件名.js
 
-别忘了eslint
-npm install eslint --save-dev
+eslint
+  npm install eslint --save-dev
+
+  设置一个配置文件：
+  ./node_modules/.bin/eslint --init
+  记得选项使用js文件
 
 配置eslint
 
@@ -48,9 +52,7 @@ module.exports = {
 
 
 配置package.json
-"scripts": {
-    "lint": "eslint src/js"
-  },
+
   之后可以npm run lint
 
 
