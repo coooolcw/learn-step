@@ -62,5 +62,5 @@ module.exports = {
 express生成器安装
 npm install express-generator -g
 
-在当前目录创建名为myapp的Express 应用程序(以pug为模板)
+在当前目录创建名为myapp的Express 应用程序(以pug,也就是jade为模板)
 express --view=pug myapp
