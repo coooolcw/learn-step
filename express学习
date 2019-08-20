@@ -18,8 +18,17 @@ eslint
   设置一个配置文件：
   ./node_modules/.bin/eslint --init
   记得选项使用js文件
+  
+  配置package.json
 
-配置eslint
+  "scripts": {
+    //添加以下
+    "lint": "eslint **.js"
+  }
+  之后可以npm run lint
+
+
+  配置eslint选项
 
 module.exports = {
   env: {
@@ -50,16 +59,8 @@ module.exports = {
   }
 };
 
-
-配置package.json
-
-  "scripts": {
-    //添加以下
-    "lint": "eslint **.js"
-  }
-  之后可以npm run lint
-
-
 express生成器安装
 npm install express-generator -g
 
+在当前目录创建名为myapp的Express 应用程序(以pug为模板)
+express --view=pug myapp
