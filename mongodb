@@ -65,14 +65,16 @@
          journal:
             enabled: true
 安全配置
-  在windows中使用暂时可以不配置,但是在vps上必须配置
+  在windows中使用暂时可以直接bindIp: localhost,但是在vps上必须配置此项目
   https://docs.mongodb.com/manual/administration/configuration/#security-considerations
     例子
       net:
          bindIp: localhost,10.8.0.10,192.168.4.24,/tmp/mongod.sock
       security:
          authorization: enabled
-  
+  安全相关
+    https://docs.mongodb.com/manual/security/
+    在vps架设时再回来查阅
     
     
     
