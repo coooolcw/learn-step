@@ -53,6 +53,10 @@ module.exports = {
 
 配置package.json
 
+  "scripts": {
+    //添加以下
+    "lint": "eslint **.js"
+  }
   之后可以npm run lint
 
 
