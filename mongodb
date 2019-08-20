@@ -39,6 +39,43 @@
     守护进程启动,并且输出日志
     mongod --fork --logpath /var/log/mongodb.log
     
+    根据conf配置启动
+    mongod --config D:\mongodb\etc\mongo.conf
+    
+基本配置
+  https://docs.mongodb.com/manual/administration/configuration/
+    1.windows的cmd中,守护进程似乎有点问题
+    例子中的conf配置
+      processManagement ：
+        fork ： true 
+        需要删除
+    linux应该是需要此配置的
+    
+    本地使用的配置
+      net:
+         bindIp: localhost
+         port: 27017
+      storage:
+         dbPath: D:/mongodb/data
+      systemLog:
+         destination: file
+         path: "D:/mongodb/log/mongod.log"
+         logAppend: true
+      storage:
+         journal:
+            enabled: true
+安全配置
+  在windows中使用暂时可以不配置,但是在vps上必须配置
+  https://docs.mongodb.com/manual/administration/configuration/#security-considerations
+    例子
+      net:
+         bindIp: localhost,10.8.0.10,192.168.4.24,/tmp/mongod.sock
+      security:
+         authorization: enabled
+  
+    
+    
+    
 atlas
   配置和使用
     https://www.tracymc.cn/archives/1430
