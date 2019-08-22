@@ -64,3 +64,29 @@ npm install express-generator -g
 
 在当前目录创建名为myapp的Express 应用程序(以pug,也就是jade为模板)
 express --view=pug myapp
+
+
+文件目录结构
+  .
+  ├── app.js
+  ├── bin
+  │   └── www
+  ├── package.json
+  ├── public
+  │   ├── images
+  │   ├── javascripts
+  │   └── stylesheets
+  │       └── style.css
+  ├── routes
+  │   ├── index.js
+  │   └── users.js
+  └── views
+      ├── error.pug
+      ├── index.pug
+      └── layout.pug
+      
+app.js  入口文件
+www 执行文件
+routes文件夹存放路由文件
+public静态文件库
+views模板文件夹,格式为pug(jade)
