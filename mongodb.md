@@ -120,16 +120,18 @@ linux平台的安装和使用
 `echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list`  
 `sudo apt-get update`  
 `sudo apt-get install -y mongodb-org`  
+  
+linux相关文件位置 
+---
+conf文件  
+/etc/mongod.conf  
+data文件夹  
+/var/lib/mongodb  
+log文件夹  
+/var/log/mongodb  
 
-linux相关文件位置
-conf文件
-/etc/mongod.conf
-data文件夹
-/var/lib/mongodb
-log文件夹
-/var/log/mongodb
-
-指令
-sudo service mongod start
-sudo service mongod stop
-sudo service mongod restart
+指令  
+---
+sudo service mongod start  
+sudo service mongod stop  
+sudo service mongod restart  
