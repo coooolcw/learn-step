@@ -121,3 +121,15 @@ linux平台的安装和使用
 `sudo apt-get update`  
 `sudo apt-get install -y mongodb-org`  
 
+linux相关文件位置
+conf文件
+/etc/mongod.conf
+data文件夹
+/var/lib/mongodb
+log文件夹
+/var/log/mongodb
+
+指令
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod restart
