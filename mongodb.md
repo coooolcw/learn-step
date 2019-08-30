@@ -157,9 +157,8 @@ mongoshell常用指令
 `show dbs`显示可用的数据库  
   
 创建一个数据库和集合  
----
 ```
 use myNewDatabase
 db.myCollection.insertOne( { x: 1 } );
 ```
-  
+[shell指令速查](https://docs.mongodb.com/manual/reference/mongo-shell/)
