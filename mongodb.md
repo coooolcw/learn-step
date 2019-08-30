@@ -139,3 +139,10 @@ sudo service mongod restart
 linux平台安全配置  
 ---
 基本配置已经自动设置完了,暂时不启用账号,只允许本地连接
+
+linux平台mongoshell配置
+---
+默认安装后的可执行文件目录
+/usr/bin
+添加到path的指令
+`export PATH=user/bin:$PATH`
