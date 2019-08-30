@@ -166,5 +166,5 @@ db.myCollection.insertOne( { x: 1 } );
 [mongodb import](https://docs.mongodb.com/manual/reference/program/mongoimport/)  
 [mongodb export](https://docs.mongodb.com/manual/reference/program/mongoexport/)  
   
-import指令范例  
+import指令范例(注意不要在mongoshell内使用,这是独立的可执行文件)  
 `mongoimport --db cwweb --collection cwblogs --file /web/mongodbcache/blogs.json`
