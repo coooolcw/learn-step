@@ -142,7 +142,19 @@ linux平台安全配置
 
 linux平台mongoshell配置
 ---
-默认安装后的可执行文件目录
-/usr/bin
-添加到path的指令
-`export PATH=user/bin:$PATH`
+默认安装后的可执行文件目录  
+/usr/bin  
+添加到path的指令  
+`export PATH=user/bin:$PATH`  
+此后即可直接输入mongo使用mongoshell
+
+mongoshell常用指令
+---
+`db`  
+显示正在使用的db  
+  
+`use <database>`  
+切换使用的数据库  
+  
+`show dbs`  
+显示拥有的数据库  
