@@ -161,4 +161,10 @@ mongoshell常用指令
 use myNewDatabase
 db.myCollection.insertOne( { x: 1 } );
 ```
-[shell指令速查](https://docs.mongodb.com/manual/reference/mongo-shell/)
+[shell指令速查](https://docs.mongodb.com/manual/reference/mongo-shell/)  
+  
+[mongodb import](https://docs.mongodb.com/manual/reference/program/mongoimport/)  
+[mongodb export](https://docs.mongodb.com/manual/reference/program/mongoexport/)  
+  
+import指令范例  
+`mongoimport --db cwweb --collection cwblogs --file /web/mongodbcache/blogs.json`
