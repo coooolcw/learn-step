@@ -2,6 +2,7 @@
 因此递归有时会因为递归层数过多导致游览器报错  
 此时应当将递归转化为循环语句  
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/throw  
+
 throw的用法  
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/try...catch  
