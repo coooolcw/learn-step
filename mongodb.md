@@ -112,7 +112,7 @@ atlas
     https://www.tracymc.cn/archives/1430  
   
   
-linux平台的安装和使用  
+linux平台的安装  
 ---  
 根据官方文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/    
 依次输入    
@@ -130,7 +130,7 @@ data文件夹
 log文件夹  
 /var/log/mongodb  
 
-指令  
+linux平台指令  
 ---
 sudo service mongod start  
 sudo service mongod stop  
