@@ -90,12 +90,13 @@ processManagement ：
          authorization: enabled
 ```  
 
-  安全相关  
-  ---
+安全相关  
+---
     https://docs.mongodb.com/manual/security/  
     在vps架设时再回来查阅  
       
-windows服务相关  
+windows服务相关 
+---
   安装服务  
     `mongod --config D:\mongodb\etc\mongo.conf --install`   
     此时可按照运行指令进行配置  
@@ -105,7 +106,8 @@ windows服务相关
     
     也可以在bin下修改mongod.cfg文件(未尝试)
     
-atlas  
+atlas 
+---
   配置和使用  
     https://www.tracymc.cn/archives/1430  
   
