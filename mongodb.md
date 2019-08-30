@@ -63,7 +63,7 @@ processManagement ：
     linux应该是需要此配置的    
       
     本地使用的配置  
-    ```
+```
       net:
          bindIp: localhost
          port: 27017
@@ -105,16 +105,17 @@ windows服务相关
     
     也可以在bin下修改mongod.cfg文件(未尝试)
     
-atlas
-  配置和使用
-    https://www.tracymc.cn/archives/1430
-
-linux平台的安装和使用
----
-根据官方文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/  
-依次输入  
+atlas  
+  配置和使用  
+    https://www.tracymc.cn/archives/1430  
+  
+  
+linux平台的安装和使用  
+---  
+根据官方文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/    
+依次输入    
 `wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -`  
 `echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list`  
 `sudo apt-get update`  
-`sudo apt-get install -y mongodb-org`
+`sudo apt-get install -y mongodb-org`  
 
