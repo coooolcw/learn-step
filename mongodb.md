@@ -154,7 +154,15 @@ mongoshell常用指令
 显示正在使用的db  
   
 `use <database>`  
-切换使用的数据库  
+切换使用的数据库,若不存在会创建  
   
 `show dbs`  
-显示拥有的数据库  
+显示可用的数据库  
+  
+创建一个数据库和集合  
+  
+```
+use myNewDatabase
+db.myCollection.insertOne( { x: 1 } );
+```
+  
