@@ -135,3 +135,7 @@ linux平台指令
 sudo service mongod start  
 sudo service mongod stop  
 sudo service mongod restart  
+  
+linux平台安全配置  
+---
+基本配置已经自动设置完了,暂时不启用账号,只允许本地连接
