@@ -1,28 +1,32 @@
-        普通方法:设置class:block/none;
-        通过addClass  removeClass操作
+
+普通方法
+---
+设置class:block/none;
+通过addClass  removeClass操作
 
 jQ方法
-        操作display,以形变的方式消失/出现
-                .show([duration ] [, easing ] [, complete ])
-                .hide([duration ] [, easing ] [, complete ])
-                .toggle([duration ] [, easing ] [, complete ]) 
+---
+操作display,以形变的方式消失/出现  
+                `.show([duration ] [, easing ] [, complete ])`  
+                `.hide([duration ] [, easing ] [, complete ])`  
+                `.toggle([duration ] [, easing ] [, complete ])`  
 
-        淡入淡出,修改透明度
-                .fadeIn( [duration ] [, easing ] [, complete ] )
-                .fadeOut( [duration ] [, easing ] [, complete ] )
-                .fadeToggle( [duration ] [, easing ] [, complete ] )
+淡入淡出,修改透明度  
+                `.fadeIn( [duration ] [, easing ] [, complete ] )`  
+                `.fadeOut( [duration ] [, easing ] [, complete ] )`  
+                `.fadeToggle( [duration ] [, easing ] [, complete ] )`  
 
 
-        调整透明度
+调整透明度  
                 .fadeTo(duration, opacity [, easing ] [, complete ])
         
-        单纯形变,修改高度
+单纯形变,修改高度
                 .slideDown( [duration ] [, easing ] [, complete ] )
                 .slideUp( [duration ] [, easing ] [, complete ] )
                 .slideToggle( [duration ] [, easing ] [, complete ] )
         
         
-        停止正在进行的动画
+停止正在进行的动画
                 .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
                         clearQueue:true表示删除在队列中等待的其他动画
                         jumpToEnd:一个布尔值指示是否当前动画立即完成
@@ -38,14 +42,14 @@ jQ方法
                         当这个属性设置为true的时,调用时所有动画方法将立即设置元素为他们的最终状态,而不是显示效果.
                 
 
-        动画过渡插件
+动画过渡插件
                 jquery.easing
                         https://github.com/gdsmith/jquery.easing
                         效果查找站
                         https://j11y.io/demos/jquery/easing/
                 
                 
-        自定义动画
+自定义动画
                 .animate( properties [, duration ] [, easing ] [, complete ] )
                         类型: PlainObject
                         一个CSS属性和值的对象,动画将根据这组对象移动。
@@ -56,7 +60,7 @@ jQ方法
                                 
                                 
                                 
-       jquery动画队列
+jquery动画队列
                 基础介绍
                 https://blog.csdn.net/qq_42564846/article/details/81666008
                 详细说明
