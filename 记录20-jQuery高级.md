@@ -7,96 +7,110 @@
 jQ方法
 ---
 操作display,以形变的方式消失/出现  
-                `.show([duration ] [, easing ] [, complete ])`  
-                `.hide([duration ] [, easing ] [, complete ])`  
-                `.toggle([duration ] [, easing ] [, complete ])`  
+---
+`.show([duration ] [, easing ] [, complete ])`  
+`.hide([duration ] [, easing ] [, complete ])`  
+`.toggle([duration ] [, easing ] [, complete ])`  
 
 淡入淡出,修改透明度  
-                `.fadeIn( [duration ] [, easing ] [, complete ] )`  
-                `.fadeOut( [duration ] [, easing ] [, complete ] )`  
-                `.fadeToggle( [duration ] [, easing ] [, complete ] )`  
+---
+`.fadeIn( [duration ] [, easing ] [, complete ] )`  
+`.fadeOut( [duration ] [, easing ] [, complete ] )`  
+`.fadeToggle( [duration ] [, easing ] [, complete ] )`  
 
 
 调整透明度  
-                .fadeTo(duration, opacity [, easing ] [, complete ])
+---
+`.fadeTo(duration, opacity [, easing ] [, complete ])`
         
-单纯形变,修改高度
-                .slideDown( [duration ] [, easing ] [, complete ] )
-                .slideUp( [duration ] [, easing ] [, complete ] )
-                .slideToggle( [duration ] [, easing ] [, complete ] )
+单纯形变,修改高度  
+---
+`.slideDown( [duration ] [, easing ] [, complete ] )`  
+`.slideUp( [duration ] [, easing ] [, complete ] )`  
+`.slideToggle( [duration ] [, easing ] [, complete ] )`  
         
         
-停止正在进行的动画
-                .stop( [queue ] [, clearQueue ] [, jumpToEnd ] )
-                        clearQueue:true表示删除在队列中等待的其他动画
-                        jumpToEnd:一个布尔值指示是否当前动画立即完成
+停止正在进行的动画 
+---
+`.stop( [queue ] [, clearQueue ] [, jumpToEnd ] )`  
+clearQueue:true表示删除在队列中等待的其他动画  
+jumpToEnd:一个布尔值指示是否当前动画立即完成  
+  
+`.finish( [queue ] )`  
+停止当前正在运行的动画，删除所有排队的动画，并完成匹配元素所有的动画。  
+  
+stop与finish的区别  
+.finish()方法和.stop(true, true)很相似,.stop(true, true)将清除队列,并且[目前]的动画跳转到其最终值.  
+但是,不同的是,.finish() 会导致所有排队的动画的CSS属性跳转到他们的最终值.  
 
-                .finish( [queue ] )
-                        停止当前正在运行的动画，删除所有排队的动画，并完成匹配元素所有的动画。
-
-                stop与finish的区别
-                        .finish()方法和.stop(true, true)很相似,.stop(true, true)将清除队列,并且[目前]的动画跳转到其最终值.
-                        但是,不同的是,.finish() 会导致所有排队的动画的CSS属性跳转到他们的最终值.
-
-                jQuery.fx.off
-                        当这个属性设置为true的时,调用时所有动画方法将立即设置元素为他们的最终状态,而不是显示效果.
+jQuery.fx.off  
+当这个属性设置为true的时,调用时所有动画方法将立即设置元素为他们的最终状态,而不是显示效果.  
                 
-
-动画过渡插件
-                jquery.easing
-                        https://github.com/gdsmith/jquery.easing
-                        效果查找站
-                        https://j11y.io/demos/jquery/easing/
+  
+动画过渡插件  
+---
+jquery.easing  
+https://github.com/gdsmith/jquery.easing  
+效果查找站  
+https://j11y.io/demos/jquery/easing/  
                 
                 
 自定义动画
-                .animate( properties [, duration ] [, easing ] [, complete ] )
-                        类型: PlainObject
-                        一个CSS属性和值的对象,动画将根据这组对象移动。
-                        可进行+=运算,但需要用''包裹.无等号时可不需要
-                .animate( properties, options )
-                options 具体见https://www.html.cn/jqapi-1.9/animate/
-                                参考网站缺少了start的回调函数
+---
+`.animate( properties [, duration ] [, easing ] [, complete ] )`  
+类型: PlainObject  
+一个CSS属性和值的对象,动画将根据这组对象移动。  
+可进行+=运算,但需要用''包裹.无等号时可不需要  
+`.animate( properties, options )`  
+options 具体见https://www.html.cn/jqapi-1.9/animate/  
+参考网站缺少了start的回调函数  
                                 
                                 
                                 
-jquery动画队列
-                基础介绍
-                https://blog.csdn.net/qq_42564846/article/details/81666008
-                详细说明
-                https://www.cnblogs.com/snandy/archive/2013/02/18/2892749.html 
-                .queue()    
-                        .queue( [queueName ] )
-                        .queue( [queueName ], newQueue )
-                        .queue( [queueName ], callback( next ) )
-                        http://www.w3school.com.cn/jquery/data_queue.asp
-                        从jQuery 1.4开始，向队列中追加函数时，可以向该函数中传入另一个函数，作为第一个参数。
-                        当调用函数时，会自动从函数队列中弹出下一个项目，保证队列中函数的继续进行。我们可以像下面这样使用：
-                                $("#test").queue(function(next) {
-                                    // Do some stuff...
-                                    next();
-                                });
-                        
-                .dequeue( [queueName ] )
-                        当.dequeue()被调用的时候，列队中的下一个函数将从这个列队中被移除，然后再执行。
-                        这个执行的函数中也应当直接或间接的包含 .dequeue()语句，这样才能继续执行队列中的其它函数，所以,这个序列可以继续。
-                .clearQueue( [queueName ] )
-                        从列队中移除所有未执行的项。
-                .delay( duration [, queueName ] )
-                        设置一个延时来推迟执行队列中后续的项。
-                        
+jquery动画队列  
+---
+基础介绍  
+https://blog.csdn.net/qq_42564846/article/details/81666008  
+详细说明  
+https://www.cnblogs.com/snandy/archive/2013/02/18/2892749.html   
+`.queue()`  
+`.queue( [queueName ] )`  
+`.queue( [queueName ], newQueue )`  
+`.queue( [queueName ], callback( next ) )`  
+http://www.w3school.com.cn/jquery/data_queue.asp  
+从jQuery 1.4开始，向队列中追加函数时，可以向该函数中传入另一个函数，作为第一个参数。  
+当调用函数时，会自动从函数队列中弹出下一个项目，保证队列中函数的继续进行。我们可以像下面这样使用：  
 
+```
+$("#test").queue(function(next) {
+  // Do some stuff...
+  next();
+});
+```  
+
+                        
+`.dequeue( [queueName ] )`  
+当.dequeue()被调用的时候，列队中的下一个函数将从这个列队中被移除，然后再执行。  
+这个执行的函数中也应当直接或间接的包含 .dequeue()语句，这样才能继续执行队列中的其它函数，所以,这个序列可以继续。  
+`.clearQueue( [queueName ] )`  
+从列队中移除所有未执行的项。  
+`.delay( duration [, queueName ] )`  
+设置一个延时来推迟执行队列中后续的项。  
+                        
+  
 jQ与其他插件共存
-                jQuery.noConflict( [removeAll ] )
-                        放弃jQuery控制$ 变量。
-                        旧引用的$ 被保存在jQuery的初始化; noConflict() 简单的恢复它们。(在引入冲突以后也可以消除冲突,并且复原其他插件)
-                        如果必要的话，我们可以释放jQuery名字，传递true作为一个参数给这个方法。 (var j = jQuery.noConflict();)
-                        但是大多数插件依靠jQuery存在的变量,这种情况下，可能导致插件不能正常操作。
+---
+`jQuery.noConflict( [removeAll ] )`  
+放弃jQuery控制$ 变量。  
+旧引用的$ 被保存在jQuery的初始化; noConflict() 简单的恢复它们。(在引入冲突以后也可以消除冲突,并且复原其他插件)  
+如果必要的话，我们可以释放jQuery名字，传递true作为一个参数给这个方法。` (var j = jQuery.noConflict();) ` 
+但是大多数插件依靠jQuery存在的变量,这种情况下，可能导致插件不能正常操作。  
 
-jQ兼容性判断
-                jQuery.support
-                但现在该属性已被放弃,建议使用Modernizr
-                https://modernizr.com/
+jQ兼容性判断  
+---
+`jQuery.support`  
+但现在该属性已被放弃,建议使用Modernizr  
+https://modernizr.com/  
                 
 修整字符串
                 jQuery.trim(str)
