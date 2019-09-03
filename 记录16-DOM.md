@@ -121,7 +121,7 @@ NamedNodeMap
 获取节点  
 ---
 1.`ocument.getElementById();`  
-p256~257  
+p256\~257  
 IE7以前会将name匹配的元素也返回,现在基本不需要考虑这个.  
 只有document才有此方法  
 2.`ocument.getElementsByName();` 
