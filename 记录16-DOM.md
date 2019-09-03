@@ -1,7 +1,7 @@
 1.document.write()方法虽然方便,但是一旦在document加载完成以后使用,会造成整个页面被覆盖  
 因此很少使用  
   
-一creat
+一.creat
 ===
 1.document.createElement('')
 ---
@@ -25,7 +25,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment  
   
-二innerHTML outerHTML
+二.innerHTML outerHTML
 ===
 红皮书p294~298  
 1.innerHTML  
@@ -37,72 +37,82 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Element/outerHTML  
 不常用  
-三innerText outerText
+三.innerText outerText
 === 
 红皮书p301~303  
-    1.innerText
-        https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
-      替代
-      textContent
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent
-      个人认为直接使用textContent更好
-    2.outerText
-        会删除原有元素,不推荐使用
+1.innerText  
+---
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText  
+替代  
+textContent  
+https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent  
+个人认为直接使用textContent更好  
+  
+2.outerText
+---
+会删除原有元素,不推荐使用  
+  
+四.DOM遍历  
+===
+基础方法  
+红皮书p248~253  
+常用的遍历属性见p251的图.  
+另有childNodes[]列表可以进行遍历  
+同时还有 1.hasChildNodes()用于查询元素是否含有子节点  
+2.ownerDocument属性指向整个文档的文档节点  
+3.Document.documentElement返回文档根元素,只读;  
+HTML 文档通常包含一个子节点 <html>，可能在它前面还有个 DOCTYPE 声明。  
+XML 文档通常包含多个子节点：根元素，DOCTYPE 声明，和 processing instructions。  
+所以你应该使用 document.documentElement 来获取根元素, 而不是 document.firstChild。  
+实际上不用document.也可以,其他元素节点的此方法也返回根元素  
+  
+需要注意的点:  
 
-四DOM遍历
-    基础方法
-    红皮书p248~253
-        常用的遍历属性见p251的图.
-        另有childNodes[]列表可以进行遍历
-        同时还有 1.hasChildNodes()用于查询元素是否含有子节点
-                2.ownerDocument属性指向整个文档的文档节点
-                3.Document.documentElement返回文档根元素,只读;
-                HTML 文档通常包含一个子节点 <html>，可能在它前面还有个 DOCTYPE 声明。
-                XML 文档通常包含多个子节点：根元素，DOCTYPE 声明，和 processing instructions。
-                所以你应该使用 document.documentElement 来获取根元素, 而不是 document.firstChild。
-                实际上不用document.也可以,其他元素节点的此方法也返回根元素
-        
-        需要注意的点:<p>
-                    <a></a>
-                    </p>
-            此处p的第一个子节点(使用firstChild)是文本节点,空格与回车形成的文本节点
-            
-        重要属性:nodeType nodeName tagName
-        
-        nodeType的属性值可以用于判断节点类型   红皮书p248有具体信息,一般常用的值是1==普通节点
-    元素遍历方法
-        红皮书p288
-        指向的对象不包括文本节点和注释节点
-        childElementCount;返回子节点个数(不包括文本节点和注释)
-        firstElementChild;
-        lastElementChild;
-        previousElementSibling;
-        nextElementSibling;
-        children[i];子元素列表list;children同样也有length属性;基本与childNodes类似
-
-Nodelist
-        用各种get到的(除byid以外)的结果集合
-        特点:实时更新  每次访问都会重新查询   类数组
-        一般尽量少访问,同时将length属性保存起来减少查询次数
-        常将内容遍历后保存到数组中
-        Array.prototype.slice.call(Nodelist);调用后可直接返回新数组
-HTMLCollection
-        红书p257,相当于特殊化的nodelist
-        重要方法: namedItem()  可根据元素id和name值查询
-        https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCollection
-        犀牛书p367的介绍更具体
-        此类数组可使用[数字][字符串]访问具体元素
-
-        常见的返回此集合的方法,p256~258
-        document.anchors等
-
-NamedNodeMap
-        保存元素的特性节点  集合(也算一种类数组)  ,该节点的nodeValue值就是特性的值.
-        红皮书p266
-        主要方法:item();getNamedItem();removeNamedItem();
-        一般只用在遍历元素特性上,普通情况下使用get/setAttribute();
-
-获取节点
+```
+<p>
+<a></a>
+</p>
+```
+  
+此处p的第一个子节点(使用firstChild)是文本节点,空格与回车形成的文本节点  
+  
+重要属性:nodeType nodeName tagName  
+  
+nodeType的属性值可以用于判断节点类型   红皮书p248有具体信息,一般常用的值是1==普通节点  
+元素遍历方法  
+红皮书p288  
+指向的对象不包括文本节点和注释节点  
+childElementCount;返回子节点个数(不包括文本节点和注释)  
+firstElementChild;   
+lastElementChild;  
+previousElementSibling;  
+nextElementSibling;  
+children[i];子元素列表list;children同样也有length属性;基本与childNodes类似  
+  
+Nodelist  
+用各种get到的(除byid以外)的结果集合  
+特点:实时更新  每次访问都会重新查询   类数组  
+一般尽量少访问,同时将length属性保存起来减少查询次数  
+常将内容遍历后保存到数组中  
+Array.prototype.slice.call(Nodelist);调用后可直接返回新数组   
+  
+HTMLCollection  
+红书p257,相当于特殊化的nodelist  
+重要方法: namedItem()  可根据元素id和name值查询  
+https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCollection  
+犀牛书p367的介绍更具体  
+此类数组可使用[数字][字符串]访问具体元素  
+  
+常见的返回此集合的方法,p256~258  
+document.anchors等  
+  
+NamedNodeMap  
+        保存元素的特性节点  集合(也算一种类数组)  ,该节点的nodeValue值就是特性的值.  
+        红皮书p266  
+        主要方法:item();getNamedItem();removeNamedItem();  
+        一般只用在遍历元素特性上,普通情况下使用get/setAttribute();  
+  
+获取节点  
         1.document.getElementById();
         p256~257
         IE7以前会将name匹配的元素也返回,现在基本不需要考虑这个.
