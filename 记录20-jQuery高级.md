@@ -40,7 +40,7 @@ jumpToEnd:一个布尔值指示是否当前动画立即完成
 停止当前正在运行的动画，删除所有排队的动画，并完成匹配元素所有的动画。  
   
 stop与finish的区别  
-.finish()方法和.stop(true, true)很相似,.stop(true, true)将清除队列,并且[目前]的动画跳转到其最终值.  
+`.finish()`方法和`.stop(true, true)`很相似,`.stop(true, true)`将清除队列,并且[目前]的动画跳转到其最终值.  
 但是,不同的是,.finish() 会导致所有排队的动画的CSS属性跳转到他们的最终值.  
 
 `jQuery.fx.off`  
