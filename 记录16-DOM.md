@@ -7,9 +7,11 @@
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement  
 可创建游览器不支持的标签(IE6~8),具体方法https://blog.csdn.net/yuwq123/article/details/52198612  
+  
 2.document.createTextNode('')  
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode  
+  
 3.document.createDocumentFragment('')
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment  
@@ -18,9 +20,11 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment
 常用于创建一大段的dom结构  
 常用方法fragment.appendChild(xx);  
 多次添加子对象,一次添加至真实dom.  
+  
 4.document.createComment('')
 ---
 https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment  
+  
 二innerHTML outerHTML
 ===
 红皮书p294~298  
