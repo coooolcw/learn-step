@@ -3,31 +3,39 @@
   
 一creat
 ===
-    1.document.createElement('')
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement
-        可创建游览器不支持的标签(IE6~8),具体方法https://blog.csdn.net/yuwq123/article/details/52198612
-    2.document.createTextNode('')
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode
-    2.document.createDocumentFragment('')
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment
-        因为文档片段存在于内存中，并不在DOM树中，所以将子元素插入到文档片段时不会引起页面回流（对元素位置和几何上的计算）。
-        因此，使用文档片段通常会带来更好的性能。
-        常用于创建一大段的dom结构
-        常用方法fragment.appendChild(xx);
-        多次添加子对象,一次添加至真实dom.
-    2.document.createComment('')
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment
+1.document.createElement('')
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement  
+可创建游览器不支持的标签(IE6~8),具体方法https://blog.csdn.net/yuwq123/article/details/52198612  
+2.document.createTextNode('')  
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createTextNode  
+3.document.createDocumentFragment('')
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment  
+因为文档片段存在于内存中，并不在DOM树中，所以将子元素插入到文档片段时不会引起页面回流（对元素位置和几何上的计算）。  
+因此，使用文档片段通常会带来更好的性能。  
+常用于创建一大段的dom结构  
+常用方法fragment.appendChild(xx);  
+多次添加子对象,一次添加至真实dom.  
+4.document.createComment('')
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createComment  
 二innerHTML outerHTML
-    红皮书p294~298
-    1.innerHTML
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML
-        注意:用 innerHTML 插入文本到网页中并不罕见。但这有可能成为网站攻击的媒介，从而产生潜在的安全风险问题。
-        另外还有内存占用问题,p297
-    2.outerHTML
-        https://developer.mozilla.org/zh-CN/docs/Web/API/Element/outerHTML
-        不常用
+===
+红皮书p294~298  
+1.innerHTML  
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML  
+注意:用 innerHTML 插入文本到网页中并不罕见。但这有可能成为网站攻击的媒介，从而产生潜在的安全风险问题。  
+另外还有内存占用问题,p297  
+2.outerHTML
+---
+https://developer.mozilla.org/zh-CN/docs/Web/API/Element/outerHTML  
+不常用  
 三innerText outerText
-    红皮书p301~303
+=== 
+红皮书p301~303  
     1.innerText
         https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
       替代
