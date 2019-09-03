@@ -1,7 +1,8 @@
-1.document.write()方法虽然方便,但是一旦在document加载完成以后使用,会造成整个页面被覆盖
-因此很少使用
-
+1.document.write()方法虽然方便,但是一旦在document加载完成以后使用,会造成整个页面被覆盖  
+因此很少使用  
+  
 一creat
+===
     1.document.createElement('')
         https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement
         可创建游览器不支持的标签(IE6~8),具体方法https://blog.csdn.net/yuwq123/article/details/52198612
