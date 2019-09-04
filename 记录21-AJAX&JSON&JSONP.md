@@ -68,6 +68,7 @@ http://www.runoob.com/json/json-intro.html
   主要参数:async complete dataType error success type url   
   
   跨域  
+  ---
 红皮书p582  
 重点:JSONP p587  
 基础教程:  
