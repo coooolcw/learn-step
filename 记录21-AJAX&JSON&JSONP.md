@@ -69,13 +69,12 @@ http://www.runoob.com/json/json-intro.html
   
   跨域  
 红皮书p582  
-          重点:JSONP p587  
-          基础教程:  
-          https://segmentfault.com/a/1190000007935557  
+重点:JSONP p587  
+基础教程:  
+https://segmentfault.com/a/1190000007935557  
   
-          封装后的函数  
-          https://www.cnblogs.com/yzhihao/p/7910505.html  
+封装后的函数  
+https://www.cnblogs.com/yzhihao/p/7910505.html  
   
-          维基的基础说明概念清楚  
-          https://zh.wikipedia.org/wiki/JSONP  
-  
+维基的基础说明概念清楚  
+https://zh.wikipedia.org/wiki/JSONP  
