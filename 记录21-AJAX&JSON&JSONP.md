@@ -9,7 +9,7 @@ MDN入门教程
         https://cloud.tencent.com/developer/article/1062382  
         http://www.runoob.com/ajax/ajax-tutorial.html  虽然内容一般但是还是看一下这个  
           
-        红皮书p571开始  
+红皮书p571开始  
 
   
 
