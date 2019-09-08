@@ -1,20 +1,20 @@
-面向对象MDN
-    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
-    
-    MDN中的介绍,内容较为简单
-    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
-
-API参考
-    ES6入门
-        http://es6.ruanyifeng.com/#docs/class
-        http://es6.ruanyifeng.com/#docs/class-extends
-
-深入理解ES6
-    p181
-    从早期的类模拟开始
-    入门参考这本
-    
-    重点:
+面向对象MDN  
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript  
+  
+    MDN中的介绍,内容较为简单  
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes  
+  
+API参考  
+    ES6入门  
+        http://es6.ruanyifeng.com/#docs/class  
+        http://es6.ruanyifeng.com/#docs/class-extends  
+  
+深入理解ES6  
+    p181  
+    从早期的类模拟开始  
+    入门参考这本  
+      
+    重点:  
         1.constructor()和类基础
             类的所有方法都定义在类的prototype属性上面。
             在类的实例上面调用方法，其实就是调用原型上的方法。
