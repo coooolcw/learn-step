@@ -62,50 +62,50 @@ maps, 相当于 JavaScript 的 object，(key1: value1, key2: value2)
   
 字符串  
 ---
-SassScript 支持 CSS 的两种字符串类型：有引号字符串 (quoted strings)，如 "Lucida Grande" 'http://sass-lang.com'；
-与无引号字符串 (unquoted strings)，如 sans-serif bold，在编译 CSS 文件时不会改变其类型。
-只有一种情况例外，使用 #{} (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名：
-
-数组
+SassScript 支持 CSS 的两种字符串类型：有引号字符串 (quoted strings)，如 "Lucida Grande" 'http://sass-lang.com'；  
+与无引号字符串 (unquoted strings)，如 sans-serif bold，在编译 CSS 文件时不会改变其类型。  
+只有一种情况例外，使用 #{} (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名：  
+  
+数组  
 ---
-数组 (lists) 指 Sass 如何处理 CSS 中 margin: 10px 15px 0 0 或者
-font-face: Helvetica, Arial, sans-serif 这样通过空格或者逗号分隔的一系列的值。
-事实上，独立的值也被视为数组 —— 只包含一个值的数组。
-
-数组本身没有太多功能，但 Sass list functions 赋予了数组更多新功能：
-nth 函数可以直接访问数组中的某一项；
-join 函数可以将多个数组连接在一起；
-append 函数可以在数组中添加新值；
-而 @each 指令能够遍历数组中的每一项。
-
-
-数组中可以包含子数组，比如 1px 2px, 5px 6px 是包含 1px 2px 与 5px 6px 两个数组的数组。
-如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，
-所以也可以写成 (1px 2px) (5px 6px)。变化是，之前的 1px 2px, 5px 6px 使用逗号分割了两个子数组 (comma-separated)，
-而 (1px 2px) (5px 6px) 则使用空格分割(space-separated)。
-
-当数组被编译为 CSS 时，Sass 不会添加任何圆括号（CSS 中没有这种写法），
-所以 (1px 2px) (5px 6px) 与 1px 2px, 5px 6px 在编译后的 CSS 文件中是完全一样的，
-但是它们在 Sass 文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。
-
-用 () 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。
-空数组不可以直接编译成 CSS，比如编译 font-family: () Sass 将会报错。
-如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。
-
-基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，
-尤其是需要声明只包含单个值的数组时。例如 (1,) 表示只包含 1 的数组，
-而 (1 2 3,) 表示包含 1 2 3 这个以空格分隔的数组的数组。
-
-
-数组的使用方法:
-https://sass-lang.com/documentation/functions/list(英文)
-
+数组 (lists) 指 Sass 如何处理 CSS 中 margin: 10px 15px 0 0 或者  
+font-face: Helvetica, Arial, sans-serif 这样通过空格或者逗号分隔的一系列的值。  
+事实上，独立的值也被视为数组 —— 只包含一个值的数组。  
+  
+数组本身没有太多功能，但 Sass list functions 赋予了数组更多新功能：  
+nth 函数可以直接访问数组中的某一项；  
+join 函数可以将多个数组连接在一起；  
+append 函数可以在数组中添加新值；  
+而 @each 指令能够遍历数组中的每一项。  
+  
+  
+数组中可以包含子数组，比如 1px 2px, 5px 6px 是包含 1px 2px 与 5px 6px 两个数组的数组。  
+如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，  
+所以也可以写成 (1px 2px) (5px 6px)。变化是，之前的 1px 2px, 5px 6px 使用逗号分割了两个子数组 (comma-separated)，  
+而 (1px 2px) (5px 6px) 则使用空格分割(space-separated)。  
+  
+当数组被编译为 CSS 时，Sass 不会添加任何圆括号（CSS 中没有这种写法），  
+所以 (1px 2px) (5px 6px) 与 1px 2px, 5px 6px 在编译后的 CSS 文件中是完全一样的，  
+但是它们在 Sass 文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。  
+  
+用 () 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。  
+空数组不可以直接编译成 CSS，比如编译 font-family: () Sass 将会报错。  
+如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。  
+  
+基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，  
+尤其是需要声明只包含单个值的数组时。例如 (1,) 表示只包含 1 的数组，  
+而 (1 2 3,) 表示包含 1 2 3 这个以空格分隔的数组的数组。  
+  
+  
+数组的使用方法:  
+https://sass-lang.com/documentation/functions/list(英文)  
+  
 map
 ---
-Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。
+Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。  
 
-使用map
-https://sass-lang.com/documentation/values/maps
+使用map  
+https://sass-lang.com/documentation/values/maps  
 
 map-get
 ---
@@ -120,14 +120,15 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 @debug map-get($font-weights, "extra-bold"); // null
 ```
   
-@each
+@each  
 ---
-This doesn’t actually use a function, but it’s still one of the most common ways to use maps. 
-The @each rule evaluates a block of styles for each key/value pair in a map. 
-The key and the value are assigned to variables so they can easily be accessed in the block.
-例子
-$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+This doesn’t actually use a function, but it’s still one of the most common ways to use maps.   
+The @each rule evaluates a block of styles for each key/value pair in a map.   
+The key and the value are assigned to variables so they can easily be accessed in the block.  
+例子  
 
+`$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");`
+  
 ```
 @each $name, $glyph in $icons {
   .icon-#{$name}:before {
@@ -169,63 +170,76 @@ p {
 使用 color functions 比计算颜色值更方便一些。  
 https://sass-lang.com/documentation/functions/color  
 常用  mix()  red()  green()  blue() 等,详见网页  
-                4.mixin
-                    定义
-                        混合指令的用法是在 @mixin 后添加名称与样式
-                        混合也需要包含选择器和属性，甚至可以用 & 引用父选择器
-                        @mixin clearfix {
-                          display: inline-block;
-                          &:after {
-                            content: ".";
-                            //...省略
-                          }
-                          * html & { height: 1px }
-                        }
-
-                    使用
-                        @include 指令引用混合样式，格式是在其后添加混合名称，以及需要的参数（可选）
-
-                        混合样式中也可以包含其他混合样式
-                        @mixin compound {
-                          @include highlighted-background;
-                          @include header-text;
-                        }
-                        @mixin highlighted-background { background-color: #fc0; }
-                        @mixin header-text { font-size: 20px; }
-
-                        混合样式中应该只定义后代选择器，这样可以安全的导入到文件的任何位置。
-                        原因:不会自动覆盖同级别的属性.会按照引入顺序输出
-                    
-                    参数
-                        参数用于给混合指令中的样式设定变量，并且赋值使用。
-                        在定义混合指令的时候，按照变量的格式，通过逗号分隔，将参数写进圆括号里。
-                        引用指令时，按照参数的顺序，再将所赋的值对应写进括号
-                        @mixin sexy-border($color, $width) {
-                          border: {
-                            color: $color;
-                            width: $width;
-                            style: dashed;
-                          }
-                        }
-                        p { @include sexy-border(blue, 1in); }
-                        有时，不能确定混合指令需要使用多少个参数。
-                        这时，可以使用参数变量 … 声明（写在参数的最后方）告诉 Sass 将这些参数视为值列表处理
-                        @mixin box-shadow($shadows...)  {
-                        //something
-                        }
-                    
-                5.继承和嵌套
-                    继承
-                        @extend
-                            .error {
-                              border: 1px #f00;
-                              background-color: #fdd;
-                            }
-                            .seriousError {
-                              @extend .error;
-                              border-width: 3px;
-                            }
-                            上面代码的意思是将 .error 下的所有样式继承给 .seriousError
+  
+4.mixin
+===
+定义  
+混合指令的用法是在 @mixin 后添加名称与样式  
+混合也需要包含选择器和属性，甚至可以用 & 引用父选择器  
+```
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    //...省略
+  }
+  * html & { height: 1px }
+}
+```
+  
+使用  
+@include 指令引用混合样式，格式是在其后添加混合名称，以及需要的参数（可选）  
+  
+混合样式中也可以包含其他混合样式  
+```
+@mixin compound {
+  @include highlighted-background;
+  @include header-text;
+}
+@mixin highlighted-background { background-color: #fc0; }
+@mixin header-text { font-size: 20px; }
+```
+混合样式中应该只定义后代选择器，这样可以安全的导入到文件的任何位置。  
+原因:不会自动覆盖同级别的属性.会按照引入顺序输出  
+  
+参数  
+参数用于给混合指令中的样式设定变量，并且赋值使用。  
+在定义混合指令的时候，按照变量的格式，通过逗号分隔，将参数写进圆括号里。  
+引用指令时，按照参数的顺序，再将所赋的值对应写进括号  
+```
+@mixin sexy-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+p { @include sexy-border(blue, 1in); }
+```
+有时，不能确定混合指令需要使用多少个参数。  
+这时，可以使用参数变量 … 声明（写在参数的最后方）告诉 Sass 将这些参数视为值列表处理  
+```
+@mixin box-shadow($shadows...)  {
+//something
+}
+```
+  
+5.继承和嵌套  
+===
+继承
+---
+@extend  
+```
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+```
+上面代码的意思是将 .error 下的所有样式继承给 .seriousError  
                             
                             注意:继承的是整个css树结构.相同的子结构也会继承属性
                             解释:@extend 的作用是将重复使用的样式延伸 (extend) 给需要包含这个样式的特殊样式
