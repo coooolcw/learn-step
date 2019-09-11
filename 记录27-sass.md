@@ -10,6 +10,7 @@ https://www.cnblogs.com/morong/p/4329957.html
   
 重点:  
 1.变量  
+===
 sass的变量名必须是一个$符号开头，后面紧跟变量名  
 `$red: #f00;`  
 特殊变量：如果变量嵌套在字符串中，则需要写在 #{} 符号里面  
@@ -32,7 +33,8 @@ div {
 不在嵌套规则内定义的变量则可在任何地方使用（全局变量）。  
 将局部变量转换为全局变量可以添加 !global 声明  
   
-2.@import  
+2.@import 
+===
 通常，@import 寻找 Sass 文件并将其导入，但在以下情况下，@import 仅作为普通的 CSS 语句，不会导入任何 Sass 文件。  
 文件拓展名是 .css；  
 文件名以 http:// 开头；   
@@ -40,116 +42,132 @@ div {
 @import 包含 media queries。  
 如果不在上述情况内，文件的拓展名是 .scss 或 .sass，则导入成功。  
 没有指定拓展名，Sass 将会试着寻找文件名相同，拓展名为 .scss 或 .sass 的文件并将其导入。  
-                
-                如果需要导入 SCSS 或者 Sass 文件，但又不希望将其编译为 CSS，只需要在文件名前添加下划线，
-                这样会告诉 Sass 不要编译这些文件，但导入语句中却不需要添加下划线。
-                
-                注意:import引入时也会改变变量,使用!default设置可避免位置引发的冲突
-                
-            3.数据类型
-                SassScript 支持 6 种主要的数据类型：
-                    数字，1, 2, 13, 10px
-                    字符串，有引号字符串与无引号字符串，"foo", 'bar', baz
-                    颜色，blue, #04a3f9, rgba(255,0,0,0.5)
-                    布尔型，true, false
-                    空值，null
-                    数组 (list)，用空格或逗号作分隔符，1.5em 1em 0 2em, Helvetica, Arial, sans-serif
-                    maps, 相当于 JavaScript 的 object，(key1: value1, key2: value2)
-                    
-                    字符串
-                        SassScript 支持 CSS 的两种字符串类型：有引号字符串 (quoted strings)，如 "Lucida Grande" 'http://sass-lang.com'；
-                        与无引号字符串 (unquoted strings)，如 sans-serif bold，在编译 CSS 文件时不会改变其类型。
-                        只有一种情况例外，使用 #{} (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名：
-                        
-                    数组
-                        数组 (lists) 指 Sass 如何处理 CSS 中 margin: 10px 15px 0 0 或者
-                        font-face: Helvetica, Arial, sans-serif 这样通过空格或者逗号分隔的一系列的值。
-                        事实上，独立的值也被视为数组 —— 只包含一个值的数组。
-                        
-                        数组本身没有太多功能，但 Sass list functions 赋予了数组更多新功能：
-                        nth 函数可以直接访问数组中的某一项；
-                        join 函数可以将多个数组连接在一起；
-                        append 函数可以在数组中添加新值；
-                        而 @each 指令能够遍历数组中的每一项。
+  
+如果需要导入 SCSS 或者 Sass 文件，但又不希望将其编译为 CSS，只需要在文件名前添加下划线，  
+这样会告诉 Sass 不要编译这些文件，但导入语句中却不需要添加下划线。  
+  
+注意:import引入时也会改变变量,使用!default设置可避免位置引发的冲突  
+  
+3.数据类型  
+===
+SassScript 支持 6 种主要的数据类型：  
+数字，1, 2, 13, 10px  
+字符串，有引号字符串与无引号字符串，"foo", 'bar', baz  
+颜色，blue, #04a3f9, rgba(255,0,0,0.5)  
+布尔型，true, false  
+空值，null  
+数组 (list)，用空格或逗号作分隔符，1.5em 1em 0 2em, Helvetica, Arial, sans-serif  
+maps, 相当于 JavaScript 的 object，(key1: value1, key2: value2)  
+  
+字符串  
+---
+SassScript 支持 CSS 的两种字符串类型：有引号字符串 (quoted strings)，如 "Lucida Grande" 'http://sass-lang.com'；
+与无引号字符串 (unquoted strings)，如 sans-serif bold，在编译 CSS 文件时不会改变其类型。
+只有一种情况例外，使用 #{} (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名：
 
-                        数组中可以包含子数组，比如 1px 2px, 5px 6px 是包含 1px 2px 与 5px 6px 两个数组的数组。
-                        如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，
-                        所以也可以写成 (1px 2px) (5px 6px)。变化是，之前的 1px 2px, 5px 6px 使用逗号分割了两个子数组 (comma-separated)，
-                        而 (1px 2px) (5px 6px) 则使用空格分割(space-separated)。
+数组
+---
+数组 (lists) 指 Sass 如何处理 CSS 中 margin: 10px 15px 0 0 或者
+font-face: Helvetica, Arial, sans-serif 这样通过空格或者逗号分隔的一系列的值。
+事实上，独立的值也被视为数组 —— 只包含一个值的数组。
 
-                        当数组被编译为 CSS 时，Sass 不会添加任何圆括号（CSS 中没有这种写法），
-                        所以 (1px 2px) (5px 6px) 与 1px 2px, 5px 6px 在编译后的 CSS 文件中是完全一样的，
-                        但是它们在 Sass 文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。
+数组本身没有太多功能，但 Sass list functions 赋予了数组更多新功能：
+nth 函数可以直接访问数组中的某一项；
+join 函数可以将多个数组连接在一起；
+append 函数可以在数组中添加新值；
+而 @each 指令能够遍历数组中的每一项。
 
-                        用 () 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。
-                        空数组不可以直接编译成 CSS，比如编译 font-family: () Sass 将会报错。
-                        如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。
 
-                        基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，
-                        尤其是需要声明只包含单个值的数组时。例如 (1,) 表示只包含 1 的数组，
-                        而 (1 2 3,) 表示包含 1 2 3 这个以空格分隔的数组的数组。
-                        
-                        
-                        数组的使用方法:
-                            https://sass-lang.com/documentation/functions/list(英文)
-                        
-                    map
-                        Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。
-                        
-                        使用map
-                            https://sass-lang.com/documentation/values/maps
-                            
-                        map-get
-                            Maps are all about associating keys and values, 
-                            so naturally there’s a way to get the value associated with a key: the map-get($map, $key) function!
-                            This function returns the value in the map associated with the given key.
-                            It returns null if the map doesn’t contain the key.
-                        例子
-                            $font-weights: ("regular": 400, "medium": 500, "bold": 700);
-                            @debug map-get($font-weights, "medium"); // 500
-                            @debug map-get($font-weights, "extra-bold"); // null
-                        @each
-                            This doesn’t actually use a function, but it’s still one of the most common ways to use maps. 
-                            The @each rule evaluates a block of styles for each key/value pair in a map. 
-                            The key and the value are assigned to variables so they can easily be accessed in the block.
-                        例子
-                            $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+数组中可以包含子数组，比如 1px 2px, 5px 6px 是包含 1px 2px 与 5px 6px 两个数组的数组。
+如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，
+所以也可以写成 (1px 2px) (5px 6px)。变化是，之前的 1px 2px, 5px 6px 使用逗号分割了两个子数组 (comma-separated)，
+而 (1px 2px) (5px 6px) 则使用空格分割(space-separated)。
 
-                            @each $name, $glyph in $icons {
-                              .icon-#{$name}:before {
-                                display: inline-block;
-                                font-family: "Icon Font";
-                                content: $glyph;
-                              }
-                            }
-                
-                3.运算
-                    除法
-                        以下三种情况 / 将被视为除法运算符号： 
-                            如果值，或值的一部分，是变量或者函数的返回值
-                            如果值被圆括号包裹
-                            如果值是算数表达式的一部分
-                            
-                        例子
-                            p {
-                              font: 10px/8px;             // Plain CSS, no division
-                              $width: 1000px;
-                              width: $width/2;            // Uses a variable, does division
-                              width: round(1.5)/2;        // Uses a function, does division
-                              height: (500px/2);          // Uses parentheses, does division
-                              margin-left: 5px + 8px/2px; // Uses +, does division
-                            }
-                            编译为
-                            p {
-                              font: 10px/8px;
-                              width: 500px;
-                              height: 250px;
-                              margin-left: 9px; }
+当数组被编译为 CSS 时，Sass 不会添加任何圆括号（CSS 中没有这种写法），
+所以 (1px 2px) (5px 6px) 与 1px 2px, 5px 6px 在编译后的 CSS 文件中是完全一样的，
+但是它们在 Sass 文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。
 
-                            颜色值的运算是分段计算进行的，也就是分别计算红色，绿色，以及蓝色的值
-                            使用 color functions 比计算颜色值更方便一些。
-                                https://sass-lang.com/documentation/functions/color
-                                常用  mix()  red()  green()  blue() 等,详见网页
+用 () 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。
+空数组不可以直接编译成 CSS，比如编译 font-family: () Sass 将会报错。
+如果数组中包含空数组或空值，编译时将被清除，比如 1px 2px () 3px 或 1px 2px null 3px。
+
+基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，
+尤其是需要声明只包含单个值的数组时。例如 (1,) 表示只包含 1 的数组，
+而 (1 2 3,) 表示包含 1 2 3 这个以空格分隔的数组的数组。
+
+
+数组的使用方法:
+https://sass-lang.com/documentation/functions/list(英文)
+
+map
+---
+Maps可视为键值对的集合，键被用于定位值 在css种没有对应的概念。
+
+使用map
+https://sass-lang.com/documentation/values/maps
+
+map-get
+---
+Maps are all about associating keys and values,   
+so naturally there’s a way to get the value associated with a key: the map-get($map, $key) function!  
+This function returns the value in the map associated with the given key.  
+It returns null if the map doesn’t contain the key.  
+例子  
+```
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+@debug map-get($font-weights, "medium"); // 500
+@debug map-get($font-weights, "extra-bold"); // null
+```
+  
+@each
+---
+This doesn’t actually use a function, but it’s still one of the most common ways to use maps. 
+The @each rule evaluates a block of styles for each key/value pair in a map. 
+The key and the value are assigned to variables so they can easily be accessed in the block.
+例子
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+```
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+```
+  
+3.运算  
+===
+除法  
+以下三种情况 / 将被视为除法运算符号：   
+如果值，或值的一部分，是变量或者函数的返回值  
+如果值被圆括号包裹  
+如果值是算数表达式的一部分  
+  
+例子  
+```
+p {
+  font: 10px/8px;             // Plain CSS, no division
+  $width: 1000px;
+  width: $width/2;            // Uses a variable, does division
+  width: round(1.5)/2;        // Uses a function, does division
+  height: (500px/2);          // Uses parentheses, does division
+  margin-left: 5px + 8px/2px; // Uses +, does division
+}
+```
+编译为  
+```
+p {
+  font: 10px/8px;
+  width: 500px;
+  height: 250px;
+  margin-left: 9px; }
+```
+颜色值的运算是分段计算进行的，也就是分别计算红色，绿色，以及蓝色的值  
+使用 color functions 比计算颜色值更方便一些。  
+https://sass-lang.com/documentation/functions/color  
+常用  mix()  red()  green()  blue() 等,详见网页  
                 4.mixin
                     定义
                         混合指令的用法是在 @mixin 后添加名称与样式
