@@ -1,23 +1,27 @@
-https://cn.vuejs.org/v2/guide/routing.html
-重要API
-
-  router实例的基础配置
-    https://router.vuejs.org/zh/api/#routes
-
-
-route文档
-https://router.vuejs.org/zh/guide/#javascript
-HTML跳转
+https://cn.vuejs.org/v2/guide/routing.html  
+重要API  
+  
+  router实例的基础配置  
+    https://router.vuejs.org/zh/api/#routes  
+  
+  
+route文档  
+https://router.vuejs.org/zh/guide/#javascript  
+HTML跳转  
+```
   <!-- 使用 router-link 组件来导航. -->
   <!-- 通过传入 `to` 属性指定链接. -->
   <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
   <router-link to="/foo">Go to Foo</router-link>
-JS跳转
-  https://router.vuejs.org/zh/guide/essentials/navigation.html
-  语法router.push(location, onComplete?, onAbort?)
-  在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
-传参
-  基础传参
+```
+  
+JS跳转  
+  https://router.vuejs.org/zh/guide/essentials/navigation.html  
+  语法`router.push(location, onComplete?, onAbort?)`  
+  在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push  
+传参  
+  基础传参  
+```
     const User = {
       template: '<div>User {{ $route.params.id }}</div>'
     }
@@ -26,26 +30,29 @@ JS跳转
       { path: '/user/:id', component: User }
     ]
     })
-                        
-                        
-点击 <router-link :to="..."> 等同于调用 router.push(...)。
-  重要的路由对象属性
-    $route.path
-    $route.params
-    $route.query
-  重要路由实例方法
-    router.push
-                            
-                            
-☆注意在独立需要封装路由的组件中可以直接使用$router实例进行操作
-
-
-基本配置
-  在router.js中
+```
+  
+点击 `<router-link :to="...">` 等同于调用 `router.push(...)`。  
+  重要的路由对象属性  
+    $route.path  
+    $route.params  
+    $route.query  
+  重要路由实例方法  
+    router.push  
+  
+  
+☆注意在独立需要封装路由的组件中可以直接使用$router实例进行操作  
+  
+  
+基本配置  
+  在router.js中  
+```
   import Home from './views/home/index.vue'
   import xxxx from './views/home/xxxx.vue'
   import about from './views/about/index.vue'
-  普通的文件会在进入首页时就加载,懒加载的会在点击后开始加载
+```
+  普通的文件会在进入首页时就加载,懒加载的会在点击后开始加载  
+```
   export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -78,3 +85,4 @@ JS跳转
     }
   ]
 })
+```
