@@ -240,59 +240,72 @@ p { @include sexy-border(blue, 1in); }
 }
 ```
 上面代码的意思是将 .error 下的所有样式继承给 .seriousError  
-                            
-                            注意:继承的是整个css树结构.相同的子结构也会继承属性
-                            解释:@extend 的作用是将重复使用的样式延伸 (extend) 给需要包含这个样式的特殊样式
-                                .error {
-                                  border: 1px #f00;
-                                  background-color: #fdd;
-                                }
-                                .error.intrusion {
-                                  background-image: url("/image/hacked.png");
-                                }
-                                .seriousError {
-                                  @extend .error;
-                                  border-width: 3px;
-                                }
-                                输出
-                                .error, .seriousError {
-                                  border: 1px #f00;
-                                  background-color: #fdd; }
-                                .error.intrusion, .seriousError.intrusion {
-                                  background-image: url("/image/hacked.png"); }
-                                .seriousError {
-                                  border-width: 3px; }
-                        链式继承
-                            可嵌套进行继承
-                            
-                        伪类继承
-                            Class 选择器并不是唯一可以被延伸 (extend) 的，
-                            Sass 允许延伸任何定义给单个元素的选择器，比如 .special.cool，a:hover 或者 a.user[href^="http://"] 等
-                            例子
-                                .hoverlink {
-                                  @extend a:hover;
-                                }
-                                a:hover {
-                                  text-decoration: underline;
-                                }
-                                输出
-                                a:hover, .hoverlink {
-                                  text-decoration: underline; }
-                                所有 a:hover 的样式将继承给 .hoverlink，包括其他使用到 a:hover 的样式
-                                    .hoverlink {
-                                      @extend a:hover;
-                                    }
-                                    .comment a.user:hover {
-                                      font-weight: bold;
-                                    }
-                                    编译为
-                                    .comment a.user:hover, .comment .user.hoverlink {
-                                      font-weight: bold; }
-
-                    嵌套
-                        规则:
-                            1.内层的样式将它外层的选择器作为父选择器
-                            2.用 & 代表嵌套规则外层的父选择器
+  
+注意:继承的是整个css树结构.相同的子结构也会继承属性  
+解释:@extend 的作用是将重复使用的样式延伸 (extend) 给需要包含这个样式的特殊样式  
+```
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.error.intrusion {
+  background-image: url("/image/hacked.png");
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+```
+输出  
+```
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+.error.intrusion, .seriousError.intrusion {
+  background-image: url("/image/hacked.png"); }
+.seriousError {
+  border-width: 3px; }
+```
+链式继承  
+可嵌套进行继承  
+  
+伪类继承  
+Class 选择器并不是唯一可以被延伸 (extend) 的，  
+Sass 允许延伸任何定义给单个元素的选择器，比如 `.special.cool，a:hover` 或者 `a.user[href^="http://"]` 等  
+例子  
+```
+.hoverlink {
+  @extend a:hover;
+}
+a:hover {
+  text-decoration: underline;
+}
+```
+输出  
+```
+a:hover, .hoverlink {
+text-decoration: underline; }
+```
+所有 a:hover 的样式将继承给 .hoverlink，包括其他使用到 a:hover 的样式  
+```
+.hoverlink {
+  @extend a:hover;
+}
+.comment a.user:hover {
+  font-weight: bold;
+}
+```
+编译为  
+```
+.comment a.user:hover, .comment .user.hoverlink {
+font-weight: bold; }
+```
+  
+嵌套
+---
+规则:  
+1.内层的样式将它外层的选择器作为父选择器  
+2.用 & 代表嵌套规则外层的父选择器  
                                 a {
                                   font-weight: bold;
                                   text-decoration: none;
