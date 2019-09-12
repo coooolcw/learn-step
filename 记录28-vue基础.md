@@ -246,77 +246,69 @@ https://cn.vuejs.org/v2/guide/events.html#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E
 11.表单输入绑定
 ===
 https://cn.vuejs.org/v2/guide/forms.html  
-                v-model
-                    v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定.
-                    注意点:
-                        1.v-model 会忽略所有表单元素的 value、checked、selected 特性的初始值而总是将 Vue 实例的数据作为数据来源。
-                        你应该通过 JavaScript 在组件的 data 选项中声明初始值。
-                        2.v-model 在内部为不同的输入元素使用不同的属性并抛出不同的事件：
-                            text 和 textarea 元素使用 value 属性和 input 事件；
-                            checkbox 和 radio 使用 checked 属性和 change 事件；
-                            select 字段将 value 作为 prop 并将 change 作为事件。
-                        3.对于需要使用输入法 (如中文、日文、韩文等) 的语言，你会发现 v-model 不会在输入法组合文字过程中得到更新。
-                        4.在文本区域插值 (<textarea>{{text}}</textarea>) 并不会生效，应用 v-model 来代替。
-                        5.多选框会根据选择的顺序push值(checkbox)
-                        6.如果 v-model 表达式的初始值未能匹配任何选项，<select> 元素将被渲染为“未选中”状态。
-                        在 iOS 中，这会使用户无法选择第一个选项。因为这样的情况下，iOS 不会触发 change 事件。
-                        更推荐在第一个位置提供一个值为空的禁用选项。
-                        7.select多选时会根据设定内容的顺序填充数组,而不是选择的顺序push
-                        8.可与v-for搭配使用
-                值的绑定
-                    https://cn.vuejs.org/v2/guide/forms.html#%E5%80%BC%E7%BB%91%E5%AE%9A
-                    难以概括,参见官网
-                        主要:v-bind:value
-                修饰符
-                    .lazy.number.trim
-            12.组件基础
-                https://cn.vuejs.org/v2/guide/components.html
-                重要概念:https://wiki.imooc.com/vue/vuejscomponent.html
-                内容较多,仅摘要
-                    重点:
-                        1.一个组件的 data 选项必须是一个函数，因此每个实例可以维护一份被返回对象的独立的拷贝
-                        2.有两种组件的注册类型：全局注册和局部注册。
-                            全局注册的组件可以用在其被注册之后的任何(通过 new Vue)新创建的Vue根实例,也包括其组件树中的所有子组件的模板中.
-                        3.可以使用 v-bind 来动态传递 prop
-                        4.子组件可以通过调用内建的 $emit 方法 并传入事件名称来触发一个事件
-                        
-            13.DOM操作
-                重点
-                    this(vue).$refs
-                    说明:https://cn.vuejs.org/v2/api/#ref
-                    dom元素绑定ref="***"
-                    this.$refs.***
-            14.过渡效果
-                https://cn.vuejs.org/v2/guide/transitions.html
-                在以下情形中可以给任何元素和组件添加进入/离开过渡
-                    条件渲染 (使用 v-if)
-                    条件展示 (使用 v-show)
-                    动态组件
-                    组件根节点
-                在进入/离开的过渡中，会有 6 个 class 切换
-                    v-enter
-                    v-enter-active
-                    v-enter-to
-                    v-leave
-                    v-leave-active
-                    v-leave-to
+v-model  
+v-model 指令在表单 <input>、<textarea> 及 <select> 元素上创建双向数据绑定.  
+注意点:  
+1.v-model 会忽略所有表单元素的 value、checked、selected 特性的初始值而总是将 Vue 实例的数据作为数据来源。  
+你应该通过 JavaScript 在组件的 data 选项中声明初始值。  
+2.v-model 在内部为不同的输入元素使用不同的属性并抛出不同的事件：  
+text 和 textarea 元素使用 value 属性和 input 事件；  
+checkbox 和 radio 使用 checked 属性和 change 事件；  
+select 字段将 value 作为 prop 并将 change 作为事件。  
+3.对于需要使用输入法 (如中文、日文、韩文等) 的语言，你会发现 v-model 不会在输入法组合文字过程中得到更新。  
+4.在文本区域插值(`<textarea>{{text}}</textarea>`)并不会生效，应用 v-model 来代替。  
+5.多选框会根据选择的顺序push值(checkbox)  
+6.如果 v-model 表达式的初始值未能匹配任何选项，<select> 元素将被渲染为“未选中”状态。  
+在 iOS 中，这会使用户无法选择第一个选项。因为这样的情况下，iOS 不会触发 change 事件。  
+更推荐在第一个位置提供一个值为空的禁用选项。  
+7.select多选时会根据设定内容的顺序填充数组,而不是选择的顺序push  
+8.可与v-for搭配使用  
+值的绑定  
+https://cn.vuejs.org/v2/guide/forms.html#%E5%80%BC%E7%BB%91%E5%AE%9A  
+难以概括,参见官网  
+主要:v-bind:value  
+修饰符  
+.lazy.number.trim  
+  
+12.组件基础  
+===
+https://cn.vuejs.org/v2/guide/components.html  
+重要概念:https://wiki.imooc.com/vue/vuejscomponent.html  
+内容较多,仅摘要  
+重点:  
+1.一个组件的 data 选项必须是一个函数，因此每个实例可以维护一份被返回对象的独立的拷贝  
+2.有两种组件的注册类型：全局注册和局部注册。  
+全局注册的组件可以用在其被注册之后的任何(通过 new Vue)新创建的Vue根实例,也包括其组件树中的所有子组件的模板中.  
+3.可以使用 v-bind 来动态传递 prop  
+4.子组件可以通过调用内建的 $emit 方法 并传入事件名称来触发一个事件  
+  
+13.DOM操作  
+===
+重点  
+this(vue).$refs  
+说明:https://cn.vuejs.org/v2/api/#ref  
+dom元素绑定`ref="***"`  
+`this.$refs.***`  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                过滤器
-                    https://cn.vuejs.org/v2/guide/filters.html#ad
+14.过渡效果  
+===
+https://cn.vuejs.org/v2/guide/transitions.html  
+在以下情形中可以给任何元素和组件添加进入/离开过渡  
+条件渲染 (使用 v-if)  
+条件展示 (使用 v-show)  
+动态组件  
+组件根节点  
+在进入/离开的过渡中，会有 6 个 class 切换  
+v-enter  
+v-enter-active  
+v-enter-to  
+v-leave  
+v-leave-active  
+v-leave-to  
+  
+  
+过滤器  
+https://cn.vuejs.org/v2/guide/filters.html#ad  
                     
 
     
