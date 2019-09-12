@@ -354,124 +354,139 @@ body.firefox a {
   
   
 注意:可遍历数组 不过感觉上用each更好  
-                        $list:(,,,,,);//something
-                        for $listitem from $list though length($list) {
-                            $listitem {
-                                //something
-                            }
-                        }
-                        
-                    3.while
-                        @while 指令重复输出格式直到表达式返回结果为 false。这样可以实现比 @for 更复杂的循环，只是很少会用到
-                        记得在循环内操作$i
-                        $i: 6;
-                        @while $i > 0 {
-                          .item-#{$i} { width: 2em * $i; }
-                          $i: $i - 2;
-                        }
-                    4.each
-                        对list
-                            @each 指令的格式是 $var in <list>, $var 可以是任何变量名，
-                            比如 $length 或者 $name，而 <list> 是一连串的值，也就是值列表。
-                            @each 将变量 $var 作用于值列表中的每一个项目，然后输出结果
-                            语法:@each $size in $sizes
-                        对map
-                            https://sass-lang.com/documentation/at-rules/control/each
-                            语法:@each <variable>, <variable> in <expression> { ... }
-                            例子
-                                $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
-                                @each $name, $glyph in $icons{
-                                  .icon-#{$name}:before {
-                                    display: inline-block;
-                                    font-family: "Icon Font";
-                                    content: $glyph;
-                                  }
-                                }
-                            
-                7.函数
-                    函数列表(总)
-                        https://sass-lang.com/documentation/functions
-                        
-                        1.数字
-                            number函数列表
-                            https://sass-lang.com/documentation/functions/math
-                            重点函数
-                                1.random($limit: null)
-                                    如果$limit是1,输出0~1之间的随机数
-                                    如果$limit是1以上的整数,输出1~$limiti之间的随机整数
-                            常见函数
-                                1.abs($number) //=> number 
-                                2.ceil($number) //=> number 
-                                3.floor($number) //=> number 
-                                4.max($number...) //=> number 
-                                5.min($number...) //=> number
-                                6.percentage($number) //=> number 
-                                7.round($number) //=> number 
-                                
-                        2.数组
-                            https://sass-lang.com/documentation/functions/list
-                            常见函数
-                                1.length($list) //=> number 
-                                2.nth($list, $n) 
-                                3.set-nth($list, $n, $value) //=> list 
-                                4.join($list1, $list2, $separator: auto, $bracketed: auto) //=> list 
-                                    用于合并两个数组
-                                5.append($list, $val, $separator: auto) //=> list 
-                                    在数组的最后添加新的值
-                                5.index($list, $value) //=> number | null 
-                        3.字符串
-                            https://sass-lang.com/documentation/functions/string
-                            常见函数
-                                1.quote($string) //=> string 
-                                2.str-index($string, $substring) //=> number 
-                                3.str-insert($string, $insert, $index) //=> string 
-                                    插入字符.
-                                4.str-length($string) //=> number 
-                                5.to-upper-case($string) //=> string 
-                                  to-lower-case($string) //=> string
-                        4.map函数
-                            https://sass-lang.com/documentation/functions/map
-                            常见函数
-                                1.map-get($map, $key) 
-                                2.map-remove($map, $keys...) //=> map 
-                                3.map-keys($map) //=> list 
-                                4.map-values($map) //=> list 
-                                5.map-has-key($map, $key) //=> boolean 
-                                6.keywords($args) //=> map 
-                                    重点
-                                    用于mixin
-                                    @mixin syntax-colors($args...) {
-                                      @debug keywords($args); // (string: #080, comment: #800, $variable: $60b)
+```
+$list:(,,,,,);//something
+for $listitem from $list though length($list) {
+  $listitem {
+    //something
+  }
+}
+```
+3.while  
+@while 指令重复输出格式直到表达式返回结果为 false。这样可以实现比 @for 更复杂的循环，只是很少会用到  
+记得在循环内操作$i  
+```
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}
+```
+4.each  
+对list  
+@each 指令的格式是 $var in <list>, $var 可以是任何变量名，  
+比如 $length 或者 $name，而 <list> 是一连串的值，也就是值列表。  
+@each 将变量 $var 作用于值列表中的每一个项目，然后输出结果  
+语法:@each $size in $sizes  
+对map  
+https://sass-lang.com/documentation/at-rules/control/each  
+语法:@each <variable>, <variable> in <expression> { ... }  
+例子  
+```
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+@each $name, $glyph in $icons{
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+```
+7.函数  
+函数列表(总)  
+https://sass-lang.com/documentation/functions  
+  
+1.数字  
+number函数列表  
+https://sass-lang.com/documentation/functions/math  
+重点函数  
+1.random($limit: null)  
+如果$limit是1,输出0~1之间的随机数  
+如果$limit是1以上的整数,输出1~$limiti之间的随机整数  
+常见函数  
+```
+1.abs($number) //=> number 
+2.ceil($number) //=> number 
+3.floor($number) //=> number 
+4.max($number...) //=> number 
+5.min($number...) //=> number
+6.percentage($number) //=> number 
+7.round($number) //=> number 
+```
+  
+2.数组  
+https://sass-lang.com/documentation/functions/list  
+常见函数  
+```
+1.length($list) //=> number 
+2.nth($list, $n) 
+3.set-nth($list, $n, $value) //=> list 
+4.join($list1, $list2, $separator: auto, $bracketed: auto) //=> list 
+  用于合并两个数组
+5.append($list, $val, $separator: auto) //=> list 
+  在数组的最后添加新的值
+5.index($list, $value) //=> number | null 
+```
+3.字符串  
+https://sass-lang.com/documentation/functions/string  
+常见函数  
+```
+1.quote($string) //=> string 
+2.str-index($string, $substring) //=> number 
+3.str-insert($string, $insert, $index) //=> string 
+  插入字符.
+4.str-length($string) //=> number 
+5.to-upper-case($string) //=> string 
+  to-lower-case($string) //=> string
+```
+4.map函数  
+https://sass-lang.com/documentation/functions/map  
+常见函数  
+```
+1.map-get($map, $key) 
+2.map-remove($map, $keys...) //=> map 
+3.map-keys($map) //=> list 
+4.map-values($map) //=> list 
+5.map-has-key($map, $key) //=> boolean 
+6.keywords($args) //=> map 
+```
+重点  
+用于mixin  
+```
+@mixin syntax-colors($args...) {
+  @debug keywords($args); // (string: #080, comment: #800, $variable: $60b)
 
-                                      @each $name, $color in keywords($args) {
-                                        pre span.stx-#{$name} {
-                                          color: $color;
-                                        }
-                                      }
-                                    }
+@each $name, $color in keywords($args) {
+  pre span.stx-#{$name} {
+    color: $color;
+    }
+  }
+}
 
-                                    @include syntax-colors(
-                                      $string: #080,
-                                      $comment: #800,
-                                      $variable: #60b,
-                                    )
-                        5.自定义函数
-                            https://sass-lang.com/documentation/at-rules/function
-                            Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用
-                            
-                            例子
-                                @function pow($base, $exponent) {
-                                  $result: 1;
-                                  @for $_ from 1 through $exponent {
-                                    $result: $result * $base;
-                                  }
-                                  @return $result;
-                                }
+@include syntax-colors(
+  $string: #080,
+  $comment: #800,
+  $variable: #60b,
+)
+```
+5.自定义函数  
+https://sass-lang.com/documentation/at-rules/function  
+Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用  
+  
+例子  
+```
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
 
-                                .sidebar {
-                                  float: left;
-                                  margin-left: pow(4, 3) * 1px;
-                                }
-
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+}
+```
 
 
