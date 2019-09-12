@@ -1,11 +1,13 @@
-注意
-    vue-cli3取消了初始配置build文件夹
-    现在配置需要在根目录下创建vue.config.js文件进行配置
-        官网配置页面https://cli.vuejs.org/zh/config/
-        语法格式为
-        module.exports = {
-          // 选项...
-        }
+注意  
+vue-cli3取消了初始配置build文件夹  
+现在配置需要在根目录下创建vue.config.js文件进行配置  
+官网配置页面https://cli.vuejs.org/zh/config/  
+语法格式为  
+```
+module.exports = {
+    // 选项...
+}
+```
     默认插件
         在使用cli创建时,以下选项选择In package.json后会将一些插件(Babel, PostCSS, ESLint等)配置选项放在package.json内
         默认是在分别单独的文件内进行配置
