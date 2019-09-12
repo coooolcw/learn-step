@@ -306,47 +306,54 @@ font-weight: bold; }
 规则:  
 1.内层的样式将它外层的选择器作为父选择器  
 2.用 & 代表嵌套规则外层的父选择器  
-                                a {
-                                  font-weight: bold;
-                                  text-decoration: none;
-                                  &:hover { text-decoration: underline; }
-                                  body.firefox & { font-weight: normal; }
-                                }
-                                输出
-                                a {
-                                  font-weight: bold;
-                                  text-decoration: none; }
-                                  a:hover {
-                                    text-decoration: underline; }
-                                  body.firefox a {
-                                    font-weight: normal; }
-                            3.Sass 允许将属性嵌套在命名空间中,命名空间也可以包含自己的属性值
-                                .funky {
-                                  font: 20px/24px {
-                                    family: fantasy;
-                                    weight: bold;
-                                  }
-                                }
-                                输出
-                                .funky {
-                                  font: 20px/24px;
-                                    font-family: fantasy;
-                                    font-weight: bold; }
-                    
-                6.条件/控制语句
-                    1.if
-                        当 @if 的表达式返回值不是 false 或者 null 时，条件成立，输出 {} 内的代码
-                        @if 声明后面可以跟多个 @else if 声明，或者一个 @else 声明。
-                        如果 @if 声明失败，Sass 将逐条执行 @else if 声明，如果全部失败，最后执行 @else 声明
-                    2.for
-                        @for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。
-                        这个指令包含两种格式：@for $var from <start> through <end>，
-                        或者 @for $var from <start> to <end>，区别在于 through 与 to 的含义：
-                        当使用 through 时，条件范围包含 <start> 与 <end> 的值，而使用 to 时条件范围只包含 <start> 的值不包含 <end> 的值。
-                        另外，$var 可以是任何变量，比如 $i；<start> 和 <end> 必须是整数值。
-                        
-                        
-                        注意:可遍历数组 不过感觉上用each更好
+```
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+  body.firefox & { font-weight: normal; }
+}
+```
+输出  
+```
+a {
+  font-weight: bold;
+  text-decoration: none; }
+a:hover {
+  text-decoration: underline; }
+body.firefox a {
+  font-weight: normal; }
+```
+3.Sass 允许将属性嵌套在命名空间中,命名空间也可以包含自己的属性值  
+```
+.funky {
+  font: 20px/24px {
+    family: fantasy;
+    weight: bold;
+  }
+}
+```
+输出  
+```
+.funky {
+  font: 20px/24px;
+  font-family: fantasy;
+  font-weight: bold; }
+```
+6.条件/控制语句  
+1.if  
+当 @if 的表达式返回值不是 false 或者 null 时，条件成立，输出 {} 内的代码  
+@if 声明后面可以跟多个 @else if 声明，或者一个 @else 声明。  
+如果 @if 声明失败，Sass 将逐条执行 @else if 声明，如果全部失败，最后执行 @else 声明  
+2.for  
+@for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。  
+这个指令包含两种格式：@for $var from <start> through <end>，  
+或者 @for $var from <start> to <end>，区别在于 through 与 to 的含义：  
+当使用 through 时，条件范围包含 <start> 与 <end> 的值，而使用 to 时条件范围只包含 <start> 的值不包含 <end> 的值。  
+另外，$var 可以是任何变量，比如 $i；<start> 和 <end> 必须是整数值。  
+  
+  
+注意:可遍历数组 不过感觉上用each更好  
                         $list:(,,,,,);//something
                         for $listitem from $list though length($list) {
                             $listitem {
