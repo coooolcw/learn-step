@@ -1,42 +1,51 @@
-官网
-    vue官方文档
-    https://cn.vuejs.org/
-    vue-cli
-    https://cli.vuejs.org/zh/
-    cli3的配置参考
-    https://cli.vuejs.org/zh/config/
-    
-    vue3对于vue2的目录结构有较大的改动
-    但是会替代vue2 因此直接参考vue3 cli 的官方文档 
-
-
-学习历程
-    1.基础用法
-        直接在html中引入
-            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        
-        vue学习
-            1.创建实例
-                略
-            2.data数据绑定☆
-                注意点:只有当实例被创建时 data 中存在的属性才是响应式的
-            3.vue实例方法
-                https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7
-                待使用一段时间后补充常用方法
-            4.生命周期钩子
-                生命周期图示https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA
-                重要的时间点
-                    mounted
-                        如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。
-                        注意:该钩子在服务器端渲染期间不被调用。
-                        
-                        注意:不要在选项属性或回调上使用箭头函数，比如 created: () => console.log(this.a) 或
-                        vm.$watch('a', newValue => this.myMethod())。
-                        箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，
-                        经常导致 Uncaught TypeError: Cannot read property of undefined 或 
-                        Uncaught TypeError: this.myMethod is not a function 之类的错误。
-            5.模板语法☆
-                文本
+官网  
+vue官方文档  
+https://cn.vuejs.org/  
+vue-cli  
+https://cli.vuejs.org/zh/  
+cli3的配置参考  
+https://cli.vuejs.org/zh/config/  
+  
+vue3对于vue2的目录结构有较大的改动  
+但是会替代vue2 因此直接参考vue3 cli 的官方文档   
+  
+  
+学习历程  
+1.基础用法  
+直接在html中引入  
+`<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>`
+  
+vue学习  
+1.创建实例  
+---
+略  
+  
+2.data数据绑定☆  
+---
+注意点:只有当实例被创建时 data 中存在的属性才是响应式的  
+  
+3.vue实例方法  
+---
+https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7  
+待使用一段时间后补充常用方法  
+  
+4.生命周期钩子  
+---
+生命周期图示https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA  
+重要的时间点  
+mounted  
+如果 root 实例挂载了一个文档内元素，当 mounted 被调用时 vm.$el 也在文档内。  
+注意:该钩子在服务器端渲染期间不被调用。  
+  
+注意:不要在选项属性或回调上使用箭头函数，比如 `created: () => console.log(this.a)` 或  
+`vm.$watch('a', newValue => this.myMethod())`。  
+箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，  
+经常导致 `Uncaught TypeError: Cannot read property of undefined` 或   
+`Uncaught TypeError: this.myMethod is not a function` 之类的错误。  
+  
+5.模板语法☆  
+---
+文本  
                 指令
                     v-html v-bind v-on
                         v-html
