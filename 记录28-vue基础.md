@@ -46,93 +46,94 @@ mounted
 5.模板语法☆  
 ---
 文本  
-                指令
-                    v-html v-bind v-on
-                        v-html
-                            双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 v-html 指令
-                            v-html="rawHtml"
-                            注意:1.变量的值会直接作为HTML,忽略解析属性值中的数据绑定.
-                                2.你不能使用 v-html 来复合局部模板
-                                
-                        v-bind
-                            Mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 v-bind 指令
-                            <div v-bind:id="dynamicId"></div>
-                            对于布尔特性 (它们只要存在就意味着值为 true)，v-bind 工作起来略有不同,
-                                <button v-bind:disabled="isButtonDisabled">Button</button>
-                            如果 isButtonDisabled 的值是 null、undefined 或 false，
-                            则 disabled 特性甚至不会被包含在渲染出来的 <button> 元素中。
-                        
-                        v-on
-                            
-                            
-                js表达式
-                    重点:1.if语句不生效,必须使用三元表达式
-                        2.模板表达式都被放在沙盒中，只能访问全局变量的一个白名单，如 Math 和 Date
-                
-                动态参数☆
-                    可以用方括号括起来的 JavaScript 表达式作为一个指令的参数
-                    动态参数预期会求出一个字符串，异常情况下值为 null。这个特殊的 null 值可以被显性地用于移除绑定。
-                    任何其它非字符串类型的值都将会触发一个警告。
-                    动态参数表达式有一些语法约束，因为某些字符，例如空格和引号，放在 HTML 特性名里是无效的。
-                    同样，在 DOM 中使用模板时你需要回避大写键名。
-                    
-                修饰符☆
-                    修饰符 (modifier) 是以半角句号 . 指明的特殊后缀，用于指出一个指令应该以特殊方式绑定。
-                    例:.prevent 修饰符告诉 v-on 指令对于触发的事件调用 event.preventDefault()
-                    
-                    
-            6.计算属性☆
-                https://cn.vuejs.org/v2/guide/computed.html
-                模板内的表达式非常便利，但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻辑会让模板过重且难以维护。
-                    对于任何复杂逻辑，都应当使用计算属性
-                    例子见https://cn.vuejs.org/v2/guide/computed.html#%E5%9F%BA%E7%A1%80%E4%BE%8B%E5%AD%90
-                    
-                vs方法
-                    我们可以将同一函数定义为一个方法而不是一个计算属性。
-                    两种方式的最终结果确实是完全相同的。
-                    然而，不同的是计算属性是基于它们的响应式依赖进行缓存的。
-                    只在相关响应式依赖发生改变时它们才会重新求值。
-                    这就意味着只要 message 还没有发生改变，
-                    多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数。
-                    
-                    相比之下，每当触发重新渲染时，调用方法将总会再次执行函数
-                    
-                侦听☆
-                    常用于需要ajax的数据改变
-                    https://cn.vuejs.org/v2/guide/computed.html#%E4%BE%A6%E5%90%AC%E5%99%A8
-                    watch的api
-                        https://cn.vuejs.org/v2/api/#watch
+指令
+v-html v-bind v-on
+v-html
+双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 v-html 指令
+v-html="rawHtml"
+注意:1.变量的值会直接作为HTML,忽略解析属性值中的数据绑定.
+2.你不能使用 v-html 来复合局部模板
 
-                setter
-                    计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter
-                    赋值vm.变量时会调用setter
-                    
-            7.Class 与 Style 绑定
-                class
-                    对象语法
-                        绑定的数据对象不必内联定义在模板里
-                        也可以在这里绑定一个返回对象的计算属性。
-                    数组语法
-                        在数组语法中也可以使用对象语法
-                        <div v-bind:class="[{ active: isActive }, errorClass]"></div>
-                    在组件上使用
-                        https://cn.vuejs.org/v2/guide/class-and-style.html#%E7%94%A8%E5%9C%A8%E7%BB%84%E4%BB%B6%E4%B8%8A
-                        暂缓
-                style
-                    对象语法
-                        直接绑定到一个样式对象通常更好,同样的，对象语法常常结合返回对象的计算属性使用。
-                    数组语法
-                        v-bind:style 的数组语法可以将多个样式对象应用到同一个元素上
-                        注意:这里与class不同,只能使用样式对象
-                        <div v-bind:style="[baseStyles, overridingStyles]"></div>
-                            baseStyles = { color : red}
-                        
-                    多重值
-                        <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
-                        这样写只会渲染数组中最后一个被浏览器支持的值。
-                        在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 display: flex。
-                    
-            8.条件渲染
+v-bind
+Mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 v-bind 指令
+<div v-bind:id="dynamicId"></div>
+对于布尔特性 (它们只要存在就意味着值为 true)，v-bind 工作起来略有不同,
+<button v-bind:disabled="isButtonDisabled">Button</button>
+如果 isButtonDisabled 的值是 null、undefined 或 false，
+则 disabled 特性甚至不会被包含在渲染出来的 <button> 元素中。
+
+v-on
+
+
+js表达式
+重点:1.if语句不生效,必须使用三元表达式
+2.模板表达式都被放在沙盒中，只能访问全局变量的一个白名单，如 Math 和 Date
+
+动态参数☆
+可以用方括号括起来的 JavaScript 表达式作为一个指令的参数
+动态参数预期会求出一个字符串，异常情况下值为 null。这个特殊的 null 值可以被显性地用于移除绑定。
+任何其它非字符串类型的值都将会触发一个警告。
+动态参数表达式有一些语法约束，因为某些字符，例如空格和引号，放在 HTML 特性名里是无效的。
+同样，在 DOM 中使用模板时你需要回避大写键名。
+
+修饰符☆
+修饰符 (modifier) 是以半角句号 . 指明的特殊后缀，用于指出一个指令应该以特殊方式绑定。
+例:.prevent 修饰符告诉 v-on 指令对于触发的事件调用 event.preventDefault()
+
+
+6.计算属性☆
+---
+https://cn.vuejs.org/v2/guide/computed.html
+模板内的表达式非常便利，但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻辑会让模板过重且难以维护。
+对于任何复杂逻辑，都应当使用计算属性
+例子见https://cn.vuejs.org/v2/guide/computed.html#%E5%9F%BA%E7%A1%80%E4%BE%8B%E5%AD%90
+
+vs方法
+我们可以将同一函数定义为一个方法而不是一个计算属性。
+两种方式的最终结果确实是完全相同的。
+然而，不同的是计算属性是基于它们的响应式依赖进行缓存的。
+只在相关响应式依赖发生改变时它们才会重新求值。
+这就意味着只要 message 还没有发生改变，
+多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数。
+
+相比之下，每当触发重新渲染时，调用方法将总会再次执行函数
+
+侦听☆
+常用于需要ajax的数据改变
+https://cn.vuejs.org/v2/guide/computed.html#%E4%BE%A6%E5%90%AC%E5%99%A8
+watch的api
+https://cn.vuejs.org/v2/api/#watch
+
+setter
+计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter
+赋值vm.变量时会调用setter
+
+7.Class 与 Style 绑定
+class
+对象语法
+绑定的数据对象不必内联定义在模板里
+也可以在这里绑定一个返回对象的计算属性。
+数组语法
+在数组语法中也可以使用对象语法
+<div v-bind:class="[{ active: isActive }, errorClass]"></div>
+在组件上使用
+https://cn.vuejs.org/v2/guide/class-and-style.html#%E7%94%A8%E5%9C%A8%E7%BB%84%E4%BB%B6%E4%B8%8A
+暂缓
+style
+对象语法
+直接绑定到一个样式对象通常更好,同样的，对象语法常常结合返回对象的计算属性使用。
+数组语法
+v-bind:style 的数组语法可以将多个样式对象应用到同一个元素上
+注意:这里与class不同,只能使用样式对象
+<div v-bind:style="[baseStyles, overridingStyles]"></div>
+baseStyles = { color : red}
+
+多重值
+<div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
+这样写只会渲染数组中最后一个被浏览器支持的值。
+在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 display: flex。
+
+8.条件渲染
                 v-if
                     v-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。
                     可以把一个 <template> 元素当做不可见的包裹元素，并在上面使用 v-if。最终的渲染结果将不包含 <template> 元素。
