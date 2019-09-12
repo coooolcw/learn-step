@@ -401,8 +401,8 @@ number函数列表
 https://sass-lang.com/documentation/functions/math  
 重点函数  
 1.random($limit: null)  
-如果$limit是1,输出0~1之间的随机数  
-如果$limit是1以上的整数,输出1~$limiti之间的随机整数  
+如果$limit是1,输出0\~1之间的随机数  
+如果$limit是1以上的整数,输出1\~$limiti之间的随机整数  
 常见函数  
 ```
 1.abs($number) //=> number 
