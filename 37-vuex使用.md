@@ -1,5 +1,5 @@
 1.安装  
-`npm install vuex --save`
+`npm install vuex --save`  
 或者在cli3构建的时候选择  
   
 2.创建store目录/文件  
