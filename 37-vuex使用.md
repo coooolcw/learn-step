@@ -1,9 +1,10 @@
-1.安装
-  npm install vuex --save
-  或者在cli3构建的时候选择
-
-2.创建store目录/文件
-js文件:
+1.安装  
+`npm install vuex --save`
+或者在cli3构建的时候选择  
+  
+2.创建store目录/文件  
+js文件:  
+```
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -20,10 +21,11 @@ export default new Vuex.Store({
 
   }
 });
-
-
-
-然后在main.js里引入store
+```
+  
+  
+然后在main.js里引入store  
+```
 import store from './store'//引入store
  
 new Vue({
@@ -31,3 +33,4 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+```
