@@ -8,56 +8,57 @@ module.exports = {
     // 选项...
 }
 ```
-    默认插件
-        在使用cli创建时,以下选项选择In package.json后会将一些插件(Babel, PostCSS, ESLint等)配置选项放在package.json内
-        默认是在分别单独的文件内进行配置
-        Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In package.json
+默认插件  
+在使用cli创建时,以下选项选择In package.json后会将一些插件(Babel, PostCSS, ESLint等)配置选项放在package.json内  
+默认是在分别单独的文件内进行配置  
+Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In package.json  
+  
+  
+  
+重要指令  
+`1.npm run lint --fix`  
+`2.npm run serve`  
+  
+  
+重要配置选项  
+      
+配置入口  
+https://cli.vuejs.org/zh/config/#pages  
+默认的入口为src/main.js  
+在运行多页面任务时需要修改这里  
+  
+  
+devServer  
+代理的设置在这里
+https://cli.vuejs.org/zh/config/#devserver
+支持webpack的选项
+内容较多,参考https://webpack.js.org/configuration/dev-server/
+中文的webpack的devserve配置说明https://www.webpackjs.com/configuration/dev-server/
+这里待学习webpack,内容很多,留坑
 
-
-
-重要指令
-    1.npm run lint --fix
-    2.npm run serve
-        
-        
-重要配置选项
-    
-    配置入口
-        https://cli.vuejs.org/zh/config/#pages
-        默认的入口为src/main.js
-        在运行多页面任务时需要修改这里
-
-
-        
-    devServer
-        代理的设置在这里
-        https://cli.vuejs.org/zh/config/#devserver
-        支持webpack的选项
-        内容较多,参考https://webpack.js.org/configuration/dev-server/
-        中文的webpack的devserve配置说明https://www.webpackjs.com/configuration/dev-server/
-        这里待学习webpack,内容很多,留坑
-        
-        主要是
-            host与port
-            在局域网内测试时需要修改此处(例如手机测试)
-            https://webpack.js.org/configuration/dev-server/#devserverhost
-            
-            //vue.config.js文件
-                module.exports = {
-                  //...
-                  devServer: {
-                    host: '0.0.0.0',
-                    port: 8000
-                  }
-                };
-        
-配置教程
-https://segmentfault.com/a/1190000016101954
-https://juejin.im/post/5bd02f98e51d457a944b634f
-
-
-
-可参考的模板
+主要是
+host与port
+在局域网内测试时需要修改此处(例如手机测试)
+https://webpack.js.org/configuration/dev-server/#devserverhost
+```
+//vue.config.js文件
+    module.exports = {
+        //...
+        devServer: {
+            host: '0.0.0.0',
+            port: 8000
+        }
+    };
+```
+  
+配置教程  
+https://segmentfault.com/a/1190000016101954  
+https://juejin.im/post/5bd02f98e51d457a944b634f  
+  
+  
+  
+可参考的模板  
+```
 module.exports = {
   baseUrl: process.env.NODE_ENV === 'production'
     ? '//your_url'
@@ -180,3 +181,4 @@ module.exports = {
   // 第三方插件配置
   pluginOptions: {}
 };
+```
