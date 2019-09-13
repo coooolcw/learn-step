@@ -1,14 +1,15 @@
-eslint官网
-https://eslint.org/
-中文网
-http://eslint.cn/
-具体的规则更改方式可在http://eslint.cn/docs/rules/中查找
-
-https://www.html.cn/archives/8345
-  airbnb的js代码规范
-
-
-//.editorconfig  选用airbnb风格自动创建的文件
+eslint官网  
+https://eslint.org/  
+中文网  
+http://eslint.cn/  
+具体的规则更改方式可在http://eslint.cn/docs/rules/中查找  
+  
+https://www.html.cn/archives/8345  
+airbnb的js代码规范  
+  
+  
+//.editorconfig  选用airbnb风格自动创建的文件  
+```
   [*.{js,jsx,ts,tsx,vue}]
   indent_style = space
   indent_size = 2
@@ -16,13 +17,14 @@ https://www.html.cn/archives/8345
   trim_trailing_whitespace = true
   insert_final_newline = true
   max_line_length = 100
-
-修改配置在.eslintrc.js
-的rules对象内修改
-
-
-个人使用的风格
-  空格遵循大部分标准改为两个space
+```
+修改配置在.eslintrc.js  
+的rules对象内修改  
+  
+  
+个人使用的风格  
+  空格遵循大部分标准改为两个space  
+```
   rules:{ 
      'semi': ["error", "always"],                       //必须分号结尾
       'arrow-spacing': ["error", { "before": true, "after": true }],   //箭头函数括号前后都有空格
@@ -38,22 +40,23 @@ https://www.html.cn/archives/8345
         "ignores": []               //忽略的标签
       }]
   }
-  其他暂时跟随vscode的prettier插件默认设置进行美化,不在vue中安装
-  以后有项目后再具体调整
-
-prettier
-  官网
-    https://prettier.io/
-    配置说明(无中文版)
-      https://prettier.io/docs/en/options.html
-  使用时script后的内容会自动缩进到顶格,与eslint冲突
-      
-      冲突原因
-        vutur中的
-          Format: Script Initial Indent
-          Format: Style Initial Indent
-        需要选择为勾选(true)
-        注意此选项并不在prettier中
+```
+  其他暂时跟随vscode的prettier插件默认设置进行美化,不在vue中安装  
+  以后有项目后再具体调整  
+  
+prettier  
+官网  
+https://prettier.io/  
+配置说明(无中文版)  
+https://prettier.io/docs/en/options.html  
+使用时script后的内容会自动缩进到顶格,与eslint冲突  
+  
+冲突原因  
+vutur中的    
+`Format: Script Initial Indent`  
+`Format: Style Initial Indent`  
+需要选择为勾选(true)  
+注意此选项并不在prettier中  
         
       
 
