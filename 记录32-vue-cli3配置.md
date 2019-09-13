@@ -29,17 +29,17 @@ https://cli.vuejs.org/zh/config/#pages
   
   
 devServer  
-代理的设置在这里
-https://cli.vuejs.org/zh/config/#devserver
-支持webpack的选项
-内容较多,参考https://webpack.js.org/configuration/dev-server/
-中文的webpack的devserve配置说明https://www.webpackjs.com/configuration/dev-server/
-这里待学习webpack,内容很多,留坑
-
-主要是
-host与port
-在局域网内测试时需要修改此处(例如手机测试)
-https://webpack.js.org/configuration/dev-server/#devserverhost
+代理的设置在这里  
+https://cli.vuejs.org/zh/config/#devserver  
+支持webpack的选项  
+内容较多,参考https://webpack.js.org/configuration/dev-server/  
+中文的webpack的devserve配置说明https://www.webpackjs.com/configuration/dev-server/  
+这里待学习webpack,内容很多,留坑  
+  
+主要是  
+host与port  
+在局域网内测试时需要修改此处(例如手机测试)  
+https://webpack.js.org/configuration/dev-server/#devserverhost  
 ```
 //vue.config.js文件
     module.exports = {
