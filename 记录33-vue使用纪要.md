@@ -1,25 +1,25 @@
-整体过程
-        main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等
-        最终所有的资源和文件被导出到public/index.html中发布到dist
+整体过程  
+main.js是入口文件,一般只定向到app.vue,在app.vue中导入其他组件和书写逻辑等  
+最终所有的资源和文件被导出到public/index.html中发布到dist  
+  
+  
+一些文件介绍  
+postcss  
+暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css  
+gitignore  
+上传至git时不上传的清单  
+public文件夹  
+https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html  
+相当于老版本的静态文件夹(static)+index.html  
+此处的文件不会经过webpack直接打包  
 
-
-一些文件介绍
-    postcss
-        暂时不需要自行修改,自动启用的是自动补充游览器css前缀,可使用其他插件更改css
-    gitignore
-        上传至git时不上传的清单
-    public文件夹
-        https://cli.vuejs.org/zh/guide/html-and-static-assets.html#html
-        相当于老版本的静态文件夹(static)+index.html
-        此处的文件不会经过webpack直接打包
-        
-        public/index.html
-        此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入
-        meta在此书写:主要是user-scalable=no
-    
-    src:主要编写的区域
-        assets   主要的资源文件夹
-                    图片,字体等
+public/index.html  
+此index是最终被导入所有代码的模板,在构建过程中,资源链接会被自动注入  
+meta在此书写:主要是user-scalable=no  
+  
+src:主要编写的区域
+assets   主要的资源文件夹
+图片,字体等
                  js和css(scss/less)的公共文件也放在这里
                  
                  scss常用文件梳理:
