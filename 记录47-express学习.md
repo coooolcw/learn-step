@@ -1,3 +1,24 @@
+基础node常用模块  
+1.http  
+2.url  
+3.util  
+4.fs  
+    
+一般使用express框架进行开发(避免重复发明轮子)  
+中文api地址(只有4.0版本,5.0的测试版没有)  
+https://expressjs.com/zh-cn/  
+使用时注意看一下英文文档,可能会有改动  
+  
+使用express-generator生成模板  
+  
+  
+常用的模板引擎  
+jade  
+http://jade-lang.com/  
+在线转换  
+http://naltatis.github.io/jade-syntax-docs/  
+  
+  
 MDN上的学习路径  
 https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs  
   
