@@ -1,35 +1,36 @@
-MDN上的学习路径
-https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs
-
-安装
-npm,node(略)
-
-npm init 创建package文件
-
-安装express
-npm install express
-
-启动服务
-node 文件名.js
-
-eslint
-  npm install eslint --save-dev
-
-  设置一个配置文件：
-  ./node_modules/.bin/eslint --init
-  记得选项使用js文件
+MDN上的学习路径  
+https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs  
   
-  配置package.json
-
+安装  
+npm,node(略)  
+  
+npm init 创建package文件  
+  
+安装express  
+npm install express  
+  
+启动服务  
+node 文件名.js  
+  
+eslint  
+`npm install eslint --save-dev`
+  
+设置一个配置文件：  
+./node_modules/.bin/eslint --init  
+记得选项使用js文件  
+  
+配置package.json  
+```
   "scripts": {
     //添加以下
     "lint": "eslint **.js"
   }
-  之后可以npm run lint
-
-
-  配置eslint选项
-
+```
+之后可以npm run lint  
+  
+  
+配置eslint选项  
+```
 module.exports = {
   env: {
     browser: true,
@@ -58,15 +59,17 @@ module.exports = {
     indent: ["error", 2] //与vue项目需要不同配置
   }
 };
-
-express生成器安装
-npm install express-generator -g
-
-在当前目录创建名为myapp的Express 应用程序(以pug,也就是jade为模板)
-express --view=pug myapp
-
-
-文件目录结构
+```
+  
+express生成器安装  
+`npm install express-generator -g`  
+  
+在当前目录创建名为myapp的Express 应用程序(以pug,也就是jade为模板)  
+`express --view=pug myapp`
+  
+  
+文件目录结构  
+```
   .
   ├── app.js
   ├── bin
@@ -84,9 +87,9 @@ express --view=pug myapp
       ├── error.pug
       ├── index.pug
       └── layout.pug
-      
-app.js  入口文件
-www 执行文件
-routes文件夹存放路由文件
-public静态文件库
-views模板文件夹,格式为pug(jade)
+```
+app.js  入口文件  
+www 执行文件  
+routes文件夹存放路由文件  
+public静态文件库  
+views模板文件夹,格式为pug(jade)  
