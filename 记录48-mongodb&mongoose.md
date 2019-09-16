@@ -5,64 +5,64 @@ mongoDB基础教程
   
 1.安装
 ===
-  主要注意点:  
-    https://stackoverflow.com/questions/52092528/invalid-domain-user-password-while-installing-mongodb-on-windows10  
-  在选择安装到系统服务/本地服务时,需要输入的账号密码是windows的账号密码  
-  domain则为.  
+主要注意点:  
+https://stackoverflow.com/questions/52092528/invalid-domain-user-password-while-installing-mongodb-on-windows10  
+在选择安装到系统服务/本地服务时,需要输入的账号密码是windows的账号密码  
+domain则为.  
 
 2.windows平台记得使用cmd不要使用powershell,不识别可执行文件  
 ===
-  win10打开管理员权限的cmd方法:搜索cmd然后右键.在运行中输入cmd则无法选择权限  
+win10打开管理员权限的cmd方法:搜索cmd然后右键.在运行中输入cmd则无法选择权限  
   
 使用:  
 ===
-  1.运行  
-  ---
-    使用cmd管理员权限cd到安装目录C:\Program Files\MongoDB\Server\4.2\bin  
-    语法  
-    $ cd "C:\Program Files\MongoDB\Server\4.2\bin"  
+1.运行  
+---
+使用cmd管理员权限cd到安装目录`C:\Program Files\MongoDB\Server\4.2\bin`  
+语法  
+`$ cd "C:\Program Files\MongoDB\Server\4.2\bin"`  
   
-  2.系统path配置  
-  ---
-    系统属性==>高级==>环境变量==>系统变量==>path  
-    添加C:\Program Files\MongoDB\Server\4.2\bin(可直接游览添加)  
-    确定后生效  
+2.系统path配置  
+---
+系统属性==>高级==>环境变量==>系统变量==>path  
+添加`C:\Program Files\MongoDB\Server\4.2\bin(可直接游览添加)`  
+确定后生效  
     
-  3.mongo启动自动配置设置  
-  ---
-    https://docs.mongodb.com/manual/administration/configuration/  
+3.mongo启动自动配置设置  
+---
+https://docs.mongodb.com/manual/administration/configuration/  
       
 基础指令  
-  https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/  
-  默认值启用:mongod(一般不配置会报错)  
+https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/  
+默认值启用:mongod(一般不配置会报错)  
     
-  启动配置项:  
-    指定存储目录(例如存储在/srv/mongodb路径中)  
-    `mongod --dbpath /srv/mongodb/`  
+启动配置项:  
+指定存储目录(例如存储在/srv/mongodb路径中)  
+`mongod --dbpath /srv/mongodb/`  
     
-    指定tcp端口(端口12345)    
-    `mongod --port 12345`    
+指定tcp端口(端口12345)    
+`mongod --port 12345`    
     
-    守护进程启动,并且输出日志  
-    `mongod --fork --logpath /var/log/mongodb.log`  
+守护进程启动,并且输出日志  
+`mongod --fork --logpath /var/log/mongodb.log`  
       
-    根据conf配置启动  
-    `mongod --config D:\mongodb\etc\mongo.conf`  
+根据conf配置启动  
+`mongod --config D:\mongodb\etc\mongo.conf`  
       
 基本配置  
 ===
-  https://docs.mongodb.com/manual/administration/configuration/  
-    1.windows的cmd中,守护进程似乎有点问题  
-    例子中的conf配置  
+https://docs.mongodb.com/manual/administration/configuration/  
+1.windows的cmd中,守护进程似乎有点问题  
+例子中的conf配置  
     
 ```
 processManagement ：  
   fork ： true 
 ```
-        需要删除   
-    linux应该是需要此配置的    
+需要删除   
+linux应该是需要此配置的    
       
-    本地使用的配置  
+本地使用的配置  
 ```
       net:
          bindIp: localhost
@@ -79,10 +79,9 @@ processManagement ：
 ```
   
 安全配置  
-  在windows中使用暂时可以直接bindIp: localhost,但是在vps上必须配置此项目  
-  https://docs.mongodb.com/manual/administration/configuration/#security-considerations  
-    例子  
-    
+在windows中使用暂时可以直接bindIp: localhost,但是在vps上必须配置此项目  
+https://docs.mongodb.com/manual/administration/configuration/#security-considerations  
+例子  
 ```
       net:
          bindIp: localhost,10.8.0.10,192.168.4.24,/tmp/mongod.sock
@@ -97,19 +96,19 @@ processManagement ：
       
 windows服务相关 
 ===
-  安装服务  
-    `mongod --config D:\mongodb\etc\mongo.conf --install`   
-    此时可按照运行指令进行配置  
-  删除服务
-  cmd中运行  sc.exe delete MongoDB
-    或者mongod.exe --remove --serviceName "MongoDB"  
+安装服务  
+`mongod --config D:\mongodb\etc\mongo.conf --install`   
+此时可按照运行指令进行配置  
+删除服务
+cmd中运行  sc.exe delete MongoDB
+或者mongod.exe --remove --serviceName "MongoDB"  
     
-    也可以在bin下修改mongod.cfg文件(未尝试)
+也可以在bin下修改mongod.cfg文件(未尝试)
     
 atlas 
 ===
-  配置和使用  
-    https://www.tracymc.cn/archives/1430  
+配置和使用  
+https://www.tracymc.cn/archives/1430  
   
   
 linux平台的安装  
@@ -173,10 +172,10 @@ import指令范例(注意不要在mongoshell内使用,这是独立的可执行�
 mongoose
 ===
 中文文档  
-  https://mongoosedoc.top/  
-  http://www.mongoosejs.net/  
+https://mongoosedoc.top/  
+http://www.mongoosejs.net/  
 英文官网  
-  https://mongoosejs.com/  
+https://mongoosejs.com/  
   
 增删改查  
 https://www.cnblogs.com/tugenhua0707/p/9256605.html  
