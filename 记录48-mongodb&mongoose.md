@@ -1,4 +1,4 @@
-基础教程  
+mongoDB基础教程  
 ===
   https://www.runoob.com/mongodb/mongodb-tutorial.html  
   菜鸟站,感觉一般般  
@@ -168,3 +168,15 @@ db.myCollection.insertOne( { x: 1 } );
   
 import指令范例(注意不要在mongoshell内使用,这是独立的可执行文件)  
 `mongoimport --db cwweb --collection cwblogs --file /web/mongodbcache/blogs.json`
+
+
+mongoose
+===
+中文文档  
+  https://mongoosedoc.top/  
+  http://www.mongoosejs.net/  
+英文官网  
+  https://mongoosejs.com/  
+  
+增删改查  
+https://www.cnblogs.com/tugenhua0707/p/9256605.html  
