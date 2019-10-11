@@ -8,3 +8,6 @@ http://es6.ruanyifeng.com/
 es6模块自动采用严格模式
   
 const对于对象的修改,以及冻结对象
+
+2.解构赋值  
+===
