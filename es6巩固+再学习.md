@@ -33,6 +33,8 @@ function move({x = 0, y = 0} = {}) {
   
 3.正则扩展  
 ===
+构造函数的变化  
 y修饰符以及sticky属性  
 u修饰符  
 flags属性  
+s修饰符  
