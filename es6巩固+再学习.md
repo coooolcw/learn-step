@@ -36,5 +36,6 @@ function move({x = 0, y = 0} = {}) {
 构造函数的变化  
 y修饰符以及sticky属性  
 u修饰符用于处理大于`\uFFFF`的字符  
+unicode属性  
 flags属性  
 s修饰符  
