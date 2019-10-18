@@ -49,7 +49,11 @@ unicode表示法`u{}`
 实例方法repeat()  
 实例方法padStart()  padEnd()
 String.fromCodePoint()   
-String.raw()  注意使用的时候是`String.raw\`字符串\``
+String.raw()  
+注意使用的时候是
+```
+String.raw`字符串`
+```  
 模板字符串  
 标签模板  常用于防止XSS攻击,多国语言模板处理  
   
