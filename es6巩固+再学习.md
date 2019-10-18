@@ -48,7 +48,8 @@ unicode表示法`u{}`
 实例方法includes()  startsWith() endsWith()  
 实例方法repeat()  
 实例方法padStart()  padEnd()
-String.fromCodePoint()  
+String.fromCodePoint()   
+String.raw()  
 模板字符串  
 标签模板  常用于防止XSS攻击,多国语言模板处理  
   
