@@ -50,7 +50,7 @@ unicode表示法`u{}`
 实例方法padStart()  padEnd()
 String.fromCodePoint()  
 模板字符串  
-标签模板  
+标签模板  常用于防止XSS攻击,多国语言模板处理  
   
 5.数值扩展
 ===
