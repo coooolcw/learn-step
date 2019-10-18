@@ -47,6 +47,7 @@ unicode表示法`u{}`
 实例方法codePointAt()  
 实例方法includes()  startsWith() endsWith()  
 实例方法repeat()  
+实例方法padStart()  padEnd()
 String.fromCodePoint()  
 模板字符串  
   
