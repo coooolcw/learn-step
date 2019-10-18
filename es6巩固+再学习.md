@@ -48,3 +48,7 @@ unicode表示法`u{}`
 实例方法includes()  startsWith() endsWith()  
 实例方法repeat()  
 String.fromCodePoint()  
+模板字符串  
+  
+5.数值扩展
+===
