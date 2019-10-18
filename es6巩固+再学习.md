@@ -50,6 +50,7 @@ unicode表示法`u{}`
 实例方法padStart()  padEnd()
 String.fromCodePoint()  
 模板字符串  
+标签模板  
   
 5.数值扩展
 ===
