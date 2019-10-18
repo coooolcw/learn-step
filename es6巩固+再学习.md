@@ -44,5 +44,5 @@ s修饰符
 ===
 unicode表示法`u{}`  
 遍历器接口`for of`  
-String.codePointAt()  
+实例方法codePointAt()  
 String.fromCodePoint() 
