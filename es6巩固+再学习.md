@@ -66,4 +66,6 @@ String.raw`字符串`
 常用API  
 `Number.isInteger()`注意15.0也视为整数,传入非数字返回false,同时数据精度可能会造成误判  
 [详情](http://es6.ruanyifeng.com/#docs/number)  
-  
+数字上下限  
+`Number.MAX_SAFE_INTEGER`和`Number.MIN_SAFE_INTEGER`  
+`Number.isSafeInteger()`判断是否在这个范围之内  
