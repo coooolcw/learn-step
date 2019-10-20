@@ -75,3 +75,6 @@ String.raw`字符串`
 [具体返回的规则](http://es6.ruanyifeng.com/#docs/number#Math-sign)  
 `Math.cbrt()`计算一个数的立方根  
   
+6.数组扩展
+===
+  
