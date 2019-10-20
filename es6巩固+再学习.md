@@ -72,3 +72,4 @@ String.raw`字符串`
 `Math.trunc()`去除一个数的小数部分,返回整数部分,不进行四舍五入等操作  
 `Math.sign()`判断一个数到底是正数、负数、还是零,若参数为非数值,会先将其转换为数值  
 [具体返回的规则](http://es6.ruanyifeng.com/#docs/number#Math-sign)  
+`Math.cbrt()`计算一个数的立方根  
