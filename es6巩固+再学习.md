@@ -62,5 +62,5 @@ String.raw`字符串`
 ===
 二进制和八进制(0b 0o)  
 转换回十进制则用`Number('')`;  
-
+Number.isFinite()  Number.isNaN()  
 
