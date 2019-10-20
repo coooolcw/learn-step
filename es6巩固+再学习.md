@@ -69,4 +69,4 @@ String.raw`字符串`
 数字上下限  
 `Number.MAX_SAFE_INTEGER`和`Number.MIN_SAFE_INTEGER`  
 `Number.isSafeInteger()`判断是否在这个范围之内  
-`Math.trunc()`去除一个数的小数部分,返回整数部分
+`Math.trunc()`去除一个数的小数部分,返回整数部分,不进行四舍五入等操作
