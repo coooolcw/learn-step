@@ -63,4 +63,5 @@ String.raw`字符串`
 二进制和八进制(0b 0o)  
 转换回十进制则用`Number('')`;  
 不太常用的API`Number.isFinite()`&`Number.isNaN()`  
-常用API`Number.isInteger()`注意15.0也视为整数  
+常用API`Number.isInteger()`注意15.0也视为整数,传入非数字返回false,同时数据精度可能会造成误判
+[详情](http://es6.ruanyifeng.com/#docs/number)
