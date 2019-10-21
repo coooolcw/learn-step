@@ -79,4 +79,4 @@ String.raw`字符串`
 ===
 `Array.of()`将一组值,转换为数组,用于替代`new Array()`和`Array()`  
 `Array.of()`总是返回参数值组成的数组.如果没有参数,就返回一个空数组.  
-  
+`Array.from()`将两类对象转为真正的数组:类似数组的对象(array-like object)和可遍历(iterable)的对象
