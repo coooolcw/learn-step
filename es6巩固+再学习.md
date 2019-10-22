@@ -82,5 +82,5 @@ String.raw`字符串`
 `Array.from()`将两类对象转为真正的数组:类似数组的对象(array-like object)和可遍历(iterable)的对象  
 常用于把querySelectorAll返回的类数组转为真正的数组  
 Array.from还可以接受第二个参数,作用类似于数组的map方法,用来对每个元素进行处理,将处理后的值放入返回的数组.  
-  
+还用于将字符串转为数组,然后返回字符串的正确长度,防止大于\uFFFF的字符计算成两个字符  
 
