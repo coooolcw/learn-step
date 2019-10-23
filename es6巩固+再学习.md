@@ -130,7 +130,8 @@ rest参数
   
 尾调用  
 用于优化递归性能,在需要性能优化的时候使用.  
-  
+内容较多,较难  
+[详情](http://es6.ruanyifeng.com/#docs/function#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)  
   
   
   
