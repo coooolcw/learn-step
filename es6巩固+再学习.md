@@ -133,5 +133,8 @@ rest参数
 内容较多,较难  
 [详情](http://es6.ruanyifeng.com/#docs/function#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)  
   
-  
+8.对象扩展
+===
+简洁表示法  
+属性和方法的简洁表示  
   
