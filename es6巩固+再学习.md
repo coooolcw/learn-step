@@ -120,6 +120,10 @@ foo() // undefined 5
   
 rest参数  
 获取函数的多余参数,这样就不需要使用arguments对象了
-
-
-
+  
+箭头函数  
+重点  
+注意点:1.this不同,箭头函数this在定义时确定,不是运行时的对象  
+2.不能用new  
+3.没有arguments对象  
+4.不能使用yield
