@@ -149,3 +149,9 @@ let obj = {
 };
 ```
   
+`Object.is()`用来比较两个值是否严格相等,与严格比较运算符(===)的行为基本一致,除了NaN与+0-0,NaN与NaN返回true,+0 -0返回false.  
+`Object.assign`用于对象的合并，将源对象(source)的所有可枚举属性，复制到目标对象(target)  
+注意:  
+1.浅拷贝  
+2.  
+`Object.keys``Object.values``Object.entries`  
