@@ -155,4 +155,5 @@ let obj = {
 1.浅拷贝  
 2.同名属性替换  
 3.可处理数组,但是会把数组当做object  
+4.不会复制函数体,只会复制函数的返回值(如果返回的是值的话)
 `Object.keys``Object.values``Object.entries`  
