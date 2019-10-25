@@ -153,5 +153,6 @@ let obj = {
 `Object.assign`用于对象的合并，将源对象(source)的所有可枚举属性，复制到目标对象(target)  
 注意:  
 1.浅拷贝  
-2.  
+2.同名属性替换  
+3.可处理数组,但是会把数组当做object  
 `Object.keys``Object.values``Object.entries`  
