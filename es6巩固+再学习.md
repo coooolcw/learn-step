@@ -157,3 +157,9 @@ let obj = {
 3.可处理数组,但是会把数组当做object  
 4.不会复制函数体,只会复制函数的返回值(如果返回的是值的话)  
 `Object.keys``Object.values``Object.entries`常用的是entries  
+  
+  
+9.symbol
+---
+新的数据类型  
+  
