@@ -33,4 +33,5 @@ origin可修改,一般不变,表示是远程库
 回复上n次commit的状态  HEAD表示当前版本  上一个版本就是HEAD^ 两个是HEAD^^ 上n个版本就是HEAD~n  
 也可以使用commit id  
 4.`$ git reflog`  
-查询每次commit的commit id,可用于回溯
+查询每次commit的commit id,可用于回溯  
+5.
