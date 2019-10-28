@@ -22,3 +22,15 @@ origin可修改,一般不变,表示是远程库
 把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程  
 以后推送  
 `git push origin master`  
+  
+  
+其他指令  
+1.`$ git status`  
+查看状态,修改和提交情况  
+2.`$ git diff`  
+查看不同  
+3.`$ git reset --hard HEAD`  
+回复上n次commit的状态  HEAD表示当前版本  上一个版本就是HEAD^ 两个是HEAD^^ 上n个版本就是HEAD~n  
+也可以使用commit id  
+4.`$ git reflog`  
+查询每次commit的commit id,可用于回溯
