@@ -171,5 +171,8 @@ symbol带参数时只是表示对当前Symbol值的描述,因此相同参数的S
 遍历:1.遍历所有symbol属性Object.getOwnPropertySymbols  
 2.遍历包括symbol的所有属性Reflect.ownKeys(obj)  
 
-取值:Symbol.prototype.description属性(可取到for传入的数据)
-
+取值:Symbol.prototype.description属性(可取到`symbol()`或`symbol.for()`传入的数据)  
+  
+synbol.for()  
+重点  
+接受一个字符串作为参数,然后搜索有没有以该参数作为名称的Symbol值.如果有,就返回这个Symbol值,否则就新建并返回一个以该字符串为名称的Symbol值.  
