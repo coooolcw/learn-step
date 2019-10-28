@@ -186,3 +186,6 @@ symbol带参数时只是表示对当前Symbol值的描述,因此相同参数的S
 2.Symbol.keyFor()返回一个已登记的symbol类型值的key  
 Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)  
   
+10.set map
+---
+  
