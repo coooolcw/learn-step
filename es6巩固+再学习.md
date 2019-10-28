@@ -162,17 +162,26 @@ let obj = {
 9.symbol
 ---
 新的数据类型  
-symbol带参数时只是表示对当前Symbol值的描述,因此相同参数的Symbol函数的返回值是不相等的  
-如果参数是一个对象,那就会先调用toString方法把对象变成字符串  
-可显示转为字符串,但是不能直接参与运算(调用toString)  
+不能直接参与运算  
 主要用于对象属性名(注意不能使用点运算符读取symbol属性名的值)  
 无法被普通方法遍历到(for...in,for...of,Object.keys(),Object.getOwnPropertyNames(),JSON.stringify())  
+创建:  
+1.symbol()  
+symbol带参数时只是表示对当前Symbol值的描述,因此相同参数的Symbol函数的返回值是不相等的  
+如果参数是一个对象,那就会先调用toString方法把对象变成字符串  
+2.symbol.for()  
+重点  
+接受一个字符串作为参数,然后搜索有没有以该参数作为名称的Symbol值.如果有,就返回这个Symbol值,否则就新建并返回一个以该字符串为名称的Symbol值.  
+  
   
 遍历:1.遍历所有symbol属性Object.getOwnPropertySymbols  
 2.遍历包括symbol的所有属性Reflect.ownKeys(obj)  
 
-取值:Symbol.prototype.description属性(可取到`symbol()`或`symbol.for()`传入的数据)  
+取值:
+1.实例属性Symbol.prototype.description  
+可取到`symbol()`或`symbol.for()`传入的数据  
+返回描述  
   
-synbol.for()  
-重点  
-接受一个字符串作为参数,然后搜索有没有以该参数作为名称的Symbol值.如果有,就返回这个Symbol值,否则就新建并返回一个以该字符串为名称的Symbol值.  
+2.Symbol.keyFor()返回一个已登记的symbol类型值的key  
+Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)  
+  
