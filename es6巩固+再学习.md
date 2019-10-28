@@ -165,3 +165,11 @@ let obj = {
 symbol带参数时只是表示对当前Symbol值的描述,因此相同参数的Symbol函数的返回值是不相等的  
 如果参数是一个对象,那就会先调用toString方法把对象变成字符串  
 可显示转为字符串,但是不能直接参与运算(调用toString)  
+主要用于对象属性名(注意不能使用点运算符读取symbol属性名的值)  
+无法被普通方法遍历到(for...in,for...of,Object.keys(),Object.getOwnPropertyNames(),JSON.stringify())  
+  
+遍历:1.遍历所有symbol属性Object.getOwnPropertySymbols  
+2.遍历包括symbol的所有属性Reflect.ownKeys(obj)  
+
+取值:Symbol.prototype.description属性(可取到for传入的数据)
+
