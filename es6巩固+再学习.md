@@ -191,4 +191,7 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
 在数据结构中优先考虑Map、Set,放弃Array和Object  
 [遍历方法和api等](http://es6.ruanyifeng.com/#docs/set-map)  
 方法和api较多,查阅网站  
-  
+重点注意set,map与JSON格式的数据转换  
+在需要临时存储DOM节点等信息时,可使用WeakSet以及WeakMap  
+[一个什么时候使用Set Map结构的总结](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)
+
