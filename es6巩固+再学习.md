@@ -188,4 +188,7 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
   
 10.set map
 ---
+set  
+  
+map  
   
