@@ -188,7 +188,7 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
   
 10.set map
 ---
-set  
-  
-map  
+在数据结构中优先考虑Map、Set,放弃Array和Object  
+[遍历方法和api等](http://es6.ruanyifeng.com/#docs/set-map)  
+方法和api较多,查阅网站  
   
