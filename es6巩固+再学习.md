@@ -193,5 +193,6 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
 方法和api较多,查阅网站  
 重点注意set,map与JSON格式的数据转换  
 在需要临时存储DOM节点等信息时,可使用WeakSet以及WeakMap  
-[一个什么时候使用Set Map结构的总结](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)
-在存储大量数据时选择map(set),简单存储以及json简单处理使用object,在创建需要通过this操作各种属性的时候使用object
+[一个什么时候使用Set Map结构的总结](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)  
+[中文翻译](https://juejin.im/post/5c7f6251f265da2dce1f68d3)  
+
