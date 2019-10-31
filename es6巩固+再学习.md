@@ -198,4 +198,10 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
   
 使用...和new Set()/new Map()把set/map和数组相互转换,可使用所有数组方法  
   
-
+WeakSet和WeakMap都只接受对象作为键,主要都用于DOM节点临时存储.  
+weak系列没有遍历,只能用add,delete,has方法.  
+  
+11.Proxy
+---
+  
+  
