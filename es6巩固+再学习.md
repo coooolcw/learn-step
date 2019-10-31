@@ -195,4 +195,7 @@ Symbol.for(sym),返回注册时传入的数据(Symbol()或Symbol.for()传入的)
 在需要临时存储DOM节点等信息时,可使用WeakSet以及WeakMap  
 [一个什么时候使用Set Map结构的总结](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)  
 [中文翻译](https://juejin.im/post/5c7f6251f265da2dce1f68d3)  
+  
+使用...和new Set()把set和数组相互转换,可使用所有数组方法  
+  
 
