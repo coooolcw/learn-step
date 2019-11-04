@@ -207,6 +207,6 @@ weak系列没有遍历,只能用add,delete,has方法.
 proxy暂时使用频率较低,在需要使用的时候再查阅即可.  
 vue3.0会在内部使用proxy跟踪数据变化,到时候可以学习  
   
-  
-  
 reflect比较常用  
+要把之前用Object调用的各种方法都替换成Reflect调用  
+  
