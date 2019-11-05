@@ -215,7 +215,7 @@ reflect比较常用
 [api](http://es6.ruanyifeng.com/#docs/reflect)  
   
 Proxy和Reflect的重点方法  
-`get()``set()``apply()``has()``construct()``ownKeys()`  
+`get()` `set()` `apply()` `has()` `construct()` `ownKeys()`  
   
 12.class
 ---
