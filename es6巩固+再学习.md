@@ -209,4 +209,13 @@ vue3.0会在内部使用proxy跟踪数据变化,到时候可以学习
   
 reflect比较常用  
 要把之前用Object调用的各种方法都替换成Reflect调用  
+[api](http://es6.ruanyifeng.com/#docs/reflect)  
   
+12.class
+---
+重要  
+  
+13.Promise
+---
+重要  
+
