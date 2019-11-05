@@ -217,6 +217,9 @@ reflect比较常用
 Proxy和Reflect的重点方法  
 `get()` `set()` `apply()` `has()` `construct()` `ownKeys()`  
   
+用途:  
+解耦模块和业务,比如解耦校验模块与业务  
+  
 12.class
 ---
 重要  
