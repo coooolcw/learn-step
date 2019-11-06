@@ -224,6 +224,11 @@ Proxy和Reflect的重点方法
 ---
 重要  
 [内容见ES6入门](http://es6.ruanyifeng.com/#docs/class)  
+注意:1.Class内定义的方法不可枚举,与ES5不同  
+2.直接调用会报错  
+3.默认严格模式  
+4.没有变量提升  
+5.在函数名前加\*代表是Generator方法  
 [Class继承](http://es6.ruanyifeng.com/#docs/class-extends)  
   
 13.Promise
