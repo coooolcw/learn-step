@@ -229,6 +229,8 @@ Proxy和Reflect的重点方法
 3.默认严格模式  
 4.没有变量提升  
 5.在函数名前加\*代表是Generator方法  
+6.注意this的指向  
+  
 [Class继承](http://es6.ruanyifeng.com/#docs/class-extends)  
   
 13.Promise
