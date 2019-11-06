@@ -223,6 +223,8 @@ Proxy和Reflect的重点方法
 12.class
 ---
 重要  
+[内容见ES6入门](http://es6.ruanyifeng.com/#docs/class)  
+[Class继承](http://es6.ruanyifeng.com/#docs/class-extends)  
   
 13.Promise
 ---
