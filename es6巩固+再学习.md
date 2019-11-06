@@ -240,6 +240,10 @@ Proxy和Reflect的重点方法
 new.target方法判定是否是由new或Reflect.construct()调用,可用于function构造的类  
   
 [Class继承](http://es6.ruanyifeng.com/#docs/class-extends)  
+注意:  
+1.子类必须在constructor方法中调用super方法,否则新建实例时会报错  
+如果子类没有定义constructor方法,这个方法会被默认添加,并自动调用super  
+2.在子类的构造函数中,只有调用super之后,才可以使用this关键字  
   
 13.Promise
 ---
