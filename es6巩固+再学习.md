@@ -231,6 +231,11 @@ Proxy和Reflect的重点方法
 5.在函数名前加\*代表是Generator方法  
 6.注意this的指向  
   
+私有属性和方法:  
+1.\_模拟  
+2.Symbol模拟  
+3.新提案,在属性名前加#号,使用时也要带上#  
+  
 [Class继承](http://es6.ruanyifeng.com/#docs/class-extends)  
   
 13.Promise
