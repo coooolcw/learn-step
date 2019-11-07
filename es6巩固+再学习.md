@@ -245,6 +245,9 @@ new.target方法判定是否是由new或Reflect.construct()调用,可用于funct
 如果子类没有定义constructor方法,这个方法会被默认添加,并自动调用super  
 2.在子类的构造函数中,只有调用super之后,才可以使用this关键字  
 3.`super()`相当于`A.prototype.constructor.call(this)`  
+4.作为函数,`super()`只能用在子类构造函数中,执行时,this指向的是子类  
+5.super作为对象时,在普通方法中,指向父类的原型对象.在静态方法中,指向父类.  
+6.在子类普通方法中通过super调用父类的方法时,方法内部的this指向当前的子类实例.  
   
 13.Promise
 ---
