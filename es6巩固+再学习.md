@@ -260,4 +260,7 @@ ES6可以继承原生构造函数,例如Number,Array
 14.Iterator和for...of  
 ---
   
+15.Generator
+---
+重点,难  
   
