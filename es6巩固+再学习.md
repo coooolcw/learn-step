@@ -256,4 +256,8 @@ ES6可以继承原生构造函数,例如Number,Array
 13.Promise
 ---
 重要  
-
+    
+14.Iterator和for...of  
+---
+  
+  
