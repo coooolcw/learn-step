@@ -271,3 +271,7 @@ ES6可以继承原生构造函数,例如Number,Array
 ---
 正在提案的第二阶段,尚未确定语法  
 [github地址](https://github.com/tc39/proposal-decorators)  
+  
+17.Module
+---
+  
