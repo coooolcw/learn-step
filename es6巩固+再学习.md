@@ -258,6 +258,8 @@ ES6可以继承原生构造函数,例如Number,Array
 重要  
 Promise中如果不添加任何条件,直接调用resolve,与setTimeout设置为0类似,会在执行队列结束处添加resolve函数的调用  
 node和游览器都有事件用于处理拒绝  
+注意:
+1.then返回一个新的Promise对象  
   
 14.Iterator和for...of  
 ---
