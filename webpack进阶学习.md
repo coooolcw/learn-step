@@ -1,5 +1,5 @@
 杂记  
-1.在scss中自动添加变量文件,减少不必要的书写  
+1.在每个vue文件的scss中自动添加变量文件,减少不必要的书写  
 vue.config.js  
 ```
 module.exports = {
