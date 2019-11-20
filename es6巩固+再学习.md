@@ -263,7 +263,7 @@ node和游览器都有事件用于处理拒绝
 2.then中返回的参数会被下一个then传入回调函数  
 3.then返回promise则下一个then会等待promise完成再进行调用  
 4.reject()与throw new Error作用类似  
-5.
+5.promise最后都应该跟一个catch对象  
   
 14.Iterator和for...of  
 ---
