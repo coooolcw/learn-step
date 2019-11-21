@@ -265,6 +265,9 @@ node和游览器都有事件用于处理拒绝
 4.reject()与throw new Error作用类似  
 5.promise对象后面都应该跟一个catch对象,然后可以再继续调用then  
   
+重点与难点:
+[与Generator 函数结合](http://es6.ruanyifeng.com/#docs/promise#Generator-%E5%87%BD%E6%95%B0%E4%B8%8E-Promise-%E7%9A%84%E7%BB%93%E5%90%88)  
+
 14.Iterator和for...of  
 ---
   
