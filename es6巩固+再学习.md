@@ -271,6 +271,15 @@ node和游览器都有事件用于处理拒绝
 14.Iterator和for...of  
 ---
 [参考页面](http://es6.ruanyifeng.com/#docs/iterator)  
+注意:
+1.可在原型上定义,常用于NodeList`NodeList.prototype[Symbol.iterator]`  
+2.NodeList可使用数组的遍历方法`NodeList.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];`  
+  
+默认调用此接口的方法:  
+1.解构赋值  
+2.扩展运算符  
+3.`yield*`[注意这里](http://es6.ruanyifeng.com/#docs/iterator#%E8%B0%83%E7%94%A8-Iterator-%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%9C%BA%E5%90%88)  
+4.其他  
   
 15.Generator
 ---
