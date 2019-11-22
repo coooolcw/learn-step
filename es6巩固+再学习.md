@@ -281,6 +281,9 @@ node和游览器都有事件用于处理拒绝
 3.`yield*`[注意这里](http://es6.ruanyifeng.com/#docs/iterator#%E8%B0%83%E7%94%A8-Iterator-%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%9C%BA%E5%90%88)  
 4.其他  
   
+遍历器有throw和return方法,[具体参见](http://es6.ruanyifeng.com/#docs/iterator#%E9%81%8D%E5%8E%86%E5%99%A8%E5%AF%B9%E8%B1%A1%E7%9A%84-return%EF%BC%8Cthrow)  
+应该不太常用  
+  
 15.Generator
 ---
 重点,难  
