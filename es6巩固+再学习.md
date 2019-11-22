@@ -282,7 +282,7 @@ node和游览器都有事件用于处理拒绝
 4.其他  
   
 遍历器有throw和return方法,[具体参见](http://es6.ruanyifeng.com/#docs/iterator#%E9%81%8D%E5%8E%86%E5%99%A8%E5%AF%B9%E8%B1%A1%E7%9A%84-return%EF%BC%8Cthrow)  
-应该不太常用  
+平时不太常用,一般和Generator函数并用  
   
 15.Generator
 ---
