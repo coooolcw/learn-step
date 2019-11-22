@@ -274,6 +274,7 @@ node和游览器都有事件用于处理拒绝
 注意:
 1.可在原型上定义,常用于NodeList`NodeList.prototype[Symbol.iterator]`  
 2.NodeList可使用数组的遍历方法`NodeList.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];`  
+3.用于数组时与for in不同,可以使用break,continue和return  
   
 默认调用此接口的方法:  
 1.解构赋值  
