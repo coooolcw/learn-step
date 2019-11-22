@@ -270,7 +270,7 @@ node和游览器都有事件用于处理拒绝
 
 14.Iterator和for...of  
 ---
-  
+[参考页面](http://es6.ruanyifeng.com/#docs/iterator)  
   
 15.Generator
 ---
