@@ -120,14 +120,14 @@ NamedNodeMap
   
 获取节点  
 ---
-1.`ocument.getElementById();`  
+1.`document.getElementById();`  
 p256\~257  
 IE7以前会将name匹配的元素也返回,现在基本不需要考虑这个.  
 只有document才有此方法  
-2.`ocument.getElementsByName();` 
+2.`document.getElementsByName();` 
 p256\~257  
 只有document才有此方法  
-3.`ocument.getElementsByTagName();`  
+3.`document.getElementsByTagName();`  
 p256\~257  
 只有document才有此方法  
 传入\*可获得所有元素
