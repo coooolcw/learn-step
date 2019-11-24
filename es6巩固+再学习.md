@@ -288,6 +288,8 @@ node和游览器都有事件用于处理拒绝
 15.Generator
 ---
 重点,难  
+搞不太明白  
+async和await是Generator函数的语法糖  
   
   
 16.装饰器(decorator)
