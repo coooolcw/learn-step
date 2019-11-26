@@ -134,3 +134,66 @@ var isPalindrome = function(x) {
   
   
 </details>
+  
+    
+83.给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。  
+```
+示例 1:
+
+输入: 1->1->2
+输出: 1->2
+示例 2:
+
+输入: 1->1->2->3->3
+输出: 1->2->3
+```
+来源：力扣（LeetCode）  
+链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list  
+  
+  
+<details>
+  
+链表的使用
+```
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates = function(head) {
+    if(!head) {
+        return null;
+    }
+    let mySet = new Set();
+    (function addSet() {
+        if(head) {
+            mySet.add(head.val);
+            head = head.next;
+            addSet();
+        }
+    })();
+    let arr = [...mySet];
+    let len = arr.length;
+    let index = 1;
+    let ans = new ListNode(arr[0]);
+    head = ans; 
+    (function pushListNode() {
+        if(index < len) {
+            head.next = new ListNode(arr[index]);
+            head = head.next;
+            index++;
+            pushListNode();
+        }
+    })();
+    return ans;
+};
+```
+76ms  
+写复杂了,需要简化  
+</details>  
