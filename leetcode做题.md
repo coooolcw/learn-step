@@ -126,7 +126,7 @@ var isPalindrome = function(x) {
     if(x.toString(10).split('').reverse().join('') === x.toString(10)) {
         return true;
     } else {
-        return false
+        return false;
     }
 };
 ```  
