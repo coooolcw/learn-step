@@ -50,4 +50,44 @@ var twoSum = function(nums, target) {
 
 </details>  
   
-7.  
+7.给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+```示例 1:
+
+输入: 123
+输出: 321
+ 示例 2:
+
+输入: -123
+输出: -321
+示例 3:
+
+输入: 120
+输出: 21
+```
+注意:  
+假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。  
+  
+来源：力扣（LeetCode）  
+链接：https://leetcode-cn.com/problems/reverse-integer  
+  
+<details>    
+  
+解题:  
+转数组用数组reverse然后转回数字
+```
+var reverse = function(x) {
+    let ans;
+    let max = Math.pow(2,31);
+    if(x < 0) {
+        ans = Number.parseInt((-x).toString(10).split('').reverse().join(''));
+        return (ans > max) ? 0: -ans;
+    } else {
+        ans = Number.parseInt(x.toString(10).split('').reverse().join(''));
+        return (ans > max - 1) ? 0: ans;
+    }
+};
+```
+同样是暴力方法  
+92ms  
+
+</details> 
