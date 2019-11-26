@@ -119,6 +119,7 @@ var reverse = function(x) {
 解题:  
 <details>  
 字符串法  
+  
 ```
 var isPalindrome = function(x) {
     if(x < 0) return false;
