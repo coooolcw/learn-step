@@ -11,3 +11,5 @@ require('echarts/lib/chart/bar');
 require('echarts/lib/component/tooltip');
 require('echarts/lib/component/title');
 ```
+[按需引入的列表](https://github.com/apache/incubator-echarts/blob/master/index.js)  
+2.
